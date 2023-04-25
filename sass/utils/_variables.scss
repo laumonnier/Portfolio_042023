@@ -1,0 +1,34 @@
+$colour-primary:#068a69;
+$colour-secondary: #81e4c6;
+$colour-tertiary: #e6b328;
+$colour-invalid:#890627;
+$colour-white: #fff;
+$colour-light-white: #abaaaa;
+$colour-black: black;
+$colour-red: #f14343;
+$colour-light-mint:#bce2a4;
+$colour-selection-bg:#000101;
+$colour-gray-transparent:#03030390;
+
+$font-size:(h1:2.5rem, h2:3rem, logo:4rem, quote:6rem, heading: 5rem, project-heading: 4rem, nav-heading: 1.1rem, social-heading: 1.1rem, label: 3rem);
+$text-shadow-offset:(logo:0.3rem);
+// $font-weight:(logo: 700, quote: 500, heading: 400, project-heading: 550, )
+$txt-input-palette:(
+    focus:(
+        txt: $colour-white,
+        border: $colour-primary,
+    ),
+    hover:(
+        txt: $colour-black,
+        border: $colour-primary,
+    ),
+    invalid:(
+        bg: $colour-primary,
+        txt: $colour-white,
+        border: $colour-primary,
+    ),
+);
+$breakpoints:(
+    mobile: 767px,
+    tablet: 991px
+);

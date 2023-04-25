@@ -1,0 +1,14 @@
+.about-section {
+    height: calc(800px + 8vw);
+    h2 {
+        mix-blend-mode: exculsion;
+        margin: 220px 0 0;
+    }
+    p {
+        width: 80%;
+        min-width: 270px;
+        text-align: justify;
+        margin: auto;
+        line-height: calc(3px + 2.3vw);
+    }
+}

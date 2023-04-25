@@ -1,0 +1,56 @@
+.nav {
+    display: flex;
+    align-items: space-around;
+    text-align: right;
+    ul{
+        @include list-unstyled;
+    }
+    &__link {
+        display: inline-flex;
+        justify-content: space-between;
+        align-content: center;
+        font-size: calc(map-get($font-size, nav-heading) + 0.98vw);
+        margin: 0 1rem;
+        padding: 0.2rem;
+        a,
+        a:visited {
+            cursor: pointer;
+            position: relative;
+            text-decoration: none;
+            color: $colour-light-white;
+            transition: 0.15s linear;
+            &:hover {
+                @include background-shift($colour-gray-transparent);
+                transform: scale(1.1);
+                color: $colour-white;
+                border-radius: 10px;
+                padding: 0 5px;
+                &::after {
+                    animation: animLink 1.4s infinite ease-in-out;
+                }
+                @keyframes animLink {
+                    50% {
+                        transform: scaleX(0.2);
+                    }
+                    100% {
+                        transform: scaleX(1);
+                    }
+                    
+                }
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                background-color: $colour-white;
+                height: 2px;
+                bottom: -4px;
+                left: 0;
+            }
+            
+        // &--active { 
+        //     background-color: $colour-active;
+        // }
+        }
+    }
+}

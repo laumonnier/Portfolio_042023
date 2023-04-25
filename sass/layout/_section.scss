@@ -1,0 +1,34 @@
+section{
+    scroll-margin-block: 12rem;
+    h1 {
+        text-align: center;
+        color: $colour-black;
+    }
+    h2 {
+        font-size: calc(2rem + 4vw);
+        color: $colour-black;
+        margin-top: 5px;
+        text-align: center;
+    }
+}
+
+/*Faire une fonction et mixin pour les background-color des id*/
+#home{
+    background-color: $colour-primary;
+}
+
+#about{
+    background-color: $colour-white;
+}
+
+#skills{
+    background-color: $colour-secondary;
+}
+
+#portfolio{
+    background-color: $colour-white;
+}
+
+#contact{
+    background-color: $colour-red;
+}

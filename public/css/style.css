@@ -1,0 +1,286 @@
+body {
+  font-family: "Noto Sans", "Merriweather", "Poppins", "Roboto", sans-serif;
+  color: black;
+  font-size: calc(1rem + 1.1vw);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: calc(2.5rem + 0.98vw);
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+textarea {
+  font-family: "Poppins", "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 1.3rem;
+}
+
+button {
+  font-family: "Poppins", "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+*::selection {
+  background-color: #000101;
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  align-items: space-around;
+  text-align: right;
+}
+.nav ul {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+.nav__link {
+  display: inline-flex;
+  justify-content: space-between;
+  align-content: center;
+  font-size: calc(1.1rem + 0.98vw);
+  margin: 0 1rem;
+  padding: 0.2rem;
+}
+.nav__link a,
+.nav__link a:visited {
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  color: #abaaaa;
+  transition: 0.15s linear;
+}
+.nav__link a:hover,
+.nav__link a:visited:hover {
+  background-color: rgba(3, 3, 3, 0.5647058824);
+  transform: scale(1.1);
+  color: #fff;
+  border-radius: 10px;
+  padding: 0 5px;
+}
+.nav__link a:hover::after,
+.nav__link a:visited:hover::after {
+  animation: animLink 1.4s infinite ease-in-out;
+}
+@keyframes animLink {
+  50% {
+    transform: scaleX(0.2);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+.nav__link a::after,
+.nav__link a:visited::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+}
+
+.header {
+  z-index: 5;
+  background-color: rgba(3, 3, 3, 0.5647058824);
+  height: calc(11rem + 0.98vw);
+  margin-top: 1rem;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.header__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 2rem;
+  color: black;
+  text-shadow: 0.3rem 0.3rem #fff;
+}
+.header__logo--name {
+  margin-left: 1rem;
+  font-style: italic;
+}
+.header img {
+  height: calc(6rem + 1.1vw);
+  width: calc(6rem + 1.1vw);
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__section {
+  margin-bottom: 0rem;
+}
+
+section {
+  scroll-margin-block: 12rem;
+}
+section h1 {
+  text-align: center;
+  color: black;
+}
+section h2 {
+  font-size: calc(2rem + 4vw);
+  color: black;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/*Faire une fonction et mixin pour les background-color des id*/
+#home {
+  background-color: #068a69;
+}
+
+#about {
+  background-color: #fff;
+}
+
+#skills {
+  background-color: #81e4c6;
+}
+
+#portfolio {
+  background-color: #fff;
+}
+
+#contact {
+  background-color: #f14343;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+}
+.socials ul {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+.socials__link {
+  display: inline-flex;
+  text-align: center;
+  font-size: calc(1.1rem + 0.98vw);
+  margin: 0 0.5rem;
+}
+.socials a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.about-section {
+  height: calc(800px + 8vw);
+}
+.about-section h2 {
+  mix-blend-mode: exculsion;
+  margin: 220px 0 0;
+}
+.about-section p {
+  width: 80%;
+  min-width: 270px;
+  text-align: justify;
+  margin: auto;
+  line-height: calc(3px + 2.3vw);
+}
+
+.home-section {
+  height: calc(900px + 4vw);
+  background-image: url(../../public/images/composition-pour-ordinateur-portable-bloc-notes-bureau_23-2147982547.avif);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-top: calc(11rem + 0.98vw);
+}
+.home-section h1 {
+  letter-spacing: -5px;
+}
+
+.proj-section {
+  margin: 200px 0;
+}
+.proj-section__projects {
+  margin-top: 100px;
+}
+.proj-section__projects img {
+  height: 50vw;
+  max-height: 285px;
+  width: 100vw;
+  max-width: 560px;
+  filter: grayscale(100%);
+  transition: 1.5s;
+}
+.proj-section__projects img:hover {
+  filter: grayscale(10%);
+}
+.proj-section__projects__project {
+  position: relative;
+  width: 60vw;
+}
+
+.expertise {
+  background-image: url(../../public/images/concept-logiciel-developpement-codage-langage-programmation.jpg);
+  background-size: cover;
+  height: calc(950px + 8vw);
+}
+.expertise h2 {
+  margin: -50px 0 50px;
+  padding-top: calc(11rem + 1vw);
+}
+.expertise__skills {
+  margin: 10px 0;
+}
+.expertise__skills--appear {
+  text-align: center;
+}
+.expertise p {
+  display: inline-block;
+  font-size: calc(1rem + 3vw);
+  letter-spacing: 2px;
+  color: #fff;
+  background-color: black;
+  border-radius: 20px;
+  padding: 0 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

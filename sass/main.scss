@@ -1,0 +1,22 @@
+@import "./utils/variables";
+@import "./utils/fonctions";
+@import "./utils/mixins";
+@import "./utils/extensions";
+
+@import "./base/typography";
+@import "./base/base";
+
+@import "./layout/nav";
+@import "./layout/header";
+// @import "./layout/socials";
+@import "./layout/main";
+@import "./layout/section";
+
+// @import "./components/img-project";
+@import "./components/socials";
+
+@import "./pages/about";
+@import "./pages/contact";
+@import "./pages/home";
+@import "./pages/portfolio";
+@import "./pages/skills";

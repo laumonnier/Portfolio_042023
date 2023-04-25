@@ -1,0 +1,32 @@
+.header {
+    z-index: 5;
+    background-color: $colour-gray-transparent;
+    height: calc(11rem + 0.98vw);
+    margin-top: 1rem;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    // border: 5px solid black;
+    &__logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 2rem;
+        color:$colour-black;
+        @include text-shadow($colour-white);
+        &--name {
+            margin-left: 1rem;
+            font-style: italic;
+        }
+    }
+    img {
+        height: calc(6rem + 1.1vw);
+        width: calc(6rem + 1.1vw);
+        border: 3px solid black;
+        border-radius: 10px;
+    }
+}

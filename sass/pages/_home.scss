@@ -1,0 +1,12 @@
+.home-section {
+    height: calc(900px + 4vw);
+    background-image: url(../../public/images/composition-pour-ordinateur-portable-bloc-notes-bureau_23-2147982547.avif);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+
+    padding-top: calc(11rem + 0.98vw);
+    h1 {
+        letter-spacing: -5px;
+    }
+}
