@@ -1,22 +1,67 @@
+/*section portfolio*/
 .proj-section {
     margin: 200px 0;
     &__projects {
         margin-top: 100px;
-        img {
-            height: 50vw;
-            max-height: 285px;
-            width: 100vw;
-            max-width: 560px;
-            filter: grayscale(100%);
-            transition: 1.5s;
-            &:hover{
-                filter: grayscale(10%);
-            }
     }
     &__project {
         position: relative;
         width: 60vw;
+        max-width: 620px;
+        &:hover {
+            img {
+                filter: brightness(20%);
+            }
+            .proj-section__project--info {
+                opacity: 1;
+                transform: translate(-23px, -50%);
+            }
+        }
 
+        &--p1 {
+            margin: 0 0 50px 3vw;
+        }
+        &--p2 {
+            margin: 0 6vw 0 auto;
+        }
+        &--p3 {
+            margin: 0 auto 0 6vw;
+        }
+        &--p4 {
+            margin: 0 5vw 0 auto;
+        }
+        &--p5 {
+            margin: 0 auto 0 5vw;
+        }
+        &--info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50px, -50%);
+            margin-left: 6.5vw;
+            transition: 0.3s ease-out;
+            opacity: 0;
+            a {
+                font-size: calc(1rem + 3vw);
+                color: $colour-white;
+                text-decoration: none;
+            }
+            p {
+                text-align: center;
+                font-style: calc(0.7rem + 2.5vw);
+                margin-top: 0.5vw;
+            }
+        }
+        img {
+            width: 100%;
+            max-width: 620px;
+            // filter: grayscale(100%);
+            transition: 0.4s ease-out;
+            // &:hover{
+            //     filter: grayscale(10%);
+            // }
     }
     }
 }

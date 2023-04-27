@@ -182,8 +182,30 @@ section h2 {
   background-color: #fff;
 }
 
-#contact {
-  background-color: #f14343;
+/*footer*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  background-color: #5f5f5f;
+  padding: calc(2rem + 2vw) calc(4rem + 1.8vw);
+}
+.footer__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer__links--quick p {
+  text-decoration: underline;
+}
+
+ul li {
+  color: #cccccc;
+}
+ul li a {
+  color: #cccccc;
+  font-size: calc(0.5rem + 1.5vw);
+  text-decoration: none;
 }
 
 .socials {
@@ -209,6 +231,7 @@ section h2 {
   color: #fff;
 }
 
+/*section about*/
 .about-section {
   height: calc(800px + 8vw);
 }
@@ -224,6 +247,7 @@ section h2 {
   line-height: calc(3px + 2.3vw);
 }
 
+/*section home*/
 .home-section {
   height: calc(900px + 4vw);
   background-image: url(../../public/images/composition-pour-ordinateur-portable-bloc-notes-bureau_23-2147982547.avif);
@@ -236,28 +260,68 @@ section h2 {
   letter-spacing: -5px;
 }
 
+/*section portfolio*/
 .proj-section {
   margin: 200px 0;
 }
 .proj-section__projects {
   margin-top: 100px;
 }
-.proj-section__projects img {
-  height: 50vw;
-  max-height: 285px;
-  width: 100vw;
-  max-width: 560px;
-  filter: grayscale(100%);
-  transition: 1.5s;
-}
-.proj-section__projects img:hover {
-  filter: grayscale(10%);
-}
-.proj-section__projects__project {
+.proj-section__project {
   position: relative;
   width: 60vw;
+  max-width: 620px;
+}
+.proj-section__project:hover img {
+  filter: brightness(20%);
+}
+.proj-section__project:hover .proj-section__project--info {
+  opacity: 1;
+  transform: translate(-23px, -50%);
+}
+.proj-section__project--p1 {
+  margin: 0 0 50px 3vw;
+}
+.proj-section__project--p2 {
+  margin: 0 6vw 0 auto;
+}
+.proj-section__project--p3 {
+  margin: 0 auto 0 6vw;
+}
+.proj-section__project--p4 {
+  margin: 0 5vw 0 auto;
+}
+.proj-section__project--p5 {
+  margin: 0 auto 0 5vw;
+}
+.proj-section__project--info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50px, -50%);
+  margin-left: 6.5vw;
+  transition: 0.3s ease-out;
+  opacity: 0;
+}
+.proj-section__project--info a {
+  font-size: calc(1rem + 3vw);
+  color: #fff;
+  text-decoration: none;
+}
+.proj-section__project--info p {
+  text-align: center;
+  font-style: calc(0.7rem + 2.5vw);
+  margin-top: 0.5vw;
+}
+.proj-section__project img {
+  width: 100%;
+  max-width: 620px;
+  transition: 0.4s ease-out;
 }
 
+/*section skills*/
 .expertise {
   background-image: url(../../public/images/concept-logiciel-developpement-codage-langage-programmation.jpg);
   background-size: cover;

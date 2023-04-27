@@ -1,0 +1,29 @@
+/*footer*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: darken($colour-grey-white, 20%);
+    padding: calc(2rem + 2vw) calc(4rem + 1.8vw);
+    &__links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &--quick {
+            p{
+                text-decoration: underline;
+            } 
+        }
+    }
+}
+
+ul {
+    li{
+        color: darken($colour-white, 20%);
+        a {
+            color: darken($colour-white, 20%);
+            font-size: calc(0.5rem + 1.5vw);
+            text-decoration: none;
+        }
+    }
+}
