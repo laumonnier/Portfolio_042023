@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*@mixin socials à faire*/
 body {
   font-family: "Noto Sans", "Merriweather", "Poppins", "Roboto", sans-serif;
   color: black;
@@ -89,8 +91,12 @@ body {
 .nav__link a:hover::after,
 .nav__link a:visited:hover::after {
   animation: animLink 1.4s infinite ease-in-out;
+  transform-origin: left;
 }
 @keyframes animLink {
+  0% {
+    transform: scale(1);
+  }
   50% {
     transform: scaleX(0.2);
   }
@@ -194,20 +200,63 @@ section h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: calc(13px + 3vw);
 }
 .footer__links--quick p {
+  font-size: calc(1.6rem + 0.98vw);
   text-decoration: underline;
+}
+.footer__contact a {
+  font-size: calc(0.77rem + 1.2vw);
 }
 
 ul li {
   color: #cccccc;
 }
-ul li a {
+ul li a,
+ul li a:visited {
+  cursor: pointer;
+  position: relative;
   color: #cccccc;
   font-size: calc(0.5rem + 1.5vw);
   text-decoration: none;
+  transition: 0.15 linear;
+  transform-origin: center;
+}
+ul li a:hover,
+ul li a:visited:hover {
+  transform: scale(1.1);
+  color: #b3b3b3;
+}
+ul li a:hover::after,
+ul li a:visited:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  transform-origin: left;
+  animation: animLinkFooter 1.4s infinite ease-in-out;
+}
+@keyframes animLinkFooter {
+  0% {
+    transform: scale(0.01);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0.01);
+  }
 }
 
+.social a {
+  font-size: calc(1.6rem + 0.98vw);
+}
+
+/*Faire une mixin des liens sociaux pour ensuite les inclure dans .socials*/
 .socials {
   display: flex;
   justify-content: center;

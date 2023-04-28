@@ -14,10 +14,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,400;1,500;1,600;1,800&display=swap" rel="stylesheet">
     <title>Portfolio Laurent MONNIER</title>
+    <link rel="stylesheet" href="./lib/locomotive-scroll.css"/>
     <meta name="description" content="Portfolio de Laurent MONNIER - Développeur Web">
     <link rel="shortcut icon" href="./public/images/favicon-32x32.ico" type="image/x-icon">
 </head>
-<body>
+<body data-scroll-container>
     <!-- 
     Header
         logo
@@ -258,25 +259,25 @@
                     <li><a href="https://fr.freepik.com/">freepik</a></li>
                     <li><a href="https://fontawesome.com/">Font Awesome</a></li>
                     <li><a href="https://favicon.io/">Favicon.io</a></li>
-                    <li><a href="https://www.cartoonify.de/">Cartoonify</a></li>
                 </ul>
             </div>
             <div class="footer__links--quick">
                 <p class="quick-links">Liens utiles</p>
                 <ul>
                     <li><a href="https://www.fontsquirrel.com/">Font Squirrel</a></li>
-                    <li><a href="https://fonts.google.com/">Google Fonts</a></li>                    
+                    <li><a href="https://fonts.google.com/">Google Fonts</a></li>
+                    <li><a href="https://www.cartoonify.de/">Cartoonify</a></li>                    
                 </ul>
             </div>
         </div>
-        <div class="socials">
+        <div class="social">
             <ul>
-                <li class="socials__link">
+                <li class="social__link">
                     <a href="https://www.linkedin.com/in/laurent-monnier-647895193/" target="_blank">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
                 </li>
-                <li class="socials__link">
+                <li class="social__link">
                     <a href="https://twitter.com/mogne232" target="_blank">
                         <i class="fa-brands fa-twitter"></i>
                     </a>
@@ -284,6 +285,9 @@
             </ul>
         </div>    
     </footer>
+
+    <script src="./lib/locomotve-scroll.js"></script>
+    <script src="./js/index.js"></script>    
 
 </body>
 </html>

@@ -9,10 +9,17 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-bottom: calc(13px + 3vw);
         &--quick {
             p{
+                font-size: calc(map-get($map: $font-size, $key: footer-quick-title) + 0.98vw);
                 text-decoration: underline;
             } 
+        }
+    }
+    &__contact {
+        a {
+            font-size: calc(map-get($map: $font-size, $key: footer-contact) + 1.2vw);
         }
     }
 }
@@ -20,10 +27,47 @@
 ul {
     li{
         color: darken($colour-white, 20%);
-        a {
+        a,
+        a:visited {
+            cursor: pointer;
+            position: relative;
             color: darken($colour-white, 20%);
             font-size: calc(0.5rem + 1.5vw);
             text-decoration: none;
+            transition: 0.15 linear;
+            transform-origin: center;
+            &:hover {
+                transform: scale(1.1);
+                color: darken($colour-white, 30%);
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    background-color: $colour-white;
+                    height: 2px;
+                    bottom: -4px;
+                    left: 0;
+                    transform-origin: left;
+                    animation: animLinkFooter 1.4s infinite ease-in-out;
+                }
+                @keyframes animLinkFooter{
+                    0%{
+                        transform: scale(0.01);
+                    }
+                    50%{
+                        transform: scaleX(1);
+                    }
+                    100%{
+                        transform: scaleX(0.01);
+                    }
+                }
+            }
         }
+    }
+}
+
+.social {
+    a {
+        font-size: calc(map-get($font-size, social-footer) + 0.98vw);
     }
 }
