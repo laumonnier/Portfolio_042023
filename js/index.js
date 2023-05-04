@@ -4,3 +4,8 @@ const scroll = new LocomotiveScroll({
     tablet: {smooth: true},
     smartphone: {smooth: true},
 });
+
+//Body color
+scroll.on("scroll", () => {
+    console.log("ça scroll!!!");
+});

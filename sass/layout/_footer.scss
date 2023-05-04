@@ -66,8 +66,10 @@ ul {
     }
 }
 
-.social {
-    a {
-        font-size: calc(map-get($font-size, social-footer) + 0.98vw);
+footer {
+    .socials {
+        a {
+            font-size: calc(map-get($font-size, social-footer) + 1.5vw);
+        }
     }
 }

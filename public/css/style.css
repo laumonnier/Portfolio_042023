@@ -252,8 +252,8 @@ ul li a:visited:hover::after {
   }
 }
 
-.social a {
-  font-size: calc(1.6rem + 0.98vw);
+footer .socials a {
+  font-size: calc(1.6rem + 1.5vw);
 }
 
 /*Faire une mixin des liens sociaux pour ensuite les inclure dans .socials*/
