@@ -1,9 +1,11 @@
 /*section about*/
 .about-section {
-    height: calc(800px + 8vw);
-    h2 {
-        mix-blend-mode: exculsion;
-        margin: 220px 0 0;
+    &__title{
+        h2 {
+            mix-blend-mode: exclusion;
+            margin: 220px 0 0;
+            // color: $colour-primary;
+        }
     }
     p {
         width: 80%;

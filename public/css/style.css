@@ -10,12 +10,16 @@ body {
 
 h1 {
   font-weight: 700;
-  font-size: calc(2.5rem + 0.98vw);
+  font-size: calc(4.8rem + 0.98vw);
 }
 
 h2 {
   font-weight: 500;
   font-size: 3rem;
+}
+
+span {
+  display: inline-block;
 }
 
 textarea {
@@ -36,7 +40,7 @@ button {
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 *::selection {
@@ -45,12 +49,31 @@ button {
 }
 
 html {
+  height: 100%;
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
 body {
-  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding-bottom: calc(100px + 17vw);
+}
+
+section {
+  height: 100vh;
+  padding: 2em;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
 }
 
 .nav {
@@ -72,27 +95,34 @@ body {
   margin: 0 1rem;
   padding: 0.2rem;
 }
-.nav__link a,
-.nav__link a:visited {
+.nav__link a, .nav__link a:visited {
   cursor: pointer;
   position: relative;
   text-decoration: none;
   color: #abaaaa;
   transition: 0.15s linear;
 }
-.nav__link a:hover,
-.nav__link a:visited:hover {
+.nav__link a:hover, .nav__link a:visited:hover {
   background-color: rgba(3, 3, 3, 0.5647058824);
   transform: scale(1.1);
   color: #fff;
   border-radius: 10px;
   padding: 0 5px;
 }
-.nav__link a:hover::after,
-.nav__link a:visited:hover::after {
+.nav__link a:hover::after, .nav__link a:visited:hover::after {
   animation: animLink 1.4s infinite ease-in-out;
   transform-origin: left;
 }
+.nav__link a::after, .nav__link a:visited::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+}
+
 @keyframes animLink {
   0% {
     transform: scale(1);
@@ -104,17 +134,6 @@ body {
     transform: scaleX(1);
   }
 }
-.nav__link a::after,
-.nav__link a:visited::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  background-color: #fff;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-}
-
 .header {
   z-index: 5;
   background-color: rgba(3, 3, 3, 0.5647058824);
@@ -166,33 +185,36 @@ section h1 {
 }
 section h2 {
   font-size: calc(2rem + 4vw);
-  color: black;
   margin-top: 5px;
   text-align: center;
 }
 
-/*Faire une fonction et mixin pour les background-color des id*/
-#home {
-  background-color: #068a69;
+.home-section {
+  background: url(../../public/images/composition-pour-ordinateur-portable-bloc-notes-bureau_23-2147982547.avif) top/cover no-repeat;
+  height: calc(900px + 4vw);
+  padding: calc(11rem + 0.98vw) 0 0 0;
 }
 
-#about {
-  background-color: #fff;
+.about-section {
+  background: #fff;
+  height: calc(800px + 8vw);
 }
 
-#skills {
-  background-color: #81e4c6;
+.expertise {
+  background: url(../../public/images/concept-logiciel-developpement-codage-langage-programmation.jpg) left/cover no-repeat;
+  height: calc(950px + 8vw);
 }
 
-#portfolio {
-  background-color: #fff;
+.proj-section {
+  background: #fff;
+  height: auto;
+  margin: 200px 0;
 }
 
 /*footer*/
 .footer {
   display: flex;
   flex-direction: column;
-  height: auto;
   background-color: #5f5f5f;
   padding: calc(2rem + 2vw) calc(4rem + 1.8vw);
 }
@@ -202,19 +224,17 @@ section h2 {
   justify-content: space-between;
   margin-bottom: calc(13px + 3vw);
 }
-.footer__links--quick p {
-  font-size: calc(1.6rem + 0.98vw);
-  text-decoration: underline;
-}
 .footer__contact a {
   font-size: calc(0.77rem + 1.2vw);
 }
-
-ul li {
+.footer__quick-links p {
+  font-size: calc(1.6rem + 0.98vw);
+  text-decoration: underline;
+}
+.footer__quick-links li {
   color: #cccccc;
 }
-ul li a,
-ul li a:visited {
+.footer__quick-links a, .footer__quick-links a:visited {
   cursor: pointer;
   position: relative;
   color: #cccccc;
@@ -223,13 +243,11 @@ ul li a:visited {
   transition: 0.15 linear;
   transform-origin: center;
 }
-ul li a:hover,
-ul li a:visited:hover {
+.footer__quick-links a:hover, .footer__quick-links a:visited:hover {
   transform: scale(1.1);
   color: #b3b3b3;
 }
-ul li a:hover::after,
-ul li a:visited:hover::after {
+.footer__quick-links a:hover::after, .footer__quick-links a:visited:hover::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -240,6 +258,11 @@ ul li a:visited:hover::after {
   transform-origin: left;
   animation: animLinkFooter 1.4s infinite ease-in-out;
 }
+
+footer .socials a {
+  font-size: calc(1.6rem + 1.5vw);
+}
+
 @keyframes animLinkFooter {
   0% {
     transform: scale(0.01);
@@ -251,11 +274,6 @@ ul li a:visited:hover::after {
     transform: scaleX(0.01);
   }
 }
-
-footer .socials a {
-  font-size: calc(1.6rem + 1.5vw);
-}
-
 /*Faire une mixin des liens sociaux pour ensuite les inclure dans .socials*/
 .socials {
   display: flex;
@@ -272,20 +290,17 @@ footer .socials a {
 .socials__link {
   display: inline-flex;
   text-align: center;
-  font-size: calc(1.1rem + 0.98vw);
   margin: 0 0.5rem;
 }
 .socials a {
   text-decoration: none;
   color: #fff;
+  font-size: calc(1.1rem + 0.98vw);
 }
 
 /*section about*/
-.about-section {
-  height: calc(800px + 8vw);
-}
-.about-section h2 {
-  mix-blend-mode: exculsion;
+.about-section__title h2 {
+  mix-blend-mode: exclusion;
   margin: 220px 0 0;
 }
 .about-section p {
@@ -297,22 +312,11 @@ footer .socials a {
 }
 
 /*section home*/
-.home-section {
-  height: calc(900px + 4vw);
-  background-image: url(../../public/images/composition-pour-ordinateur-portable-bloc-notes-bureau_23-2147982547.avif);
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  padding-top: calc(11rem + 0.98vw);
-}
 .home-section h1 {
   letter-spacing: -5px;
 }
 
 /*section portfolio*/
-.proj-section {
-  margin: 200px 0;
-}
 .proj-section__projects {
   margin-top: 100px;
 }
@@ -371,12 +375,8 @@ footer .socials a {
 }
 
 /*section skills*/
-.expertise {
-  background-image: url(../../public/images/concept-logiciel-developpement-codage-langage-programmation.jpg);
-  background-size: cover;
-  height: calc(950px + 8vw);
-}
 .expertise h2 {
+  color: #fff;
   margin: -50px 0 50px;
   padding-top: calc(11rem + 1vw);
 }

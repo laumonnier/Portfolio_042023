@@ -2,7 +2,6 @@
 .footer {
     display: flex;
     flex-direction: column;
-    height: auto;
     background-color: darken($colour-grey-white, 20%);
     padding: calc(2rem + 2vw) calc(4rem + 1.8vw);
     &__links {
@@ -10,25 +9,21 @@
         flex-direction: row;
         justify-content: space-between;
         margin-bottom: calc(13px + 3vw);
-        &--quick {
-            p{
-                font-size: calc(map-get($map: $font-size, $key: footer-quick-title) + 0.98vw);
-                text-decoration: underline;
-            } 
-        }
     }
     &__contact {
         a {
             font-size: calc(map-get($map: $font-size, $key: footer-contact) + 1.2vw);
         }
     }
-}
-
-ul {
-    li{
-        color: darken($colour-white, 20%);
-        a,
-        a:visited {
+    &__quick-links {
+        p{
+            font-size: calc(map-get($map: $font-size, $key: footer-quick-title) + 0.98vw);
+            text-decoration: underline;
+        }
+        li{
+            color: darken($colour-white, 20%);
+        }
+        a,a:visited {
             cursor: pointer;
             position: relative;
             color: darken($colour-white, 20%);
@@ -50,18 +45,7 @@ ul {
                     transform-origin: left;
                     animation: animLinkFooter 1.4s infinite ease-in-out;
                 }
-                @keyframes animLinkFooter{
-                    0%{
-                        transform: scale(0.01);
-                    }
-                    50%{
-                        transform: scaleX(1);
-                    }
-                    100%{
-                        transform: scaleX(0.01);
-                    }
-                }
-            }
+            }    
         }
     }
 }
@@ -71,5 +55,18 @@ footer {
         a {
             font-size: calc(map-get($font-size, social-footer) + 1.5vw);
         }
+    }
+}
+
+//Corresponds to the different animations of the file
+@keyframes animLinkFooter{
+    0%{
+        transform: scale(0.01);
+    }
+    50%{
+        transform: scaleX(1);
+    }
+    100%{
+        transform: scaleX(0.01);
     }
 }

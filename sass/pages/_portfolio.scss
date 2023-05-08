@@ -1,6 +1,5 @@
 /*section portfolio*/
 .proj-section {
-    margin: 200px 0;
     &__projects {
         margin-top: 100px;
     }
@@ -17,22 +16,7 @@
                 transform: translate(-23px, -50%);
             }
         }
-
-        &--p1 {
-            margin: 0 0 50px 3vw;
-        }
-        &--p2 {
-            margin: 0 6vw 0 auto;
-        }
-        &--p3 {
-            margin: 0 auto 0 6vw;
-        }
-        &--p4 {
-            margin: 0 5vw 0 auto;
-        }
-        &--p5 {
-            margin: 0 auto 0 5vw;
-        }
+        @include proj-base($proj-datas);
         &--info {
             display: flex;
             flex-direction: column;
@@ -62,7 +46,7 @@
             // &:hover{
             //     filter: grayscale(10%);
             // }
-    }
+        }
     }
 }
 

@@ -10,6 +10,25 @@
     background-color: $colour;
 }
 
+@mixin background-section($backgrounds){
+    @each $section, $background in $backgrounds{
+        .#{$section}{
+        background: map-get($map: $background, $key: bg);
+        height: map-get($map: $background, $key: hgt);
+        margin: map-get($map: $background, $key: marg);
+        padding: map-get($map: $background, $key: padd); 
+        }
+    }
+}
+
+@mixin proj-base($datas){
+    @each $proj, $data in $datas{
+        &--#{$proj}{
+        margin: map-get($map: $data, $key: margin);
+        }
+    }
+}
+
 @mixin list-unstyled{
     list-style-type: none;
     text-decoration: none;

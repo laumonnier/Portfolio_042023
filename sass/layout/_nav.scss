@@ -12,8 +12,7 @@
         font-size: calc(map-get($font-size, nav-heading) + 0.98vw);
         margin: 0 1rem;
         padding: 0.2rem;
-        a,
-        a:visited {
+        & a,a:visited {
             cursor: pointer;
             position: relative;
             text-decoration: none;
@@ -29,18 +28,6 @@
                     animation: animLink 1.4s infinite ease-in-out;
                     transform-origin: left;
                 }
-                @keyframes animLink {
-                    0% {
-                        transform: scale(1);
-                    }
-                    50% {
-                        transform: scaleX(0.2);
-                    }
-                    100% {
-                        transform: scaleX(1);
-                    }
-                    
-                }
             }
             &::after {
                 content: "";
@@ -53,4 +40,18 @@
             }
         }
     }
+}
+
+//Corresponds to the different animations of the file
+@keyframes animLink {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scaleX(0.2);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+        
 }

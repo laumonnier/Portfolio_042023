@@ -11,7 +11,7 @@ $colour-grey-white:#929292;
 $colour-selection-bg:#000101;
 $colour-gray-transparent:#03030390;
 
-$font-size:(h1:2.5rem, h2:3rem, logo:4rem, quote:6rem, heading: 5rem, project-heading: 4rem, nav-heading: 1.1rem, social-heading: 1.1rem, social-footer: 1.6rem, label: 3rem, footer-contact: 0.77rem, footer-quick-title: 1.6rem);
+$font-size:(h1:4.8rem, h2:3rem, logo:4rem, quote:6rem, heading: 5rem, project-heading: 4rem, nav-heading: 1.1rem, social-heading: 1.1rem, social-footer: 1.6rem, label: 3rem, footer-contact: 0.77rem, footer-quick-title: 1.6rem);
 $text-shadow-offset:(logo:0.3rem);
 // $font-weight:(logo: 700, quote: 500, heading: 400, project-heading: 550, )
 $txt-input-palette:(
@@ -29,6 +29,46 @@ $txt-input-palette:(
         border: $colour-primary,
     ),
 );
+
+$background-section:(
+    home-section:(
+        bg: url(../../public/images/composition-pour-ordinateur-portable-bloc-notes-bureau_23-2147982547.avif) top/cover no-repeat,
+        hgt: calc(900px + 4vw),
+        padd: calc(11rem + 0.98vw) 0 0 0,
+    ),
+    about-section:(
+        bg: $colour-white,
+        hgt: calc(800px + 8vw),
+    ),
+    expertise:(
+        bg: url(../../public/images/concept-logiciel-developpement-codage-langage-programmation.jpg) left/cover no-repeat,
+        hgt: calc(950px + 8vw),
+    ),
+    proj-section:(
+        bg: $colour-white,
+        hgt: auto,
+        marg: 200px 0,
+    ),
+);
+
+$proj-datas:(
+    p1:(
+        margin: 0 0 50px 3vw,
+    ),
+    p2:(
+        margin: 0 6vw 0 auto,
+    ),
+    p3:(
+        margin: 0 auto 0 6vw,
+    ),
+    p4:(
+        margin: 0 5vw 0 auto,
+    ),
+    p5:(
+        margin: 0 auto 0 5vw,
+    ),
+);
+
 $breakpoints:(
     mobile: 767px,
     tablet: 991px

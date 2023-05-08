@@ -1,9 +1,7 @@
 /*section skills*/
 .expertise {
-    background-image: url(../../public/images/concept-logiciel-developpement-codage-langage-programmation.jpg);
-    background-size: cover;
-    height: calc(950px + 8vw);
     h2 {
+        color: $colour-white;
         margin: -50px 0 50px;
         padding-top: calc(11rem + 1vw);
     }
