@@ -9,8 +9,8 @@ body {
 }
 
 h1 {
-  font-weight: 700;
-  font-size: calc(4.8rem + 1.98vw);
+  font-weight: 400;
+  font-size: calc(3.3rem + 1.98vw);
 }
 
 h2 {
@@ -335,13 +335,18 @@ footer .socials a {
   letter-spacing: 5px;
 }
 
+#messageName {
+  font-family: "Bungee Inline", "Noto Sans", "Merriweather", "Poppins", "Roboto", sans-serif;
+  padding: 0 4rem;
+}
+
 /*section portfolio*/
 .proj-section__projects {
   margin-top: 100px;
 }
 .proj-section__project {
   position: relative;
-  width: 60vw;
+  width: 52vw;
   max-width: 620px;
 }
 .proj-section__project--info {
@@ -380,7 +385,7 @@ footer .socials a {
   transform: translate(-25px, -50%);
 }
 .proj-section__project--p1 {
-  margin: 0 0 50px 3vw;
+  margin: 0 0 50px 6vw;
 }
 .proj-section__project--p2 {
   margin: 0 6vw 50px auto;
@@ -389,10 +394,10 @@ footer .socials a {
   margin: 0 auto 50px 6vw;
 }
 .proj-section__project--p4 {
-  margin: 0 5vw 50px auto;
+  margin: 0 6vw 50px auto;
 }
 .proj-section__project--p5 {
-  margin: 0 auto 50px 5vw;
+  margin: 0 auto 50px 6vw;
 }
 
 /*section skills*/

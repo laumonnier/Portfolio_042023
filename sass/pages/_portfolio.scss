@@ -5,7 +5,7 @@
     }
     &__project {
         position: relative;
-        width: 60vw;
+        width: 52vw;
         max-width: 620px;
         &--info {
             display: flex;
@@ -44,12 +44,6 @@
                 transform: translate(-25px, -50%);
             }
         }
-        // img {
-        //     // filter: grayscale(100%);
-        //     // &:hover{
-        //     //     filter: grayscale(10%);
-        //     // }
-        // }
         @include proj-base($proj-datas);
     }
 }
