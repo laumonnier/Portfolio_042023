@@ -2,7 +2,7 @@
 .about-section {
     &__title{
         h2 {
-            mix-blend-mode: exclusion;
+            mix-blend-mode: exclusion; // Permet de faire le mix des différents éléments
             margin: 220px 0 0;
             // color: $colour-primary;
         }

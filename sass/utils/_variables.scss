@@ -31,20 +31,25 @@ $txt-input-palette:(
 );
 
 $background-section:(
-    home-section:(
-        bg: url(../../public/images/composition-pour-ordinateur-portable-bloc-notes-bureau_23-2147982547.avif) top/cover no-repeat,
-        hgt: calc(900px + 4vw),
-        padd: calc(11rem + 0.98vw) 0 0 0,
-    ),
+    // home-section:(
+        // bg: url(../../public/images/composition-pour-ordinateur-portable-bloc-notes-bureau_23-2147982547.avif) top/cover no-repeat,
+        // width: 110vw,   
+        // hgt: calc(850px + 4vw),
+        // marg: -15px 0 0, 
+        // padd: calc(11rem + 0.98vw) 0 0 0,
+    // ),
     about-section:(
+        width: 100vw,
         bg: $colour-white,
         hgt: calc(800px + 8vw),
     ),
-    expertise:(
-        bg: url(../../public/images/concept-logiciel-developpement-codage-langage-programmation.jpg) left/cover no-repeat,
-        hgt: calc(950px + 8vw),
+    expertise-section:(
+        width: 100vw,
+        bg: url(../../public/images/concept-logiciel-developpement-codage-langage-programmation.jpg) top/cover no-repeat,
+        hgt: calc(950px + 25vw),
     ),
     proj-section:(
+        width: 100vw,
         bg: $colour-white,
         hgt: auto,
         marg: 200px 0,
@@ -56,16 +61,16 @@ $proj-datas:(
         margin: 0 0 50px 3vw,
     ),
     p2:(
-        margin: 0 6vw 0 auto,
+        margin: 0 6vw 50px auto,
     ),
     p3:(
-        margin: 0 auto 0 6vw,
+        margin: 0 auto 50px 6vw,
     ),
     p4:(
-        margin: 0 5vw 0 auto,
+        margin: 0 5vw 50px auto,
     ),
     p5:(
-        margin: 0 auto 0 5vw,
+        margin: 0 auto 50px 5vw,
     ),
 );
 

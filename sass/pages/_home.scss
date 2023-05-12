@@ -1,6 +1,30 @@
 /*section home*/
 .home-section {
-    h1 {
-        letter-spacing: -5px;
+    position: relative;
+    width: 110vw;
+    margin-top: -50px;
+    height: calc(850px + 12vw);
+    img {
+        width: 110%;
+        height: 100%;
+        // background: url(../../public/images/composition-pour-ordinateur-portable-bloc-notes-bureau_23-2147982547.avif) center/cover no-repeat;
+        transition: transform 7.5s ease-out;
+        transform: scale(1.25);
+        will-change: transform; 
     }
+    :hover {
+        img {
+            transform: scale(1.07);
+        }
+    }
+    &__text{
+        z-index: 2;
+        position: absolute;
+        text-align: center;
+        left: 0;
+        right: 0;
+        top: 25%;
+        letter-spacing: 5px;
+    }
+    
 }

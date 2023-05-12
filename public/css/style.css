@@ -10,7 +10,7 @@ body {
 
 h1 {
   font-weight: 700;
-  font-size: calc(4.8rem + 0.98vw);
+  font-size: calc(4.8rem + 1.98vw);
 }
 
 h2 {
@@ -19,6 +19,7 @@ h2 {
 }
 
 span {
+  font-size: calc(3rem + 3.98vw);
   display: inline-block;
 }
 
@@ -55,25 +56,15 @@ html {
 }
 
 body {
-  position: relative;
   margin: 0;
   padding: 0;
-  width: 100%;
   padding-bottom: calc(100px + 17vw);
 }
 
 section {
   height: 100vh;
-  padding: 2em;
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   width: 100%;
-  height: auto;
+  padding: 2em;
 }
 
 .nav {
@@ -176,9 +167,6 @@ footer {
   margin-bottom: 0rem;
 }
 
-section {
-  scroll-margin-block: 12rem;
-}
 section h1 {
   text-align: center;
   color: black;
@@ -189,23 +177,25 @@ section h2 {
   text-align: center;
 }
 
-.home-section {
-  background: url(../../public/images/composition-pour-ordinateur-portable-bloc-notes-bureau_23-2147982547.avif) top/cover no-repeat;
-  height: calc(900px + 4vw);
-  padding: calc(11rem + 0.98vw) 0 0 0;
+.section-container {
+  position: relative;
+  width: 90vw;
 }
 
 .about-section {
+  width: 100vw;
   background: #fff;
   height: calc(800px + 8vw);
 }
 
-.expertise {
-  background: url(../../public/images/concept-logiciel-developpement-codage-langage-programmation.jpg) left/cover no-repeat;
-  height: calc(950px + 8vw);
+.expertise-section {
+  width: 100vw;
+  background: url(../../public/images/concept-logiciel-developpement-codage-langage-programmation.jpg) top/cover no-repeat;
+  height: calc(950px + 25vw);
 }
 
 .proj-section {
+  width: 100vw;
   background: #fff;
   height: auto;
   margin: 200px 0;
@@ -259,6 +249,13 @@ section h2 {
   animation: animLinkFooter 1.4s infinite ease-in-out;
 }
 
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+}
 footer .socials a {
   font-size: calc(1.6rem + 1.5vw);
 }
@@ -312,8 +309,30 @@ footer .socials a {
 }
 
 /*section home*/
-.home-section h1 {
-  letter-spacing: -5px;
+.home-section {
+  position: relative;
+  width: 110vw;
+  margin-top: -50px;
+  height: calc(850px + 12vw);
+}
+.home-section img {
+  width: 110%;
+  height: 100%;
+  transition: transform 7.5s ease-out;
+  transform: scale(1.25);
+  will-change: transform;
+}
+.home-section :hover img {
+  transform: scale(1.07);
+}
+.home-section__text {
+  z-index: 2;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 25%;
+  letter-spacing: 5px;
 }
 
 /*section portfolio*/
@@ -325,35 +344,13 @@ footer .socials a {
   width: 60vw;
   max-width: 620px;
 }
-.proj-section__project:hover img {
-  filter: brightness(20%);
-}
-.proj-section__project:hover .proj-section__project--info {
-  opacity: 1;
-  transform: translate(-23px, -50%);
-}
-.proj-section__project--p1 {
-  margin: 0 0 50px 3vw;
-}
-.proj-section__project--p2 {
-  margin: 0 6vw 0 auto;
-}
-.proj-section__project--p3 {
-  margin: 0 auto 0 6vw;
-}
-.proj-section__project--p4 {
-  margin: 0 5vw 0 auto;
-}
-.proj-section__project--p5 {
-  margin: 0 auto 0 5vw;
-}
 .proj-section__project--info {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: absolute;
   top: 50%;
-  transform: translate(-50px, -50%);
+  transform: translate(-60px, -50%);
   margin-left: 6.5vw;
   transition: 0.3s ease-out;
   opacity: 0;
@@ -361,32 +358,56 @@ footer .socials a {
 .proj-section__project--info a {
   font-size: calc(1rem + 3vw);
   color: #fff;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .proj-section__project--info p {
   text-align: center;
-  font-style: calc(0.7rem + 2.5vw);
+  color: #fff;
   margin-top: 0.5vw;
 }
 .proj-section__project img {
-  width: 100%;
-  max-width: 620px;
   transition: 0.4s ease-out;
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+}
+.proj-section__project:hover img {
+  filter: brightness(20%);
+  transform: scale(1.3);
+}
+.proj-section__project:hover .proj-section__project--info {
+  opacity: 1;
+  transform: translate(-25px, -50%);
+}
+.proj-section__project--p1 {
+  margin: 0 0 50px 3vw;
+}
+.proj-section__project--p2 {
+  margin: 0 6vw 50px auto;
+}
+.proj-section__project--p3 {
+  margin: 0 auto 50px 6vw;
+}
+.proj-section__project--p4 {
+  margin: 0 5vw 50px auto;
+}
+.proj-section__project--p5 {
+  margin: 0 auto 50px 5vw;
 }
 
 /*section skills*/
-.expertise h2 {
+.expertise-section h2 {
   color: #fff;
   margin: -50px 0 50px;
   padding-top: calc(11rem + 1vw);
 }
-.expertise__skills {
+.expertise-section__skills {
   margin: 10px 0;
 }
-.expertise__skills--appear {
+.expertise-section__skills--appear {
   text-align: center;
 }
-.expertise p {
+.expertise-section p {
   display: inline-block;
   font-size: calc(1rem + 3vw);
   letter-spacing: 2px;

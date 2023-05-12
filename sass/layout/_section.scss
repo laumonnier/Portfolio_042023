@@ -1,5 +1,4 @@
 section{
-    scroll-margin-block: 12rem;
     h1 {
         text-align: center;
         color: $colour-black;
@@ -12,4 +11,9 @@ section{
     }
     
 }
+.section-container{
+    position: relative;
+    width: 90vw;
+}
+
 @include background-section($background-section);

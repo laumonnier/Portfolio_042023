@@ -13,6 +13,7 @@
 @mixin background-section($backgrounds){
     @each $section, $background in $backgrounds{
         .#{$section}{
+        width: map-get($map: $background, $key: width);
         background: map-get($map: $background, $key: bg);
         height: map-get($map: $background, $key: hgt);
         margin: map-get($map: $background, $key: marg);
