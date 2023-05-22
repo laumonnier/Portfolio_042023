@@ -24,11 +24,76 @@
         right: 0;
         top: 25%;
         letter-spacing: 5px;
+    }
+    &__title{
+        perspective: 800px;        
     }    
 }
 
+.appear {
+    // opacity: 0;
+    // transition-property: opacity;
+    // transform: translateY(100%) rotateX(-80deg);
+    // transform-origin: top center;
+    // transform-style: preserve-3d;
+    // transition-duration: 1.5s;
+    // transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+        // &.is-inview {
+            // transition-delay: 7s;
+            // opacity: 1;
+            // transform: none;
+        // }
+}
 
-#messageName {
+#hs-title-line2 {
+    // opacity: 0;
+    // transition-delay: 7s;
+    animation-duration: 7s;
+    animation-direction: normal;
+    // animation-delay: 7s;
+    animation-name: glissement-left;
+    animation-iteration-count: 1;
+}
+
+#hs-title-line3 {
+    transition-delay: 8s;
+    animation-duration: 8s;
+    animation-direction: normal;
+    // animation-delay: 8s;
+    animation-name: glissement-bottom;
+    animation-iteration-count: 1;
+}
+
+@keyframes glissement-left {
+    from {
+        opacity: 0;
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        opacity: 1 ;
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes glissement-bottom {
+    from {
+        opacity: 0;
+        margin-top: -100%;
+        width: 100%;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0%;
+        width: 100%;
+    }
+}
+
+
+#messageName, #messageHello {
     font-family: 'Bungee Inline','Noto Sans','Merriweather','Poppins','Roboto', sans-serif;
     padding: 0 4rem;
 }

@@ -74,6 +74,15 @@ $proj-datas:(
     ),
 );
 
+$home-appear-title-line:(
+    hs-title-line2:(
+       td: 7s,
+    ),
+    hs-title-line3:(
+       td: 8s, 
+    ),
+);
+
 $breakpoints:(
     mobile: 767px,
     tablet: 991px

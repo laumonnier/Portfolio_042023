@@ -30,6 +30,14 @@
     }
 }
 
+@mixin home-appear-delay($delays){
+    @each $line, $delay in $delays{
+        ##{$line}{
+           transition-delay: map-get($map: $delay, $key: td); 
+        }
+    }
+}
+
 @mixin list-unstyled{
     list-style-type: none;
     text-decoration: none;

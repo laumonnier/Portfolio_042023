@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html 
     lang="fr"
-    class="is-smooth-scroll-compatible is-loaded has-scroll-smooth has-scroll-init has-scroll-scrolling has-scroll-dragging">
+    class="is-smooth-scroll-compatible is-loading">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,11 +18,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
     <title>Portfolio Laurent MONNIER</title>
-    <link rel="stylesheet" href="./lib/locomotive-scroll1.css"/>
+    <!-- <link rel="stylesheet" href="./lib/locomotive-scroll1.css"/> -->
     <meta name="description" content="Portfolio de Laurent MONNIER - Développeur Web">
     <link rel="shortcut icon" href="./public/images/favicon-32x32.ico" type="image/x-icon">
 </head>
-<body data-scroll-container>
+<body>
     <!-- 
     Header
         logo
@@ -77,14 +77,14 @@
             
     </header>
 
+    <div>
     <main class="main">
-        <section data-scroll-section id="home" class="section home-section">
+        <section id="home" class="section home-section">
             <div class="home-section__container">
             <img src="./public/images/composition-pour-ordinateur-portable-bloc-notes-bureau_23-2147982547.avif" alt="image_de_fond"/>
             <div class="home-section__text">
-                <div data-scroll data-scroll-repeat="true" class="home-section__name ">
-                    <div class="home-section__name--appear">
-                        <h1 id="messageName">
+                <div class="home-section__name ">
+                        <h1 id="messageHello">
                             <!-- <span data-scroll data-scroll-speed="-0.9" data-scroll-repeat="true" data-scroll-direction="horizontal">L</span>
                             <span data-scroll data-scroll-speed="-1.2" data-scroll-repeat="true">a</span>
                             <span data-scroll data-scroll-speed="-0.7" data-scroll-repeat="true">u</span> 
@@ -100,17 +100,18 @@
                             <span data-scroll data-scroll-speed="-1.5" data-scroll-repeat="true">I</span>
                             <span data-scroll data-scroll-speed="-1.1" data-scroll-repeat="true">E</span>
                             <span data-scroll data-scroll-speed="-0.7" data-scroll-repeat="true">R</span> -->
-                            Hello World!!! I'm Laurent MONNIER
+                            Hello World!!!
                         </h1>
-                    </div>
+                        <h1 id="messageName">I'm Laurent MONNIER</h1>
+                    <!-- </div> -->
                 </div>
-                <div data-scroll data-scroll-repeat="true" class="home-section__title home-section__title--line2">
-                    <div class="home-section__title--appear">
+                <div class="home-section__title">
+                    <div class="appear" id="hs-title-line2">
                         <h2>Développeur Web</h2>
                     </div>
                 </div>
-                <div data-scroll data-scroll-repeat="true" class="home-section__title home-section__title--line3">
-                    <div class="home-section__title--appear">
+                <div class="home-section__title">
+                    <div class="appear" id="hs-title-line3"> 
                         <h2>Front-End</h2>
                     </div>
                 </div>
@@ -122,8 +123,8 @@
         </div>
         </div>
         </section>
-        <section data-scroll-section id="about" class="section about-section">
-            <div data-scroll data-scroll-repeat="true" class="about-section__title">
+        <section id="about" >
+            <div class="about-section__title">
                 <h2>À propos</h2>
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rem magnam consequatur, assumenda culpa repellat tempora, ad harum voluptatum cupiditate deserunt enim. Deleniti nemo quas dolores officia laudantium eaque debitis?
@@ -131,23 +132,23 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium debitis voluptatum et corporis in cupiditate quas eveniet quis aperiam animi est, assumenda, voluptate laboriosam ipsa. Neque facere sunt culpa necessitatibus!
             </p>
         </section>
-        <section data-scroll-section id="skills" class="section expertise-section">
+        <section id="skills" class="section expertise-section">
             <h2 class="expertise-section__title expertise-section__title--parallax">
-                <span data-scroll data-scroll-speed="-1" data-scroll-repeat="true">M</span>
-                <span data-scroll data-scroll-speed="1.2" data-scroll-repeat="true">e</span>
-                <span data-scroll data-scroll-speed="1.5" data-scroll-repeat="true">s</span>
+                <span >M</span>
+                <span >e</span>
+                <span >s</span>
                 <span>&nbsp;</span>
-                <span data-scroll data-scroll-speed="0.7" data-scroll-repeat="true">C</span>
-                <span data-scroll data-scroll-speed="0.9" data-scroll-repeat="true">o</span>
-                <span data-scroll data-scroll-speed="0.2" data-scroll-repeat="true">m</span>
-                <span data-scroll data-scroll-speed="1.4" data-scroll-repeat="true">p</span>
-                <span data-scroll data-scroll-speed="1.1" data-scroll-repeat="true">é</span>
-                <span data-scroll data-scroll-speed="1.9" data-scroll-repeat="true">t</span>
-                <span data-scroll data-scroll-speed="0.5" data-scroll-repeat="true">e</span>
-                <span data-scroll data-scroll-speed="1.2" data-scroll-repeat="true">n</span>
-                <span data-scroll data-scroll-speed="0.2" data-scroll-repeat="true">c</span>
-                <span data-scroll data-scroll-speed="1.4" data-scroll-repeat="true">e</span>
-                <span data-scroll data-scroll-speed="1.9" data-scroll-repeat="true">s</span>
+                <span >C</span>
+                <span >o</span>
+                <span >m</span>
+                <span >p</span>
+                <span >é</span>
+                <span >t</span>
+                <span >e</span>
+                <span >n</span>
+                <span >c</span>
+                <span >e</span>
+                <span >s</span>
             </h2>
 
             <div class="expertise-section__skills">
@@ -191,7 +192,7 @@
             </p>
 
         </section>
-        <section data-scroll-section id="portfolio" class="section proj-section">
+        <section id="portfolio" class="section proj-section">
             <h2 class="proj-section__title proj-section__title--parallax">
                 <span>P</span>
                 <span>o</span>
@@ -214,7 +215,7 @@
                     </div>
                 </div>
                 <div class="proj-section__project proj-section__project--p2">
-                    <img src="./public/images/P2_ohmyfood_image.png" alt="projet 2" />
+                    <img src="./public/images/P2_ohmyfood_image1.png" alt="projet 2" />
                     <div class="proj-section__project--info">
                         <a href="https://github.com/laumonnier/LaurentMONNIER_3_15112021" target="_blank">Ohmyfood</a>
                         <p>Dynamiser une page wdb avec des animations CSS</p>
@@ -222,7 +223,7 @@
                     </div>
                 </div>
                 <div class="proj-section__project proj-section__project--p3">
-                    <img src="./public/images/P3_La-Panthere_image.png" alt="projet 3" />
+                    <img src="./public/images/P3_La-Panthere_image1.png" alt="projet 3" />
                     <div class="proj-section__project--info">
                         <a href="https://github.com/laumonnier/LaurentMonnier_4_23022022" target="_blank">La Panthère</a>
                         <p>Optimisation d'un site web existant</p>
@@ -230,7 +231,7 @@
                     </div>
                 </div>
                 <div class="proj-section__project proj-section__project--p4">
-                    <img src="./public/images/P4_KANAP_image.png" alt="projet 4" />
+                    <img src="./public/images/P4_KANAP_image1.png" alt="projet 4" />
                     <div class="proj-section__project--info">
                         <a href="https://github.com/laumonnier/LaurentMonnier_5_22032022" target="_blank">KANAP</a>
                         <p>Construire un site e-commerce en JavaScript</p>
@@ -293,8 +294,8 @@
             </ul>
         </div>    
     </footer>
-   
-    <script src="./lib/locomotive-scroll.js"></script>
+   </div>
+    <!-- <script src="./lib/locomotive-scroll.js"></script> -->
     <script src="./index.js"></script>
 
 </body>
