@@ -1,6 +1,7 @@
 body {
     font-family: 'Noto Sans','Merriweather','Poppins','Roboto', sans-serif;
     color: $colour-black;
+    text-align: justify;
     font-size: calc(1rem + 1.1vw);
     font-weight: 400;
     line-height: 1.7;
@@ -13,8 +14,8 @@ h1 {
 }
 
 h2 {
-    font-weight: 500;
-    font-size: map-get($map: $font-size, $key: h2);
+    font-weight: 600;
+    font-size: calc(map-get($map: $font-size, $key: h2) + 1.98vw);
 }
 
 span {

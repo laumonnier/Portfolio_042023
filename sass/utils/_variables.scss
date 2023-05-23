@@ -11,7 +11,7 @@ $colour-grey-white:#929292;
 $colour-selection-bg:#000101;
 $colour-gray-transparent:#03030390;
 
-$font-size:(h1:3.3rem, h2:3rem, logo:4rem, quote:6rem, heading: 5rem, project-heading: 4rem, nav-heading: 1.1rem, social-heading: 1.1rem, social-footer: 1.6rem, label: 3rem, footer-contact: 0.77rem, footer-quick-title: 1.6rem);
+$font-size:(h1:calc(0.45rem + 1.8vw), h2:calc(0.45rem + 1.5vw), logo:4rem, quote:6rem, heading: 5rem, project-heading: 4rem, nav-heading: 1.1rem, social-heading: 1.1rem, social-footer: 1.6rem, label: 3rem, footer-contact: 0.77rem, footer-quick-title: 1.6rem);
 $text-shadow-offset:(logo:0.3rem);
 // $font-weight:(logo: 700, quote: 500, heading: 400, project-heading: 550, )
 $txt-input-palette:(
@@ -41,18 +41,16 @@ $background-section:(
     about-section:(
         width: 100vw,
         bg: $colour-white,
-        hgt: calc(800px + 8vw),
+        padd: 0 0,
     ),
     expertise-section:(
         width: 100vw,
         bg: url(../../public/images/concept-logiciel-developpement-codage-langage-programmation.jpg) top/cover no-repeat,
-        hgt: calc(950px + 25vw),
     ),
     proj-section:(
         width: 100vw,
         bg: $colour-white,
         hgt: auto,
-        marg: 200px 0,
     ),
 );
 

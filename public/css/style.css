@@ -3,6 +3,7 @@
 body {
   font-family: "Noto Sans", "Merriweather", "Poppins", "Roboto", sans-serif;
   color: black;
+  text-align: justify;
   font-size: calc(1rem + 1.1vw);
   font-weight: 400;
   line-height: 1.7;
@@ -10,16 +11,16 @@ body {
 
 h1 {
   font-weight: 400;
-  font-size: calc(3.3rem + 1.98vw);
+  font-size: calc(0.45rem + 1.8vw + 1.98vw);
 }
 
 h2 {
-  font-weight: 500;
-  font-size: 3rem;
+  font-weight: 600;
+  font-size: calc(0.45rem + 1.5vw + 1.98vw);
 }
 
 span {
-  font-size: calc(3rem + 3.98vw);
+  font-size: calc(0.45rem + 1.5vw + 3.98vw);
   display: inline-block;
 }
 
@@ -151,8 +152,8 @@ section {
 .header {
   z-index: 5;
   background-color: rgba(3, 3, 3, 0.5647058824);
-  height: calc(11rem + 0.98vw);
-  margin-top: 1rem;
+  height: calc(8rem + 3.98vw);
+  margin-top: 3.95rem;
   position: fixed;
   display: flex;
   flex-direction: row;
@@ -190,6 +191,10 @@ section {
   margin-bottom: 0rem;
 }
 
+section {
+  margin: 8vw 0 8vw 0;
+  height: 100%;
+}
 section h1 {
   text-align: center;
   color: black;
@@ -208,20 +213,18 @@ section h2 {
 .about-section {
   width: 100vw;
   background: #fff;
-  height: calc(800px + 8vw);
+  padding: 0 0;
 }
 
 .expertise-section {
   width: 100vw;
   background: url(../../public/images/concept-logiciel-developpement-codage-langage-programmation.jpg) top/cover no-repeat;
-  height: calc(950px + 25vw);
 }
 
 .proj-section {
   width: 100vw;
   background: #fff;
   height: auto;
-  margin: 200px 0;
 }
 
 /*footer*/
@@ -312,9 +315,8 @@ section h2 {
 }
 
 /*section about*/
-.about-section__title h2 {
-  mix-blend-mode: exclusion;
-  margin: 220px 0 0;
+.about-section__title {
+  margin: 8vw 0 0;
 }
 .about-section p {
   width: 80%;
@@ -328,15 +330,17 @@ section h2 {
 .home-section {
   position: relative;
   width: 110vw;
-  margin-top: -50px;
-  height: calc(850px + 12vw);
+  margin-top: calc(-10px - 1.2vw);
+  margin-left: calc(-10px - 1.2vw);
+  height: 100%;
 }
 .home-section img {
-  width: 110%;
+  width: 100vw;
   height: 100%;
   transition: transform 7.5s ease-out;
   transform: scale(1.25);
   will-change: transform;
+  background-position: cover;
 }
 .home-section :hover img {
   transform: scale(1.07);
@@ -347,11 +351,14 @@ section h2 {
   text-align: center;
   left: 0;
   right: 0;
-  top: 25%;
+  top: 18%;
   letter-spacing: 5px;
 }
-.home-section__title {
-  perspective: 800px;
+.home-section__name {
+  line-height: calc(6px + 5vw);
+}
+.home-section__title h2 {
+  font-size: calc(0.45rem + 1.5vw + 1.98vw);
 }
 
 #hs-title-line2 {

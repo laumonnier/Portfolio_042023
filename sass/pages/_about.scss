@@ -1,9 +1,10 @@
 /*section about*/
 .about-section {
     &__title{
+        margin: 8vw 0 0;
         h2 {
-            mix-blend-mode: exclusion; // Permet de faire le mix des différents éléments
-            margin: 220px 0 0;
+            // mix-blend-mode: exclusion; // Permet de faire le mix des différents éléments
+            
             // color: $colour-primary;
         }
     }
