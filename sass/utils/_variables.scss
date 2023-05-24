@@ -3,15 +3,16 @@ $colour-secondary: #81e4c6;
 $colour-tertiary: #e6b328;
 $colour-invalid:#890627;
 $colour-white: #fff;
-$colour-light-white: #abaaaa;
+$colour-light-grey: #f4f3f3;
 $colour-black: black;
 $colour-red: #f14343;
 $colour-light-mint:#bce2a4;
-$colour-grey-white:#929292;
+$colour-grey-light-dark:#929292;
+$colour-dark-grey:#474646;
 $colour-selection-bg:#000101;
 $colour-gray-transparent:#03030390;
 
-$font-size:(h1:calc(0.45rem + 1.8vw), h2:calc(0.45rem + 1.5vw), logo:4rem, quote:6rem, heading: 5rem, project-heading: 4rem, nav-heading: 1.1rem, social-heading: 1.1rem, social-footer: 1.6rem, label: 3rem, footer-contact: 0.77rem, footer-quick-title: 1.6rem);
+$font-size:(h1:calc(0.45rem + 1.8vw), h2:calc(0.45rem + 1.5vw), h3:calc(0.35rem + 1.5vw), h4:calc(0.25rem + 0.85vw), logo:4rem, quote:6rem, heading: 5rem, project-heading: 4rem, nav-heading: 1.1rem, social-heading: 1.1rem, social-footer: 1.6rem, label: 3rem, footer-contact: 0.77rem, footer-quick-title: 1.6rem);
 $text-shadow-offset:(logo:0.3rem);
 // $font-weight:(logo: 700, quote: 500, heading: 400, project-heading: 550, )
 $txt-input-palette:(
@@ -31,16 +32,15 @@ $txt-input-palette:(
 );
 
 $background-section:(
-    // home-section:(
+    home-section:(
         // bg: url(../../public/images/composition-pour-ordinateur-portable-bloc-notes-bureau_23-2147982547.avif) top/cover no-repeat,
-        // width: 110vw,   
-        // hgt: calc(850px + 4vw),
-        // marg: -15px 0 0, 
-        // padd: calc(11rem + 0.98vw) 0 0 0,
-    // ),
+        width: 110vw,   
+        hgt: 100%,
+        marg: calc(-10px - 1.2vw) 0 0 calc(-10px - 1.2vw), 
+    ),
     about-section:(
         width: 100vw,
-        bg: $colour-white,
+        hgt: auto,
         padd: 0 0,
     ),
     expertise-section:(
@@ -49,7 +49,6 @@ $background-section:(
     ),
     proj-section:(
         width: 100vw,
-        bg: $colour-white,
         hgt: auto,
     ),
 );

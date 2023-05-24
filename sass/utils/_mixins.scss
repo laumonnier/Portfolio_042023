@@ -55,4 +55,27 @@
     }
 }
 
+@mixin section-title-shadow{
+    text-shadow: 
+    /*relief*/
+        0 0.5px 0 rgb( 205 , 205 , 205 ),
+        0 1px 0 rgb( 200 , 200 , 200 ),
+        0 1.5px 0 rgb( 195 , 195 , 195 ),
+        0 2px 0 rgb( 190 , 190 , 190 ),
+        0 2.5px 0 rgb( 185 , 185 , 185 ),
+        0 3px 0 rgb( 180 , 180 , 180 ),
+        0 3.5px 0 rgb( 175 , 175 , 175 ),
+        0 4px 0 rgb( 172 , 172 , 172 ),
+        0 4.5px 0 rgb( 175 , 175 , 175 ),
+        0 5px 0 rgb( 180 , 180 , 180 ),
+        0 5.5px 0 rgb( 185 , 185 , 185 ),
+        0 6px 0 rgb( 190 , 190 , 190 ),
+    /*ombre*/
+        6px 7px 5px rgba( 0, 0, 0, .40),
+        6px 12px 10px rgba( 0, 0, 0, .30),
+        6px 17px 20px rgba( 0, 0, 0, .20),
+        6px 22px 30px rgba( 0, 0, 0, .10);
+    color: $colour-dark-grey;
+}
+
 /*@mixin socials à faire*/

@@ -2,7 +2,7 @@
 .footer {
     display: flex;
     flex-direction: column;
-    background-color: darken($colour-grey-white, 20%);
+    background-color: darken($colour-grey-light-dark, 20%);
     padding: calc(2rem + 2vw) calc(4rem + 1.8vw);
     &__links {
         display: flex;

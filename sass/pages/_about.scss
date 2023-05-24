@@ -1,11 +1,11 @@
 /*section about*/
 .about-section {
     &__title{
-        margin: 8vw 0 0;
+        margin: 8vw 0 1.8vw;
         h2 {
             // mix-blend-mode: exclusion; // Permet de faire le mix des différents éléments
-            
-            // color: $colour-primary;
+            // display: block;
+        @include section-title-shadow;
         }
     }
     p {
@@ -14,5 +14,11 @@
         text-align: justify;
         margin: auto;
         line-height: calc(3px + 2.3vw);
+    }
+    &__subtitle{
+        h3{
+            text-align: center;
+            color: $colour-grey-light-dark;
+        }
     }
 }

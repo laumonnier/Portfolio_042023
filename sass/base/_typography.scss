@@ -18,6 +18,16 @@ h2 {
     font-size: calc(map-get($map: $font-size, $key: h2) + 1.98vw);
 }
 
+h3 {
+    font-weight: 600;
+    font-size: calc(map-get($map: $font-size, $key: h3) + 1.98vw);
+}
+
+h4 {
+    font-weight: 500;
+    font-size: calc(map-get($map: $font-size, $key: h4) + 1.45vw);
+}
+
 span {
     font-size: calc(map-get($map: $font-size, $key: h2) + 3.98vw);
     display: inline-block;

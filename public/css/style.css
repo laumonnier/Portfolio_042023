@@ -19,6 +19,16 @@ h2 {
   font-size: calc(0.45rem + 1.5vw + 1.98vw);
 }
 
+h3 {
+  font-weight: 600;
+  font-size: calc(0.35rem + 1.5vw + 1.98vw);
+}
+
+h4 {
+  font-weight: 500;
+  font-size: calc(0.25rem + 0.85vw + 1.45vw);
+}
+
 span {
   font-size: calc(0.45rem + 1.5vw + 3.98vw);
   display: inline-block;
@@ -62,6 +72,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background: #f4f3f3;
 }
 
 #container {
@@ -79,7 +90,7 @@ body {
 section {
   height: 100vh;
   width: 100%;
-  padding: 2em;
+  padding: 0 2em 0;
 }
 
 #contact {
@@ -114,7 +125,7 @@ section {
   cursor: pointer;
   position: relative;
   text-decoration: none;
-  color: #abaaaa;
+  color: #f4f3f3;
   transition: 0.15s linear;
 }
 .nav__link a:hover, .nav__link a:visited:hover {
@@ -210,9 +221,15 @@ section h2 {
   width: 90vw;
 }
 
+.home-section {
+  width: 110vw;
+  height: 100%;
+  margin: calc(-10px - 1.2vw) 0 0 calc(-10px - 1.2vw);
+}
+
 .about-section {
   width: 100vw;
-  background: #fff;
+  height: auto;
   padding: 0 0;
 }
 
@@ -223,7 +240,6 @@ section h2 {
 
 .proj-section {
   width: 100vw;
-  background: #fff;
   height: auto;
 }
 
@@ -316,7 +332,11 @@ section h2 {
 
 /*section about*/
 .about-section__title {
-  margin: 8vw 0 0;
+  margin: 8vw 0 1.8vw;
+}
+.about-section__title h2 {
+  text-shadow: 0 0.5px 0 rgb(205, 205, 205), 0 1px 0 rgb(200, 200, 200), 0 1.5px 0 rgb(195, 195, 195), 0 2px 0 rgb(190, 190, 190), 0 2.5px 0 rgb(185, 185, 185), 0 3px 0 rgb(180, 180, 180), 0 3.5px 0 rgb(175, 175, 175), 0 4px 0 rgb(172, 172, 172), 0 4.5px 0 rgb(175, 175, 175), 0 5px 0 rgb(180, 180, 180), 0 5.5px 0 rgb(185, 185, 185), 0 6px 0 rgb(190, 190, 190), 6px 7px 5px rgba(0, 0, 0, 0.4), 6px 12px 10px rgba(0, 0, 0, 0.3), 6px 17px 20px rgba(0, 0, 0, 0.2), 6px 22px 30px rgba(0, 0, 0, 0.1);
+  color: #474646;
 }
 .about-section p {
   width: 80%;
@@ -325,14 +345,14 @@ section h2 {
   margin: auto;
   line-height: calc(3px + 2.3vw);
 }
+.about-section__subtitle h3 {
+  text-align: center;
+  color: #929292;
+}
 
 /*section home*/
 .home-section {
   position: relative;
-  width: 110vw;
-  margin-top: calc(-10px - 1.2vw);
-  margin-left: calc(-10px - 1.2vw);
-  height: 100%;
 }
 .home-section img {
   width: 100vw;
@@ -406,6 +426,11 @@ section h2 {
 }
 
 /*section portfolio*/
+.proj-section__title {
+  letter-spacing: calc(4px + 1vw);
+  text-shadow: 0 0.5px 0 rgb(205, 205, 205), 0 1px 0 rgb(200, 200, 200), 0 1.5px 0 rgb(195, 195, 195), 0 2px 0 rgb(190, 190, 190), 0 2.5px 0 rgb(185, 185, 185), 0 3px 0 rgb(180, 180, 180), 0 3.5px 0 rgb(175, 175, 175), 0 4px 0 rgb(172, 172, 172), 0 4.5px 0 rgb(175, 175, 175), 0 5px 0 rgb(180, 180, 180), 0 5.5px 0 rgb(185, 185, 185), 0 6px 0 rgb(190, 190, 190), 6px 7px 5px rgba(0, 0, 0, 0.4), 6px 12px 10px rgba(0, 0, 0, 0.3), 6px 17px 20px rgba(0, 0, 0, 0.2), 6px 22px 30px rgba(0, 0, 0, 0.1);
+  color: #474646;
+}
 .proj-section__projects {
   margin-top: 100px;
 }
@@ -464,6 +489,26 @@ section h2 {
 }
 .proj-section__project--p5 {
   margin: 0 auto 50px 6vw;
+}
+
+.as-grid {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 4fr);
+  gap: 2rem;
+  border: 1px solid black;
+  padding: 10px;
+}
+.as-grid h4 {
+  text-align: center;
+  color: #bce2a4;
+}
+.as-grid__item {
+  background-color: #068a69;
+  padding: 0.5rem;
+  text-align: justify;
 }
 
 /*section skills*/

@@ -16,7 +16,7 @@
             cursor: pointer;
             position: relative;
             text-decoration: none;
-            color: $colour-light-white;
+            color: $colour-light-grey;
             transition: 0.15s linear;
             &:hover {
                 @include background-shift($colour-gray-transparent);
