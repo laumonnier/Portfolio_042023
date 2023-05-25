@@ -22,6 +22,14 @@
     }
 }
 
+@mixin section-text {
+    z-index: 2;
+    // position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
 @mixin proj-base($datas){
     @each $proj, $data in $datas{
         &--#{$proj}{

@@ -17,15 +17,17 @@ html {
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+    overflow: auto;
 }
 
 body {
     // position: relative;
-    // width: 100vw;
+    width: 100vw;
     height: 100%;
     margin: 0;
     padding: 0;
-    background: $colour-light-grey;
+    background: url("../../public/images/concept-logiciel-developpement-codage-langage-programmation.jpg") top/cover fixed;
+    // background: $colour-light-grey;
 }
 
 #container {

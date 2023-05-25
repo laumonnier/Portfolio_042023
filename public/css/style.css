@@ -66,13 +66,15 @@ html {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  overflow: auto;
 }
 
 body {
+  width: 100vw;
   height: 100%;
   margin: 0;
   padding: 0;
-  background: #f4f3f3;
+  background: url("../../public/images/concept-logiciel-developpement-codage-langage-programmation.jpg") top/cover fixed;
 }
 
 #container {
@@ -125,7 +127,7 @@ section {
   cursor: pointer;
   position: relative;
   text-decoration: none;
-  color: #f4f3f3;
+  color: #eeeded;
   transition: 0.15s linear;
 }
 .nav__link a:hover, .nav__link a:visited:hover {
@@ -203,7 +205,6 @@ section {
 }
 
 section {
-  margin: 8vw 0 8vw 0;
   height: 100%;
 }
 section h1 {
@@ -222,25 +223,33 @@ section h2 {
 }
 
 .home-section {
-  width: 110vw;
+  width: 100vw;
   height: 100%;
-  margin: calc(-10px - 1.2vw) 0 0 calc(-10px - 1.2vw);
+  margin: calc(-10px - 1.2vw) 0 0 calc(5px - 1.2vw);
 }
 
 .about-section {
   width: 100vw;
+  background: #eeeded;
   height: auto;
-  padding: 0 0;
+  margin: -0.5vw 0 0 0vw;
+  padding: 4vw 0;
 }
 
 .expertise-section {
   width: 100vw;
-  background: url(../../public/images/concept-logiciel-developpement-codage-langage-programmation.jpg) top/cover no-repeat;
+  background: #eeeded;
+  height: auto;
+  margin: 0 0 0 0;
+  padding: 10vw 0 6vw;
 }
 
 .proj-section {
   width: 100vw;
-  height: auto;
+  background: #eeeded;
+  height: 100%;
+  margin: 6vw 0 15vw;
+  padding: 1vw 0 10vw;
 }
 
 /*footer*/
@@ -331,9 +340,6 @@ section h2 {
 }
 
 /*section about*/
-.about-section__title {
-  margin: 8vw 0 1.8vw;
-}
 .about-section__title h2 {
   text-shadow: 0 0.5px 0 rgb(205, 205, 205), 0 1px 0 rgb(200, 200, 200), 0 1.5px 0 rgb(195, 195, 195), 0 2px 0 rgb(190, 190, 190), 0 2.5px 0 rgb(185, 185, 185), 0 3px 0 rgb(180, 180, 180), 0 3.5px 0 rgb(175, 175, 175), 0 4px 0 rgb(172, 172, 172), 0 4.5px 0 rgb(175, 175, 175), 0 5px 0 rgb(180, 180, 180), 0 5.5px 0 rgb(185, 185, 185), 0 6px 0 rgb(190, 190, 190), 6px 7px 5px rgba(0, 0, 0, 0.4), 6px 12px 10px rgba(0, 0, 0, 0.3), 6px 17px 20px rgba(0, 0, 0, 0.2), 6px 22px 30px rgba(0, 0, 0, 0.1);
   color: #474646;
@@ -353,6 +359,8 @@ section h2 {
 /*section home*/
 .home-section {
   position: relative;
+  height: 100%;
+  overflow: hidden;
 }
 .home-section img {
   width: 100vw;
@@ -360,14 +368,14 @@ section h2 {
   transition: transform 7.5s ease-out;
   transform: scale(1.25);
   will-change: transform;
-  background-position: cover;
+  background-position: top/cover;
 }
 .home-section :hover img {
   transform: scale(1.07);
 }
 .home-section__text {
-  z-index: 2;
   position: absolute;
+  z-index: 2;
   text-align: center;
   left: 0;
   right: 0;
@@ -426,6 +434,10 @@ section h2 {
 }
 
 /*section portfolio*/
+.proj-section__container {
+  width: 90%;
+  margin: auto;
+}
 .proj-section__title {
   letter-spacing: calc(4px + 1vw);
   text-shadow: 0 0.5px 0 rgb(205, 205, 205), 0 1px 0 rgb(200, 200, 200), 0 1.5px 0 rgb(195, 195, 195), 0 2px 0 rgb(190, 190, 190), 0 2.5px 0 rgb(185, 185, 185), 0 3px 0 rgb(180, 180, 180), 0 3.5px 0 rgb(175, 175, 175), 0 4px 0 rgb(172, 172, 172), 0 4.5px 0 rgb(175, 175, 175), 0 5px 0 rgb(180, 180, 180), 0 5.5px 0 rgb(185, 185, 185), 0 6px 0 rgb(190, 190, 190), 6px 7px 5px rgba(0, 0, 0, 0.4), 6px 12px 10px rgba(0, 0, 0, 0.3), 6px 17px 20px rgba(0, 0, 0, 0.2), 6px 22px 30px rgba(0, 0, 0, 0.1);
@@ -512,6 +524,18 @@ section h2 {
 }
 
 /*section skills*/
+.expertise-section {
+  height: 100%;
+  width: 100vw;
+}
+.expertise-section__text {
+  z-index: 2;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 1%;
+  letter-spacing: 5px;
+}
 .expertise-section h2 {
   color: #fff;
   margin: -50px 0 50px;

@@ -1,13 +1,15 @@
 /*section home*/
 .home-section {
     position: relative;
+    height: 100%;
+    overflow: hidden;
     img {
         width: 100vw;
         height: 100%;
         transition: transform 7.5s ease-out;
         transform: scale(1.25);
         will-change: transform;
-        background-position: cover; 
+        background-position: top/cover; 
     }
     :hover {
         img {
@@ -15,11 +17,8 @@
         }
     }
     &__text{
-        z-index: 2;
         position: absolute;
-        text-align: center;
-        left: 0;
-        right: 0;
+        @include section-text;
         top: 18%;
         letter-spacing: 5px;
     }

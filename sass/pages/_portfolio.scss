@@ -1,5 +1,9 @@
 /*section portfolio*/
 .proj-section {
+    &__container {
+        width: 90%;
+        margin: auto;
+    }
     &__title {
         letter-spacing: calc(4px + 1vw);
         @include section-title-shadow;
