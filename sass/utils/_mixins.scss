@@ -30,6 +30,29 @@
     right: 0;
 }
 
+//A revoir par rapport au glissement lettres span
+// @mixin delayed-time-letter($letters, $timer) {
+//     @for $i from 1 through $letters {
+//         .ltr-#{$i} {
+//             @include animation-title(glissement-left, $timer , normal , ease-in-out, 1);
+//            animation-duration: 1s+$i*$timer;
+//         //    animation-direction: normal;
+//         //    animation-name: glissement-left;
+//         //    animation-timing-function: ease-in-out;
+//         //    animation-iteration-count: 1;  
+//         }
+//     }
+// }
+
+//A revoir
+// @mixin animation-title($keyframes:glissement-left, $duration, $direction, $timing-function, $iteration) {
+//     animation-name: $keyframes;
+//     animation-duration: $duration;
+//     animation-direction: $direction;
+//     animation-timing-function: $timing-function;
+//     animation-iteration-count: $iteration;
+// }
+
 @mixin proj-base($datas){
     @each $proj, $data in $datas{
         &--#{$proj}{

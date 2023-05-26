@@ -233,15 +233,23 @@ section h2 {
   background: #eeeded;
   height: auto;
   margin: -0.5vw 0 0 0vw;
-  padding: 4vw 0;
+  padding: 3vw 0;
 }
 
 .expertise-section {
-  width: 100vw;
-  background: #eeeded;
+  width: 90vw;
+  background: rgba(238, 237, 237, 0.2705882353);
   height: auto;
-  margin: 0 0 0 0;
+  margin: auto;
   padding: 10vw 0 6vw;
+}
+
+.responsive-section {
+  width: 100vw;
+  background: url("../../public/images/responsive_desktop_tablet_smartphone_fond_table_bois.jpg") center/cover;
+  height: 100%;
+  margin: 0;
+  padding: 15vw 0 15vw;
 }
 
 .proj-section {
@@ -393,25 +401,30 @@ section h2 {
   animation-duration: 7s;
   animation-direction: normal;
   animation-name: glissement-left;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
 }
 
 #hs-title-line3 {
-  transition-delay: 8s;
   animation-duration: 8s;
   animation-direction: normal;
   animation-name: glissement-bottom;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
 }
 
 @keyframes glissement-left {
   from {
     opacity: 0;
-    margin-left: 100%;
-    width: 300%;
+    transform: translateX(50vw);
+  }
+  90% {
+    opacity: 0;
+    transform: translateX(75vw);
   }
   to {
     opacity: 1;
+    transform: translateX(0vw);
     margin-left: 0%;
     width: 100%;
   }
@@ -421,6 +434,10 @@ section h2 {
     opacity: 0;
     margin-top: -100%;
     width: 100%;
+  }
+  90% {
+    opacity: 0;
+    transform: translateY(-50vh);
   }
   to {
     opacity: 1;
@@ -525,21 +542,19 @@ section h2 {
 
 /*section skills*/
 .expertise-section {
-  height: 100%;
-  width: 100vw;
+  border: 2px solid black;
 }
 .expertise-section__text {
   z-index: 2;
   text-align: center;
   left: 0;
   right: 0;
-  top: 1%;
-  letter-spacing: 5px;
 }
-.expertise-section h2 {
-  color: #fff;
+.expertise-section__title {
   margin: -50px 0 50px;
-  padding-top: calc(11rem + 1vw);
+  padding-top: calc(1rem + 1vw);
+  text-shadow: 0 0.5px 0 rgb(205, 205, 205), 0 1px 0 rgb(200, 200, 200), 0 1.5px 0 rgb(195, 195, 195), 0 2px 0 rgb(190, 190, 190), 0 2.5px 0 rgb(185, 185, 185), 0 3px 0 rgb(180, 180, 180), 0 3.5px 0 rgb(175, 175, 175), 0 4px 0 rgb(172, 172, 172), 0 4.5px 0 rgb(175, 175, 175), 0 5px 0 rgb(180, 180, 180), 0 5.5px 0 rgb(185, 185, 185), 0 6px 0 rgb(190, 190, 190), 6px 7px 5px rgba(0, 0, 0, 0.4), 6px 12px 10px rgba(0, 0, 0, 0.3), 6px 17px 20px rgba(0, 0, 0, 0.2), 6px 22px 30px rgba(0, 0, 0, 0.1);
+  color: #474646;
 }
 .expertise-section__skills {
   margin: 10px 0;
@@ -549,12 +564,15 @@ section h2 {
 }
 .expertise-section p {
   display: inline-block;
-  font-size: calc(1rem + 3vw);
+  font-size: calc(0.4rem + 2.2vw);
   letter-spacing: 2px;
-  color: #fff;
-  background-color: black;
+  color: black;
   border-radius: 20px;
   padding: 0 10px;
+}
+
+.responsive-section__title {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

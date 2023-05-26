@@ -4,6 +4,7 @@ $colour-tertiary: #e6b328;
 $colour-invalid:#890627;
 $colour-white: #fff;
 $colour-light-grey: #eeeded;
+$colour-light-grey-alpha45: #eeeded45;
 $colour-black: black;
 $colour-red: #f14343;
 $colour-light-mint:#bce2a4;
@@ -43,22 +44,29 @@ $background-section:(
         bg: $colour-light-grey,
         hgt: auto,
         marg: -0.5vw 0 0 0vw,
-        padd: 4vw 0,
+        padd: 3vw 0,
     ),
     expertise-section:(
-        width: 100vw,
-        bg: $colour-light-grey,
+        width: 90vw,
+        bg: $colour-light-grey-alpha45,
         // bg: url(../../public/images/concept-logiciel-developpement-codage-langage-programmation.jpg) top/cover no-repeat,
         hgt: auto,
-        marg: 0 0 0 0,
+        marg: auto,
         padd: 10vw 0 6vw,
+    ),
+    responsive-section:(
+        width: 100vw,
+        bg: url("../../public/images/responsive_desktop_tablet_smartphone_fond_table_bois.jpg") center/cover,
+        hgt: 100%,
+        marg: 0,
+        padd: 15vw 0 15vw,
     ),
     proj-section:(
         width: 100vw,
         bg: $colour-light-grey,
         hgt: 100%,
-        padd: 1vw 0 10vw,
         marg: 6vw 0 15vw,
+        padd: 1vw 0 10vw,
     ),
 );
 

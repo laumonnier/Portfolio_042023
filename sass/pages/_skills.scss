@@ -1,8 +1,7 @@
 /*section skills*/
 .expertise-section {
+    border: 2px solid black;
     // position: relative;
-    height: 100%;
-    width: 100vw;
     // overflow: hidden;
     // img {
     //     width: 100vw;
@@ -12,13 +11,14 @@
     // }
     &__text {
         @include section-text;
-        top: 1%;
-        letter-spacing: 5px;
+        // letter-spacing: 2px;
     }
-    h2 {
-        color: $colour-white;
+    &__title {
         margin: -50px 0 50px;
-        padding-top: calc(11rem + 1vw);
+        padding-top: calc(1rem + 1vw);
+        @include section-title-shadow;
+        // @include animation-title(glissement-left, 500ms, normal, ease-in-out, 1);
+        // @include delayed-time-letter(14, 500ms);
     }
     &__skills {
         margin: 10px 0;
@@ -28,11 +28,35 @@
     }
     p {
         display: inline-block;
-        font-size: calc(1rem + 3vw);
+        font-size: calc(0.4rem + 2.2vw);
         letter-spacing: 2px;
-        color: $colour-white;
-        background-color: $colour-black;
+        color: $colour-black;
         border-radius: 20px;
         padding: 0 10px;
     }
 }
+
+//A revoir et faire du JS à la place pour l'animation
+
+// @keyframes glissement-left {
+//     from {
+//         opacity: 0;
+//         // transform: translateX(50vh);
+//         transform: translateY(-15vh);
+//         margin-left: 100%;
+//         width: 300%;
+//     }
+//     90% {
+//         opacity: 1;
+//         transform: translateY(-15vh);
+//         margin-left: 100%;
+//         width: 300%;
+//     }
+
+//     to {
+//         opacity: 1 ;
+//         transform: translateY(-15vh);
+//         margin-left: 50%;
+//         width: 100%;
+//     }
+// }
