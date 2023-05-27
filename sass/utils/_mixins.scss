@@ -15,6 +15,7 @@
         .#{$section}{
         width: map-get($map: $background, $key: width);
         background: map-get($map: $background, $key: bg);
+        max-height: map-get($map: $background, $key: max-hgt);
         height: map-get($map: $background, $key: hgt);
         margin: map-get($map: $background, $key: marg);
         padding: map-get($map: $background, $key: padd); 
@@ -107,6 +108,14 @@
         6px 17px 20px rgba( 0, 0, 0, .20),
         6px 22px 30px rgba( 0, 0, 0, .10);
     color: $colour-dark-grey;
+}
+
+@mixin text-decoding {
+    height: 100%;
+    font-weight: 400;
+    font-size: calc(0.4rem + 2.2vw);
+    letter-spacing: 2px;
+    color: $colour-black;
 }
 
 /*@mixin socials à faire*/

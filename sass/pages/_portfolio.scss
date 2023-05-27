@@ -57,23 +57,3 @@
     }
 }
 
-.as-grid{
-    width: 90%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 4fr);
-    gap: 2rem;
-    border: 1px solid $colour-black;
-    padding: 10px;
-    h4{
-        text-align: center;
-        color: $colour-light-mint;
-    }
-    &__item{
-        background-color: $colour-primary;
-        padding: .5rem;
-        text-align: justify;
-    }
-}
-

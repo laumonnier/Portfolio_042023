@@ -19,7 +19,7 @@
             color: $colour-light-grey;
             transition: 0.15s linear;
             &:hover {
-                @include background-shift($colour-gray-transparent);
+                @include background-shift($colour-grey-transparent);
                 transform: scale(1.1);
                 color: $colour-white;
                 border-radius: 10px;

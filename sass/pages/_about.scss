@@ -7,17 +7,39 @@
         @include section-title-shadow;
         }
     }
-    p {
-        width: 80%;
-        min-width: 270px;
-        text-align: justify;
-        margin: auto;
-        line-height: calc(3px + 2.3vw);
-    }
     &__subtitle{
         h3{
             text-align: center;
             color: $colour-grey-light-dark;
         }
     }
+    .as-grid{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 4fr);
+        gap: 2rem;
+        border: 2px solid $colour-black;
+        padding: 5px;
+        h4{
+            text-align: center;
+            color: $colour-light-mint;
+        }
+        &__item{
+            width: 100%;
+            background-color: $colour-grey-light-dark;
+            padding: .5rem;
+            text-align: justify;
+        }
+    }
+        // p {
+        //     width: 100%;
+        //     // min-width: 270px;
+        //     text-align: justify;
+        //     margin: auto;
+        //     line-height: calc(3px + 2.3vw);
+        // }
+    
 }
+
