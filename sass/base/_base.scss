@@ -11,23 +11,18 @@
     color: $colour-white;
 }
 
-html {
+html, body {
+    width: 100vw;
     height: 100%;
-    font-size: 62.5%;
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     overflow: auto;
+    background: url("../../public/images/concept-logiciel-developpement-codage-langage-programmation.jpg") top/cover fixed;
 }
 
-body {
-    // position: relative;
-    width: 100vw;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background: url("../../public/images/concept-logiciel-developpement-codage-langage-programmation.jpg") top/cover fixed;
-    // background: $colour-light-grey;
+html {
+    font-size: 62.5%;
 }
 
 #container {
