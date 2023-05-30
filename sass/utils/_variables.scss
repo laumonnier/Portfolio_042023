@@ -1,34 +1,45 @@
-$colour-primary:#068a69;
-$colour-secondary: #81e4c6;
-$colour-tertiary: #e6b328;
-$colour-invalid:#890627;
-$colour-white: #fff;
-$colour-light-grey: #eeeded;
-$colour-light-grey-alpha45: #eeeded45; 
-$colour-black: black;
-$colour-red: #f14343;
-$colour-light-mint:#bce2a4;
-$colour-grey-light-dark:#929292;
-$colour-dark-grey:#474646;
-$colour-selection-bg:#000101;
-$colour-grey-transparent:#03030390;
+/*color variables*/
+$primary-color:#068a69;
+$secondary-color: #81e4c6;
+$tertiary-color: #e6b328;
+$invalid-color:#890627;
+$white-color: #fff;
+$light-grey-color: #eeeded;
+$light-grey-alpha45-color: #eeeded45; 
+$black-color: black;
+$red-color: #f14343;
+$light-mint-color:#bce2a4;
+$grey-light-dark-color:#929292;
+$dark-grey-color:#474646;
+$selection-bg-color:#000101;
+$grey-transparent-color:#03030390;
+$purple-color:#df43f4;
+
+/*font-family*/
+$font-family-primary: 'Noto Sans','Merriweather','Poppins','Roboto', sans-serif;
+$font-family-secondary: 'Poppins','Roboto', sans-serif;
+$font-family-title-animation: 'Bungee Inline','Noto Sans','Merriweather','Poppins','Roboto', sans-serif;
+$font-family-loading-spinner: "Dancing Script", 'Poppins', 'Roboto', 'sans-serif';
 
 $font-size:(h1:calc(0.45rem + 1.8vw), h2:calc(0.45rem + 1.5vw), h3:calc(0.35rem + 1.5vw), h4:calc(0.25rem + 0.85vw), logo:4rem, quote:6rem, heading: 5rem, project-heading: 4rem, nav-heading: 1.1rem, social-heading: 1.1rem, social-footer: 1.6rem, label: 3rem, footer-contact: 0.77rem, footer-quick-title: 1.6rem);
 $text-shadow-offset:(logo:0.3rem);
 // $font-weight:(logo: 700, quote: 500, heading: 400, project-heading: 550, )
+
+
+/*variables lists used for mixins*/
 $txt-input-palette:(
     focus:(
-        txt: $colour-white,
-        border: $colour-primary,
+        txt: $white-color,
+        border: $primary-color,
     ),
     hover:(
-        txt: $colour-black,
-        border: $colour-primary,
+        txt: $black-color,
+        border: $primary-color,
     ),
     invalid:(
-        bg: $colour-primary,
-        txt: $colour-white,
-        border: $colour-primary,
+        bg: $primary-color,
+        txt: $white-color,
+        border: $primary-color,
     ),
 );
 
@@ -41,14 +52,14 @@ $background-section:(
     ),
     about-section:(
         width: 100vw,
-        bg: $colour-light-grey,
+        bg: $light-grey-color,
         hgt: auto,
         marg: -0.5vw 0 0 0vw,
         padd: 3vw 0,
     ),
     expertise-section:(
         width: 100vw,
-        bg: $colour-light-grey-alpha45,
+        bg: $light-grey-alpha45-color,
         // bg: url(../../public/images/concept-logiciel-developpement-codage-langage-programmation.jpg) top/cover no-repeat,
         max-hgt: calc(300px + 40vw),
         hgt: auto,
@@ -64,7 +75,7 @@ $background-section:(
     ),
     proj-section:(
         width: 100vw,
-        bg: $colour-light-grey,
+        bg: $light-grey-color,
         hgt: 100%,
         marg: 0vw 0 calc(-1rem + 1vw),
         padd: 1vw 0 11vw,

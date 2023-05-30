@@ -16,319 +16,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,400;1,500;1,600;1,800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>Portfolio Laurent MONNIER</title>
     <!-- <link rel="stylesheet" href="./lib/locomotive-scroll1.css"/> -->
     <meta name="description" content="Portfolio de Laurent MONNIER - Développeur Web">
     <link rel="shortcut icon" href="./public/images/favicon-32x32.ico" type="image/x-icon">
 </head>
 <body>
-    <!-- 
-    Header
-        logo
-        menu
-        socials
-        burger
-    
-    Hero
-        left
-        right
-
-    About
-        left
-        right
-
-    Services
-    Skills
-    Portfolio
-    Contact
-
-    Footer
-    -->
-    <header class="header">
-        <div class="header__logo">
-            <img src="./public/images/img_avatar_laurent.png" alt="avatar_laurent">
+    <div class="loading-spinner">
+        <div class="loading-spinner__center">
+            <span class="loading-spinner__center--initial">LM</span>
         </div>
-        <nav class="nav">
-            <ul class="list-unstyled">
-                <li class="nav__link nav__link--active"><a href="#home">Accueil</a></li>
-                <li class="nav__link"><a href="#about">A propos</a></li>
-                <li class="nav__link"><a href="#skills">Compétences</a></li>
-                <li class="nav__link"><a href="#portfolio">Portfolio</a></li>
-                <li class="nav__link"><a href="#contact">Contact</a></li>
-            </ul>
-
-        </nav>
-        <div class="socials">
-            <ul>
-                <li class="socials__link">
-                    <a href="https://www.linkedin.com/in/laurent-monnier-647895193/" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </li>
-                <li class="socials__link">
-                    <a href="https://twitter.com/mogne232" target="_blank">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                </li>
-            </ul>
-
-        </div>
-            
-    </header>
-
-    <div id="container">
-        <main id="main">
-            <!-- <div id="main"> -->
-                <section id="home" class="section home-section">
-                    <div class="home-section__container">
-                        <img src="./public/images/composition-pour-ordinateur-portable-bloc-notes-bureau_23-2147982547.avif" alt="image_de_fond"/>
-                        <div class="home-section__text">
-                            <div class="home-section__name ">
-                                <h1 id="messageHello">
-                                    <!-- <span data-scroll data-scroll-speed="-0.9" data-scroll-repeat="true" data-scroll-direction="horizontal">L</span>
-                                    <span data-scroll data-scroll-speed="-1.2" data-scroll-repeat="true">a</span>
-                                    <span data-scroll data-scroll-speed="-0.7" data-scroll-repeat="true">u</span> 
-                                    <span data-scroll data-scroll-speed="-1.3" data-scroll-repeat="true">r</span>
-                                    <span data-scroll data-scroll-speed="-0.9" data-scroll-repeat="true">e</span>
-                                    <span data-scroll data-scroll-speed="-1.5" data-scroll-repeat="true">n</span>
-                                    <span data-scroll data-scroll-speed="-0.7" data-scroll-repeat="true">t</span>
-                                    <span>&nbsp;</span>
-                                    <span data-scroll data-scroll-speed="-1" data-scroll-repeat="true">M</span>
-                                    <span data-scroll data-scroll-speed="-1.2" data-scroll-repeat="true">O</span>
-                                    <span data-scroll data-scroll-speed="-0.7" data-scroll-repeat="true">N</span>
-                                    <span data-scroll data-scroll-speed="-0.9" data-scroll-repeat="true">N</span>
-                                    <span data-scroll data-scroll-speed="-1.5" data-scroll-repeat="true">I</span>
-                                    <span data-scroll data-scroll-speed="-1.1" data-scroll-repeat="true">E</span>
-                                    <span data-scroll data-scroll-speed="-0.7" data-scroll-repeat="true">R</span> -->
-                                    Hello World!!!
-                                </h1>
-                                <h1 id="messageName">
-                                    I'm Laurent MONNIER
-                                </h1>
-                                <!-- </div> -->
-                            </div>
-                            <div class="home-section__title">
-                                <div class="appear" id="hs-title-line2">
-                                    <h2>Développeur Web</h2>
-                                </div>
-                            </div>
-                            <div class="home-section__title">
-                                <div class="appear" id="hs-title-line3"> 
-                                    <h2>Front-End</h2>
-                                </div>
-                            </div>
-                        
-                            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rem magnam consequatur, assumenda culpa repellat tempora, ad harum voluptatum cupiditate deserunt enim. Deleniti nemo quas dolores officia laudantium eaque debitis?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptas cum earum eveniet dolor vitae mollitia explicabo at eligendi ad quas sed, corporis, accusamus necessitatibus voluptates dignissimos esse eius eos.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium debitis voluptatum et corporis in cupiditate quas eveniet quis aperiam animi est, assumenda, voluptate laboriosam ipsa. Neque facere sunt culpa necessitatibus!
-                            </p>  -->
-                        </div>
-                    </div>
-                </section>
-                <section id="about" class="section about-section">
-                    <div class="about-section__title">
-                        <h2>À propos</h2>
-                    </div>
-                    <div class="about-section__subtitle">
-                        <h3>Je suis Développeur Web en Front-End <br>avec passion!</h3>
-                    </div>
-                    <div class="as-grid">
-                        <div class="as-grid__item">
-                            <h4>Développeur en reconversion !</h4>
-                            <p>
-                                Ma passion pour le développement a commencé en 2005, lorsque j'étais étudiant en Qualité et Logistique. C'est vrai cela n'a rien à voir, mais j'ai découvert ce qui me passionnait vraiment à ce moment là !<br>
-                                J'ai continué sur cette voie pendant plusieurs années car j'ai persisté sur ma première voie, avant de comprendre vraiment qu'il fallait que je fasse un vrai revirement de situation !<br>
-                                J'ai commencé par lire des livres et m'intéresser sur le sujet en tant qu'<strong>autodidacte</strong> sur des langages comme HTML5, CSS3, Java, PHP, etc.<br> 
-                                Ainsi j'ai dû faire une <strong>reconversion professionnelle</strong> en 2022-2023 avec l'optention de mon diplôme en tant que <strong>"Développeur Web"</strong> certifié par l'Etat !<br>
-                            </p>
-                        </div>
-                        <div class="as-grid__item">
-                            <h4>Travail en autonomie !</h4>
-                            <p>
-                                Pendant mon diplôme en tant que <strong>Développeur Web</strong>, je décide de faire les projets demandés sans l'aide de ma mentor <strong>Mouna HALIMA</strong>, qui respecte mon choix !<br>
-                                Je réussi tous les projets seul avec beaucoup de volonté et de détermination.<br>
-                                Merci <strong>Mouna HALIMA</strong> de m'avoir fait confiance! 
-                            </p>
-                        </div>
-                        <div class="as-grid__item">
-                            <h4>Travail de qualité !</h4>
-                            <p>
-                                Mes projets on été vu comme un <strong>Travail de qualité</strong> par mes pères et cela m'a conforté à continuer dans cette voie !<br>
-                                Et surtout, continuer à apprendre <strong>toujours de plus en plus</strong>, avec cette soif et <strong>ma curiosité</strong> d'apprendre sans limite !<br>
-                                Je décide de me <strong>perfectionner</strong> avant de me lancer dans le grand bain.<br>
-                            </p>
-                        </div>
-                        <div class="as-grid__item">
-                            <h4>Professionnalisme !</h4>
-                            <p>
-                                Chaque soutenance et projet sont présenter avec le plus grand <strong>Professionnalisme</strong> possible car cela fait parti de mon caractère très <strong>pointilleux !</strong>
-                                Maintenant, je compte vous rejoindre le plus rapidement possible lorsque je sentirais que la valeure ajoutée me représentant sera assez forte pour vous faire part de mes moyens <strong>techniques</strong> et <strong>humains !</strong> 
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <section id="skills" class="section expertise-section">
-                    <!-- <div class="expertise-section__container"> -->
-                        <!-- <img src="./public/images/concept-logiciel-developpement-codage-langage-programmation.jpg" alt="image_de_fond_section_expertise"/> -->
-                        <div class="expertise-section__text">
-                            <h2 class="expertise-section__title expertise-section__title--delayed">
-                                <span class="ltr-1">M</span>
-                                <span class="ltr-2">e</span>
-                                <span class="ltr-3">s</span>
-                                <span>&nbsp;</span>
-                                <span class="ltr-4">C</span>
-                                <span class="ltr-5">o</span>
-                                <span class="ltr-6">m</span>
-                                <span class="ltr-7">p</span>
-                                <span class="ltr-8">é</span>
-                                <span class="ltr-9">t</span>
-                                <span class="ltr-10">e</span>
-                                <span class="ltr-11">n</span>
-                                <span class="ltr-12">c</span>
-                                <span class="ltr-13">e</span>
-                                <span class="ltr-14">s</span>
-                            </h2>
-                            <div class="expertise-section__skills">
-                                <div class="skills">
-                                    <div class="expertise-section__skills--appear">
-                                        <p>JavaScript</p>
-                                    </div>
-                                </div>
-                                <div class="skills">
-                                    <div class="expertise-section__skills--appear">
-                                        <p>React</p>
-                                    </div>
-                                </div>
-                                <div class="skills">
-                                    <div class="expertise-section__skills--appear">
-                                        <p>MongoDB</p>
-                                    </div>
-                                </div>
-                                <div class="skills">
-                                    <div class="expertise-section__skills--appear">
-                                        <p>HTML5-CSS3/Sass</p>
-                                    </div>
-                                </div>
-                                <div class="skills">
-                                    <div class="expertise-section__skills--appear">
-                                        <p>Java</p>
-                                    </div>
-                                </div>
-                                <div class="skills">
-                                    <div class="expertise-section__skills--appear">
-                                        <p>PHP</p>
-                                    </div>
-                                </div>
-                                <div class="skills">
-                                    <div class="expertise-section__skills--appear">
-                                        <p>C#</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="expertise-section__subsection">
-                                <div class="text-decoding">
-                                    <!-- Toutes ces compétences vont progresser au fur et à mesures du temps, sois en tant qu'<strong>Autodidacte</strong>, <br>
-                                    ou bien sûr grâçe à votre entreprise qui me fera confiance dans la gestion de mes projets et de <strong>mon sérieux</strong> concernant l'architecture du DOM.<br>
-                                    Je serais toujours autant <strong>curieux</strong> et <strong>engagé</strong> dans l'apprentissage de nouveaux <strong>langages</strong> et <strong>technologies.</strong> -->
-                                </div>
-                            </div>
-                        </div>
-                    <!-- </div> -->
-                </section>
-                <section class="section responsive-section">
-                    <h3 class="responsive-section__title">Projets Responsives</h3>
-                </section>
-                <section id="portfolio" class="section proj-section">
-                    <div class="proj-section__container">
-                    <h2 class="proj-section__title">
-                        <!-- <span>P</span>
-                        <span>o</span>
-                        <span>r</span>
-                        <span>t</span>
-                        <span>f</span>
-                        <span>o</span>
-                        <span>l</span>
-                        <span>i</span>
-                        <span>o</span> -->
-                        Portfolio
-                    </h2>
-
-                    <div class="proj-section__projects">
-                        <div class="proj-section__project proj-section__project--p1">
-                            <img src="./public/images/P1_Booki_image.png" alt="projet 1" />  
-                            <div class="proj-section__project--info">
-                                <a href="https://github.com/laumonnier/LaurentMONNIER_2_ProjetBooki_20102021" target="_blank">Booki</a>
-                                <p>Transformer une maquette en site web avec HTML & CSS</p>
-                                <p>2022</p>
-                            </div>
-                        </div>
-                        <div class="proj-section__project proj-section__project--p2">
-                            <img src="./public/images/P2_ohmyfood_image1.png" alt="projet 2" />
-                            <div class="proj-section__project--info">
-                                <a href="https://github.com/laumonnier/LaurentMONNIER_3_15112021" target="_blank">Ohmyfood</a>
-                                <p>Dynamiser une page wdb avec des animations CSS</p>
-                                <p>2022</p>
-                            </div>
-                        </div>
-                        <div class="proj-section__project proj-section__project--p3">
-                            <img src="./public/images/P3_La-Panthere_image1.png" alt="projet 3" />
-                            <div class="proj-section__project--info">
-                                <a href="https://github.com/laumonnier/LaurentMonnier_4_23022022" target="_blank">La Panthère</a>
-                                <p>Optimisation d'un site web existant</p>
-                                <p>2022</p>
-                            </div>
-                        </div>
-                        <div class="proj-section__project proj-section__project--p4">
-                            <img src="./public/images/P4_KANAP_image1.png" alt="projet 4" />
-                            <div class="proj-section__project--info">
-                                <a href="https://github.com/laumonnier/LaurentMonnier_5_22032022" target="_blank">KANAP</a>
-                                <p>Construire un site e-commerce en JavaScript</p>
-                                <p>2022</p>
-                            </div>
-                        </div>
-                        <div class="proj-section__project proj-section__project--p5">
-                            <img src="./public/images/P5_Groupomania_image.png" alt="projet 5" />
-                            <div class="proj-section__project--info">
-                                <a href="https://github.com/laumonnier/Projet_Groupomania" target="_blank">Groupomania</a>
-                                <p>Créer une application web de location immobilière avec React</p>
-                                <p>2023</p>
-                            </div>
-                        </div>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rem magnam consequatur, assumenda culpa repellat tempora, ad harum voluptatum cupiditate deserunt enim. Deleniti nemo quas dolores officia laudantium eaque debitis?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptas cum earum eveniet dolor vitae mollitia explicabo at eligendi ad quas sed, corporis, accusamus necessitatibus voluptates dignissimos esse eius eos.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium debitis voluptatum et corporis in cupiditate quas eveniet quis aperiam animi est, assumenda, voluptate laboriosam ipsa. Neque facere sunt culpa necessitatibus!
-                    </p>
-                    </div>
-                </section>
-            <!-- </div> -->
-        </main>
-
-
-        <footer class="footer" id="contact">
-            <div class="footer__links">
-                <div class="footer__contact">
-                    <p>Contact</p>
-                    <a href="mailto:laurent.p.monnier86@gmail.com">laurent.p.monnier86@gmail.com</a>
-                </div>
-                <div class="footer__quick-links">
-                    <p>Liens utiles</p>
-                    <ul>
-                        <li><a href="https://fr.freepik.com/">freepik</a></li>
-                        <li><a href="https://fontawesome.com/">Font Awesome</a></li>
-                        <li><a href="https://favicon.io/">Favicon.io</a></li>
-                    </ul>
-                </div>
-                <div class="footer__quick-links">
-                    <p>Liens utiles</p>
-                    <ul>
-                        <li><a href="https://www.fontsquirrel.com/">Font Squirrel</a></li>
-                        <li><a href="https://fonts.google.com/">Google Fonts</a></li>
-                        <li><a href="https://www.cartoonify.de/">Cartoonify</a></li>                    
-                    </ul>
-                </div>
+    </div>
+    <div class="first-page">
+        <header class="header">
+            <div class="header__logo">
+                <img src="./public/images/img_avatar_laurent.png" alt="avatar_laurent">
             </div>
+            <nav class="nav">
+                <ul class="list-unstyled">
+                    <li class="nav__link nav__link--active"><a href="#home">Accueil</a></li>
+                    <li class="nav__link"><a href="#about">A propos</a></li>
+                    <li class="nav__link"><a href="#skills">Compétences</a></li>
+                    <li class="nav__link"><a href="#portfolio">Portfolio</a></li>
+                    <li class="nav__link"><a href="#contact">Contact</a></li>
+                </ul>
+
+            </nav>
             <div class="socials">
                 <ul>
                     <li class="socials__link">
@@ -342,8 +58,303 @@
                         </a>
                     </li>
                 </ul>
-            </div>    
-        </footer>
+
+            </div>
+                
+        </header>
+
+        <div id="container">
+            <main id="main">
+                <!-- <div id="main"> -->
+                    <section id="home" class="section home-section">
+                        <div class="home-section__container">
+                            <img src="./public/images/composition-pour-ordinateur-portable-bloc-notes-bureau_23-2147982547.avif" alt="image_de_fond"/>
+                            <div class="home-section__text">
+                                <div class="home-section__name ">
+                                    <h1 id="messageHello">
+                                        <!-- <span data-scroll data-scroll-speed="-0.9" data-scroll-repeat="true" data-scroll-direction="horizontal">L</span>
+                                        <span data-scroll data-scroll-speed="-1.2" data-scroll-repeat="true">a</span>
+                                        <span data-scroll data-scroll-speed="-0.7" data-scroll-repeat="true">u</span> 
+                                        <span data-scroll data-scroll-speed="-1.3" data-scroll-repeat="true">r</span>
+                                        <span data-scroll data-scroll-speed="-0.9" data-scroll-repeat="true">e</span>
+                                        <span data-scroll data-scroll-speed="-1.5" data-scroll-repeat="true">n</span>
+                                        <span data-scroll data-scroll-speed="-0.7" data-scroll-repeat="true">t</span>
+                                        <span>&nbsp;</span>
+                                        <span data-scroll data-scroll-speed="-1" data-scroll-repeat="true">M</span>
+                                        <span data-scroll data-scroll-speed="-1.2" data-scroll-repeat="true">O</span>
+                                        <span data-scroll data-scroll-speed="-0.7" data-scroll-repeat="true">N</span>
+                                        <span data-scroll data-scroll-speed="-0.9" data-scroll-repeat="true">N</span>
+                                        <span data-scroll data-scroll-speed="-1.5" data-scroll-repeat="true">I</span>
+                                        <span data-scroll data-scroll-speed="-1.1" data-scroll-repeat="true">E</span>
+                                        <span data-scroll data-scroll-speed="-0.7" data-scroll-repeat="true">R</span> -->
+                                        Hello World!!!
+                                    </h1>
+                                    <h1 id="messageName">
+                                        I'm Laurent MONNIER
+                                    </h1>
+                                    <!-- </div> -->
+                                </div>
+                                <div class="home-section__title">
+                                    <div class="appear" id="hs-title-line2">
+                                        <h2>Développeur Web</h2>
+                                    </div>
+                                </div>
+                                <div class="home-section__title">
+                                    <div class="appear" id="hs-title-line3"> 
+                                        <h2>Front-End</h2>
+                                    </div>
+                                </div>
+                            
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rem magnam consequatur, assumenda culpa repellat tempora, ad harum voluptatum cupiditate deserunt enim. Deleniti nemo quas dolores officia laudantium eaque debitis?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptas cum earum eveniet dolor vitae mollitia explicabo at eligendi ad quas sed, corporis, accusamus necessitatibus voluptates dignissimos esse eius eos.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium debitis voluptatum et corporis in cupiditate quas eveniet quis aperiam animi est, assumenda, voluptate laboriosam ipsa. Neque facere sunt culpa necessitatibus!
+                                </p>  -->
+                            </div>
+                        </div>
+                    </section>
+                    <section id="about" class="section about-section">
+                        <div class="about-section__title">
+                            <h2>À propos</h2>
+                        </div>
+                        <div class="about-section__subtitle">
+                            <h3>Je suis Développeur Web en Front-End <br>avec passion!</h3>
+                        </div>
+                        <div class="as-grid">
+                            <div class="as-grid__item">
+                                <h4>Développeur en reconversion !</h4>
+                                <p>
+                                    Ma passion pour le développement a commencé en 2005, lorsque j'étais étudiant en Qualité et Logistique. C'est vrai cela n'a rien à voir, mais j'ai découvert ce qui me passionnait vraiment à ce moment là !<br>
+                                    J'ai continué sur cette voie pendant plusieurs années car j'ai persisté sur ma première voie, avant de comprendre vraiment qu'il fallait que je fasse un vrai revirement de situation !<br>
+                                    J'ai commencé par lire des livres et m'intéresser sur le sujet en tant qu'<strong>autodidacte</strong> sur des langages comme HTML5, CSS3, Java, PHP, etc.<br> 
+                                    Ainsi j'ai dû faire une <strong>reconversion professionnelle</strong> en 2022-2023 avec l'optention de mon diplôme en tant que <strong>"Développeur Web"</strong> certifié par l'Etat !<br>
+                                </p>
+                            </div>
+                            <div class="as-grid__item">
+                                <h4>Travail en autonomie !</h4>
+                                <p>
+                                    Pendant mon diplôme en tant que <strong>Développeur Web</strong>, je décide de faire les projets demandés sans l'aide de ma mentor <strong>Mouna HALIMA</strong>, qui respecte mon choix !<br>
+                                    Je réussi tous les projets seul avec beaucoup de volonté et de détermination.<br>
+                                    Merci <strong>Mouna HALIMA</strong> de m'avoir fait confiance! 
+                                </p>
+                            </div>
+                            <div class="as-grid__item">
+                                <h4>Travail de qualité !</h4>
+                                <p>
+                                    Mes projets on été vu comme un <strong>Travail de qualité</strong> par mes pères et cela m'a conforté à continuer dans cette voie !<br>
+                                    Et surtout, continuer à apprendre <strong>toujours de plus en plus</strong>, avec cette soif et <strong>ma curiosité</strong> d'apprendre sans limite !<br>
+                                    Je décide de me <strong>perfectionner</strong> avant de me lancer dans le grand bain.<br>
+                                </p>
+                            </div>
+                            <div class="as-grid__item">
+                                <h4>Professionnalisme !</h4>
+                                <p>
+                                    Chaque soutenance et projet sont présenter avec le plus grand <strong>Professionnalisme</strong> possible car cela fait parti de mon caractère très <strong>pointilleux !</strong>
+                                    Maintenant, je compte vous rejoindre le plus rapidement possible lorsque je sentirais que la valeure ajoutée me représentant sera assez forte pour vous faire part de mes moyens <strong>techniques</strong> et <strong>humains !</strong> 
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="skills" class="section expertise-section">
+                        <!-- <div class="expertise-section__container"> -->
+                            <!-- <img src="./public/images/concept-logiciel-developpement-codage-langage-programmation.jpg" alt="image_de_fond_section_expertise"/> -->
+                            <div class="expertise-section__text">
+                                <h2 class="expertise-section__title expertise-section__title--delayed">
+                                    <span class="ltr-1">M</span>
+                                    <span class="ltr-2">e</span>
+                                    <span class="ltr-3">s</span>
+                                    <span>&nbsp;</span>
+                                    <span class="ltr-4">C</span>
+                                    <span class="ltr-5">o</span>
+                                    <span class="ltr-6">m</span>
+                                    <span class="ltr-7">p</span>
+                                    <span class="ltr-8">é</span>
+                                    <span class="ltr-9">t</span>
+                                    <span class="ltr-10">e</span>
+                                    <span class="ltr-11">n</span>
+                                    <span class="ltr-12">c</span>
+                                    <span class="ltr-13">e</span>
+                                    <span class="ltr-14">s</span>
+                                </h2>
+                                <div class="expertise-section__skills">
+                                    <div id="skillBox">
+                                        <div class="skillBar">
+                                            <div id="skillBar__s1">
+                                                <span class="skill-Area">JavaScript</span>
+                                                <span class="PercentSkill">50%</span>
+                                            </div>
+                                        </div>
+                                        <div class="skillBar">
+                                            <div id="skillBar__s2">
+                                                <span class="skill-Area">React</span>
+                                                <span class="PercentSkill">50%</span>
+                                            </div>
+                                        </div>
+                                        <div class="skillBar">
+                                            <div id="skillBar__s3">
+                                                <span class="skill-Area">MongoDB</span>
+                                                <span class="PercentSkill">50%</span>
+                                            </div>
+                                        </div>
+                                        <div class="skillBar">
+                                            <div id="skillBar__s4">
+                                                <span class="skill-Area">HTML</span>
+                                                <span class="PercentSkill">50%</span>
+                                            </div>
+                                        </div>
+                                        <div class="skillBar">
+                                            <div id="skillBar__s5">
+                                                <span class="skill-Area">CSS</span>
+                                                <span class="PercentSkill">50%</span>
+                                            </div>
+                                        </div>
+                                        <div class="skillBar">
+                                            <div id="skillBar__s6">
+                                                <span class="skill-Area">SASS</span>
+                                                <span class="PercentSkill">50%</span>
+                                            </div>
+                                        </div>
+                                        <div class="skillBar">
+                                            <div id="skillBar__s7">
+                                                <span class="skill-Area">Java</span>
+                                                <span class="PercentSkill">50%</span>
+                                            </div>
+                                        </div>
+                                        <div class="skillBar">
+                                            <div id="skillBar__s8">
+                                                <span class="skill-Area">PHP</span>
+                                                <span class="PercentSkill">50%</span>
+                                            </div>
+                                        </div>
+                                        <div class="skillBar">
+                                            <div id="skillBar__s9">
+                                                <span class="skill-Area">C#</span>
+                                                <span class="PercentSkill">50%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="expertise-section__subsection">
+                                    <div class="text-decoding">
+                                        <!-- Toutes ces compétences vont progresser au fur et à mesures du temps, sois en tant qu'<strong>Autodidacte</strong>, <br>
+                                        ou bien sûr grâçe à votre entreprise qui me fera confiance dans la gestion de mes projets et de <strong>mon sérieux</strong> concernant l'architecture du DOM.<br>
+                                        Je serais toujours autant <strong>curieux</strong> et <strong>engagé</strong> dans l'apprentissage de nouveaux <strong>langages</strong> et <strong>technologies.</strong> -->
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                    </section>
+                    <section class="section responsive-section">
+                        <h3 class="responsive-section__title">Projets Responsives</h3>
+                    </section>
+                    <section id="portfolio" class="section proj-section">
+                        <div class="proj-section__container">
+                        <h2 class="proj-section__title">
+                            <!-- <span>P</span>
+                            <span>o</span>
+                            <span>r</span>
+                            <span>t</span>
+                            <span>f</span>
+                            <span>o</span>
+                            <span>l</span>
+                            <span>i</span>
+                            <span>o</span> -->
+                            Portfolio
+                        </h2>
+
+                        <div class="proj-section__projects">
+                            <div class="proj-section__project proj-section__project--p1">
+                                <img src="./public/images/P1_Booki_image.png" alt="projet 1" />  
+                                <div class="proj-section__project--info">
+                                    <a href="https://github.com/laumonnier/LaurentMONNIER_2_ProjetBooki_20102021" target="_blank">Booki</a>
+                                    <p>Transformer une maquette en site web avec HTML & CSS</p>
+                                    <p>2022</p>
+                                </div>
+                            </div>
+                            <div class="proj-section__project proj-section__project--p2">
+                                <img src="./public/images/P2_ohmyfood_image1.png" alt="projet 2" />
+                                <div class="proj-section__project--info">
+                                    <a href="https://github.com/laumonnier/LaurentMONNIER_3_15112021" target="_blank">Ohmyfood</a>
+                                    <p>Dynamiser une page wdb avec des animations CSS</p>
+                                    <p>2022</p>
+                                </div>
+                            </div>
+                            <div class="proj-section__project proj-section__project--p3">
+                                <img src="./public/images/P3_La-Panthere_image1.png" alt="projet 3" />
+                                <div class="proj-section__project--info">
+                                    <a href="https://github.com/laumonnier/LaurentMonnier_4_23022022" target="_blank">La Panthère</a>
+                                    <p>Optimisation d'un site web existant</p>
+                                    <p>2022</p>
+                                </div>
+                            </div>
+                            <div class="proj-section__project proj-section__project--p4">
+                                <img src="./public/images/P4_KANAP_image1.png" alt="projet 4" />
+                                <div class="proj-section__project--info">
+                                    <a href="https://github.com/laumonnier/LaurentMonnier_5_22032022" target="_blank">KANAP</a>
+                                    <p>Construire un site e-commerce en JavaScript</p>
+                                    <p>2022</p>
+                                </div>
+                            </div>
+                            <div class="proj-section__project proj-section__project--p5">
+                                <img src="./public/images/P5_Groupomania_image.png" alt="projet 5" />
+                                <div class="proj-section__project--info">
+                                    <a href="https://github.com/laumonnier/Projet_Groupomania" target="_blank">Groupomania</a>
+                                    <p>Créer une application web de location immobilière avec React</p>
+                                    <p>2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rem magnam consequatur, assumenda culpa repellat tempora, ad harum voluptatum cupiditate deserunt enim. Deleniti nemo quas dolores officia laudantium eaque debitis?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptas cum earum eveniet dolor vitae mollitia explicabo at eligendi ad quas sed, corporis, accusamus necessitatibus voluptates dignissimos esse eius eos.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium debitis voluptatum et corporis in cupiditate quas eveniet quis aperiam animi est, assumenda, voluptate laboriosam ipsa. Neque facere sunt culpa necessitatibus!
+                        </p>
+                        </div>
+                    </section>
+                    <!-- <section id="contact" class="section contact-section">
+                        
+                    </section> -->
+                <!-- </div> -->
+            </main>
+
+
+            <footer class="footer" id="contact">
+                <div class="footer__links">
+                    <div class="footer__contact">
+                        <p>Contact</p>
+                        <a href="mailto:laurent.p.monnier86@gmail.com">laurent.p.monnier86@gmail.com</a>
+                    </div>
+                    <div class="footer__quick-links">
+                        <p>Liens utiles</p>
+                        <ul>
+                            <li><a href="https://fr.freepik.com/">freepik</a></li>
+                            <li><a href="https://fontawesome.com/">Font Awesome</a></li>
+                            <li><a href="https://favicon.io/">Favicon.io</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__quick-links">
+                        <p>Liens utiles</p>
+                        <ul>
+                            <li><a href="https://www.fontsquirrel.com/">Font Squirrel</a></li>
+                            <li><a href="https://fonts.google.com/">Google Fonts</a></li>
+                            <li><a href="https://www.cartoonify.de/">Cartoonify</a></li>                    
+                        </ul>
+                    </div>
+                </div>
+                <div class="socials">
+                    <ul>
+                        <li class="socials__link">
+                            <a href="https://www.linkedin.com/in/laurent-monnier-647895193/" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="socials__link">
+                            <a href="https://twitter.com/mogne232" target="_blank">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>    
+            </footer>
+        </div>
     </div>
     <!-- <script src="./lib/locomotive-scroll.js"></script> -->
     <script src="./index.js"></script>

@@ -10,7 +10,7 @@
     &__subtitle{
         h3{
             text-align: center;
-            color: $colour-grey-light-dark;
+            color: $grey-light-dark-color;
         }
     }
     .as-grid{
@@ -20,11 +20,11 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 4fr);
         gap: 2rem;
-        border: 2px solid $colour-black;
+        border: 2px solid $black-color;
         padding: 5px;
         h4{
             text-align: center;
-            color: $colour-light-mint;
+            color: $light-mint-color;
         }
         &__item{
             width: 100%;

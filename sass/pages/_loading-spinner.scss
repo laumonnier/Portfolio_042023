@@ -1,0 +1,107 @@
+.first-page {
+    animation: page 4200ms cubic-bezier(.55,.07,.58,.99);
+    animation-fill-mode: infinite;
+    background: url("../../public/images/concept-logiciel-developpement-codage-langage-programmation.jpg") top/cover fixed;
+}
+.loading-spinner {
+    width: 17rem;
+    height: 17rem;
+    left: calc(50% - 8rem);
+    top: calc(50% - 8rem);
+    border: 1.2rem solid transparent;
+    border-radius: 50%;
+    border-right-color: $black-color;
+    border-top-color: $black-color;
+    box-sizing: border-box;
+    position: fixed;
+    animation: spin 3500ms 1 linear;
+    animation-fill-mode: forwards;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 14.7rem;
+        height: 14.7rem;
+        left: -0.0rem;
+        top: -0.2rem;
+        border: 1.2rem solid transparent;
+        border-radius: 50%;
+        border-right-color: $dark-grey-color;
+        border-top-color: $dark-grey-color;
+        box-sizing: border-box;
+        animation: spin-inv 1750ms 2 linear;
+        animation-fill-mode: forwards;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 12.5rem;
+        height: 12.5rem;
+        left: 1.07rem;
+        top: 0.84rem;
+        border: 1.05rem solid transparent;
+        border-radius: 50%;
+        border-right-color: $grey-light-dark-color;
+        border-top-color: $grey-light-dark-color;
+        box-sizing: border-box;
+        animation: spin 3800ms 1 linear;
+        animation-fill-mode: forwards;
+    }
+    &__center {
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        left: calc(50% - 1.79rem);
+        top: calc(50% - 1.79rem);
+        // background: linear-gradient(0deg, $tertiary-color, $secondary-color, $primary-color);
+        // border: 0.1rem solid $dark-grey-color;
+        position: fixed;
+        &--initial {
+            font-size: 5.5rem;
+            font-family: $font-family-loading-spinner;
+            left: calc(50% - 3.49rem);
+            top: calc(50% - 4.99rem);
+            position: fixed;
+        }
+    }
+}
+
+/*loading-spinner*/
+@keyframes page{
+    0%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    70%{
+        transform: rotate(230deg);
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+@keyframes spin-inv{
+    0%{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    50%{
+        transform: rotate(-180deg);
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(-360deg);
+        opacity: 1;
+    }
+}

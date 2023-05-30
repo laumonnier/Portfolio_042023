@@ -1,6 +1,6 @@
 .header {
     z-index: 5;
-    background-color: $colour-grey-transparent;
+    background-color: $grey-transparent-color;
     height: calc(8rem + 3.98vw);
     margin-top: 3.95rem;
     position: fixed;
@@ -16,8 +16,8 @@
         flex-direction: row;
         align-items: center;
         margin-left: 2rem;
-        color:$colour-black;
-        @include text-shadow($colour-white);
+        color:$black-color;
+        @include text-shadow($white-color);
         &--name {
             margin-left: 1rem;
             font-style: italic;

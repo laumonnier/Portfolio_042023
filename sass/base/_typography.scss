@@ -1,6 +1,6 @@
 body {
-    font-family: 'Noto Sans','Merriweather','Poppins','Roboto', sans-serif;
-    color: $colour-black;
+    font-family: $font-family-primary;
+    color: $black-color;
     text-align: justify;
     font-size: calc(1rem + 1.1vw);
     font-weight: 400;
@@ -34,13 +34,13 @@ span {
 }
 
 textarea {
-    font-family: 'Poppins','Roboto', sans-serif;
+    font-family: $font-family-secondary;
     font-weight: 100;
     font-size: 1.3rem;
 }
 
 button {
-    font-family: 'Poppins','Roboto', sans-serif;
+    font-family: $font-family-secondary;
     font-weight: 700;
     font-style: italic;
     font-size: 2rem;

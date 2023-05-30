@@ -24,9 +24,10 @@ var msgCount1 = 0;
 var msgCount2 = 0;
 var blinkCount = 0;
 var blinkFlg = 0;
-var timer1, timer2, timer3, timer4;
+var timer1, timer2, timer3, timer4, timer5, timer6;
 var messageHello = document.getElementById("messageHello");
 var messageName = document.getElementById("messageName");
+
 
 function textFunc1() {
     messageHello.innerHTML = message1.substring(0, msgCount1);
@@ -59,6 +60,7 @@ function blinkFunct1() {
         clearInterval(timer2);
     }
 }
+
 
 timer1 = setInterval("textFunc1()", 150); //Every 150 milliseconds
 
@@ -94,4 +96,4 @@ function blinkFunct2() {
     }
 }
 
-timer3 = setInterval("textFunc2()", 250); //Every 150 milliseconds
+timer3 = setInterval("textFunc2()", 250); //Every 250 milliseconds

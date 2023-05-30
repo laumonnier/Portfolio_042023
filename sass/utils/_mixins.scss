@@ -1,13 +1,13 @@
-@mixin text-shadow($colour:lightness-shift($colour-primary), $size:map-get($map: $text-shadow-offset, $key: logo)){
-    text-shadow: $size $size $colour;
+@mixin text-shadow($color:lightness-shift($primary-color), $size:map-get($map: $text-shadow-offset, $key: logo)){
+    text-shadow: $size $size $color;
 }
 
 @mixin span-inline{
     display: inline-block;
 }
 
-@mixin background-shift($colour:lightness-shift($colour-primary)){
-    background-color: $colour;
+@mixin background-shift($color:lightness-shift($primary-color)){
+    background-color: $color;
 }
 
 @mixin background-section($backgrounds){
@@ -107,7 +107,7 @@
         6px 12px 10px rgba( 0, 0, 0, .30),
         6px 17px 20px rgba( 0, 0, 0, .20),
         6px 22px 30px rgba( 0, 0, 0, .10);
-    color: $colour-dark-grey;
+    color: $dark-grey-color;
 }
 
 @mixin text-decoding {
@@ -115,7 +115,7 @@
     font-weight: 400;
     font-size: calc(0.4rem + 2.2vw);
     letter-spacing: 2px;
-    color: $colour-black;
+    color: $black-color;
 }
 
 /*@mixin socials à faire*/
