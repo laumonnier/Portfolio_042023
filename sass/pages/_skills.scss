@@ -1,6 +1,6 @@
 /*section skills*/
 .expertise-section {
-    border: 2px solid black;
+    // border: 2px solid black;
     // position: relative;
     overflow: hidden;
     // img {
@@ -23,25 +23,29 @@
         // @include delayed-time-letter(14, 500ms);
     }
     &__skills {
-        margin: 10px 0;
-        &--appear{
-            text-align: center;
-        }
+        margin: 2%;
+        // &--appear{
+        //     text-align: center;
+        // }
     }
-    p {
-        display: inline-block;
-        font-size: calc(0.4rem + 2.2vw);
-        letter-spacing: 2px;
-        color: $black-color;
-        border-radius: 20px;
-        padding: 0 10px ;
-    }
-    @include text-decoding;
-}
+    // p {
+    //     display: inline-block;
+    //     font-size: calc(0.4rem + 2.2vw);
+    //     letter-spacing: 2px;
+    //     color: $black-color;
+    //     border-radius: 20px;
+    //     padding: 0 10px ;
+    // }
 
-.dud {
-    color: #757575;
-}
+
+//     @include text-decoding; // A voir ?!?
+// }
+
+// .dud {
+//     color: #757575;
+// }
+
+
 
 //A revoir et faire du JS à la place pour l'animation
 
@@ -66,4 +70,45 @@
 //         margin-left: 50%;
 //         width: 100%;
 //     }
-// }
+}
+
+#skillBox {
+    // z-index: 3;
+    width: 95%;
+    height: auto;
+    font-size: 20px;
+    margin: 40px auto;
+    border: 1px solid $black-color;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.skillBar {
+    width: 90%;
+    height: 50px;
+    position: relative;
+    background: $grey-alpha30-color;
+    margin: 20px auto;
+}
+
+.skill-Area {
+    z-index: 1;
+    float: left;
+    position: absolute;
+    margin: 15px 0 0 15px;
+    text-shadow: none;
+    color: $white-color;
+    font-size: 18px;
+}
+
+.PercentSkill {
+    z-index: 3;
+    position: relative;
+    padding-right: 15px;
+    margin-top: 15px;
+    float: right;
+    text-shadow: none;
+    color: $white-color;
+    font-size: 18px;
+}
+

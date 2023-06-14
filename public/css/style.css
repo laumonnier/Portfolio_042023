@@ -662,13 +662,7 @@ section h2 {
 }
 /*section skills*/
 .expertise-section {
-  border: 2px solid black;
   overflow: hidden;
-  height: 100%;
-  font-weight: 400;
-  font-size: calc(0.4rem + 2.2vw);
-  letter-spacing: 2px;
-  color: black;
 }
 .expertise-section__text {
   z-index: 2;
@@ -685,22 +679,46 @@ section h2 {
   color: #474646;
 }
 .expertise-section__skills {
-  margin: 10px 0;
-}
-.expertise-section__skills--appear {
-  text-align: center;
-}
-.expertise-section p {
-  display: inline-block;
-  font-size: calc(0.4rem + 2.2vw);
-  letter-spacing: 2px;
-  color: black;
-  border-radius: 20px;
-  padding: 0 10px;
+  margin: 2%;
 }
 
-.dud {
-  color: #757575;
+#skillBox {
+  width: 95%;
+  height: auto;
+  font-size: 20px;
+  margin: 40px auto;
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.skillBar {
+  width: 90%;
+  height: 50px;
+  position: relative;
+  background: rgba(238, 237, 237, 0.1882352941);
+  margin: 20px auto;
+}
+
+.skill-Area {
+  z-index: 1;
+  float: left;
+  position: absolute;
+  margin: 15px 0 0 15px;
+  text-shadow: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+.PercentSkill {
+  z-index: 3;
+  position: relative;
+  padding-right: 15px;
+  margin-top: 15px;
+  float: right;
+  text-shadow: none;
+  color: #fff;
+  font-size: 18px;
 }
 
 .responsive-section__title {
