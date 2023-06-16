@@ -110,6 +110,21 @@
     color: $dark-grey-color;
 }
 
+@mixin skills-datas($datas) {
+    @each $skill, $data in $datas{
+        ##{$skill}{
+            width: map-get($map: $data, $key: wdh);
+            height: map-get($map: $data, $key: ht);
+            position: map-get($map: $data, $key: ption);
+            background-color: map-get($map: $data, $key: bc);
+            animation: map-get($map: $data, $key: anim);
+            -webkit-animation: map-get($map: $data, $key: -wbkit-anim);
+            -moz-animation: map-get($map: $data, $key: -mz-anim);
+            -o-animation: map-get($map: $data, $key: -o-anim);
+        }
+    }
+}
+
 @mixin text-decoding {
     height: 100%;
     font-weight: 400;

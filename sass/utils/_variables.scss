@@ -10,6 +10,12 @@ $grey-alpha30-color: #eeeded30;
 $black-color: black;
 $red-color: #f14343;
 $light-mint-color:#bce2a4;
+$mint-color:#7be739;
+$maroon-color:#53262e;
+$ocean-blue-color:#76ebf6;
+$dark-blue-color:#212ff2;
+$green-color:#0ea452;
+$orange-color:#ef6748;
 $grey-light-dark-color:#929292;
 $dark-grey-color:#474646;
 $selection-bg-color:#000101;
@@ -81,6 +87,118 @@ $background-section:(
         marg: 0vw 0 calc(-1rem + 1vw),
         padd: 1vw 0 11vw,
     ),
+);
+
+$skills-datas:(
+    skill-HTML:(
+        wdh: 90%,
+        ht: 50px,
+        ption: absolute,
+        bc: $tertiary-color,
+        anim: animate-HTML 5s,
+        -wbkit-anim: animate-HTML 5s,
+        -mz-anim: animate-HTML 5s,
+        -o-anim: animate-HTML 5s,  
+    ),
+    skill-CSS:(
+        wdh: 90%,
+        ht: 50px,
+        ption: absolute,
+        bc: $primary-color,
+        anim: animate-CSS 5s,
+        -wbkit-anim: animate-CSS 5s,
+        -mz-anim: animate-CSS 5s,
+        -o-anim: animate-CSS 5s,
+    ),
+    skill-JS:(
+        wdh: 90%,
+        ht: 50px,
+        ption: absolute,
+        bc: $purple-color,
+        anim: animate-JS 4s,
+        -wbkit-anim: animate-JS 4s,
+        -mz-anim: animate-JS 4s,
+        -o-anim: animate-JS 4s,
+    ),
+    skill-React:(
+        wdh: 90%,
+        ht: 50px,
+        ption: absolute,
+        bc: $mint-color,
+        anim: animate-React 4s,
+        -wbkit-anim: animate-React 4s,
+        -mz-anim: animate-React 4s,
+        -o-anim: animate-React 4s,
+    ),
+    skill-Sass:(
+        wdh: 90%,
+        ht: 50px,
+        ption: absolute,
+        bc: $green-color,
+        anim: animate-Sass 4s,
+        -wbkit-anim: animate-Sass 4s,
+        -mz-anim: animate-Sass 4s,
+        -o-anim: animate-Sass 4s,
+    ),
+    skill-Java:(
+        wdh: 90%,
+        ht: 50px,
+        ption: absolute,
+        bc: $orange-color,
+        anim: animate-Java 4s,
+        -wbkit-anim: animate-Java 4s,
+        -mz-anim: animate-Java 4s,
+        -o-anim: animate-Java 4s,
+    ),
+    skill-PHP:(
+        wdh: 90%,
+        ht: 50px,
+        ption: absolute,
+        bc: $ocean-blue-color,
+        anim: animate-PHP 4s,
+        -wbkit-anim: animate-PHP 4s,
+        -mz-anim: animate-PHP 4s,
+        -o-anim: animate-PHP 4s,
+    ),
+    skill-C\#: (
+        wdh: 90%,
+        ht: 50px,
+        ption: absolute,
+        bc: $red-color,
+        anim: animate-C\# 4s,
+        -wbkit-anim: animate-C\# 4s,
+        -mz-anim: animate-C\# 4s,
+        -o-anim: animate-C\# 4s,
+    ),
+    skill-MongoDB:(
+        wdh: 90%,
+        ht: 50px,
+        ption: absolute,
+        bc: $dark-blue-color,
+        anim: animate-MongoDB 6s,
+        -wbkit-anim: animate-MongoDB 6s,
+        -mz-anim: animate-MongoDB 6s,
+        -o-anim: animate-MongoDB 6s,
+    ),
+);
+
+$keyframes-browser:(
+    anim: keyframes,
+    wbkit-anim: -webkit-keyframes,
+    mz-anim: -moz-keyframes,
+    o-anim: -o-keyframes
+);
+
+$skills-keyframes:(
+    html: animate-HTML,
+    css: animate-CSS,
+    js: animate-JS,
+    react: animate-React,
+    sass: animate-Sass,
+    java: animate-Java,
+    php: animate-PHP,
+    c\#: animate-C\#,
+    mgodb: animate-MongoDB,
 );
 
 $proj-datas:(
