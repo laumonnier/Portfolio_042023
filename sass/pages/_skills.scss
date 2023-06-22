@@ -36,59 +36,33 @@
     //     border-radius: 20px;
     //     padding: 0 10px ;
     // }
-
-
-//     @include text-decoding; // A voir ?!?
-// }
-
-// .dud {
-//     color: #757575;
-// }
-
-
-
-//A revoir et faire du JS à la place pour l'animation
-
-// @keyframes glissement-left {
-//     from {
-//         opacity: 0;
-//         // transform: translateX(50vh);
-//         transform: translateY(-15vh);
-//         margin-left: 100%;
-//         width: 300%;
-//     }
-//     90% {
-//         opacity: 1;
-//         transform: translateY(-15vh);
-//         margin-left: 100%;
-//         width: 300%;
-//     }
-
-//     to {
-//         opacity: 1 ;
-//         transform: translateY(-15vh);
-//         margin-left: 50%;
-//         width: 100%;
-//     }
+    &__subsection {
+        @include text-decoding;
+    }
 }
 
 #skillBox {
     // z-index: 3;
+    font-family: $font-family-skills;
+    font-weight: 500;
+    text-align: left;
     width: 95%;
     height: auto;
     font-size: 20px;
     margin: 40px auto;
     border: 1px solid $black-color;
-    padding: 15px;
+    padding: 10px;
     border-radius: 20px;
 }
 
 .skillBar {
     width: 90%;
-    height: 50px;
+    height: 70px;
     position: relative;
-    background: $grey-alpha30-color;
-    margin: 20px auto;
+    background: $grey-alpha70-color;
+    padding-left: -20px;
+    margin: 25px auto;
+    border-radius: 15px;
 }
 
 .skill-Area {
@@ -96,9 +70,10 @@
     float: left;
     position: absolute;
     margin: 15px 0 0 15px;
+    padding-left: 30px;
     text-shadow: none;
     color: $white-color;
-    font-size: 18px;
+    font-size: calc(15px + 0.8vw);
 }
 
 .PercentSkill {
@@ -109,6 +84,9 @@
     float: right;
     text-shadow: none;
     color: $white-color;
-    font-size: 18px;
+    font-size: calc(15px + 0.8vw);
 }
 
+@include skills-datas($skills-datas);
+
+@include keyframes-skills($keyframes-skills);

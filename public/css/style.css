@@ -262,7 +262,6 @@ section h2 {
 .expertise-section {
   width: 100vw;
   background: rgba(238, 237, 237, 0.2705882353);
-  max-height: calc(300px + 40vw);
   height: auto;
   margin: auto;
   padding: 6vw 0 15vw;
@@ -681,23 +680,35 @@ section h2 {
 .expertise-section__skills {
   margin: 2%;
 }
+.expertise-section__subsection {
+  height: 100%;
+  font-weight: 400;
+  font-size: calc(0.6rem + 2.8vw);
+  letter-spacing: 2px;
+  color: black;
+}
 
 #skillBox {
+  font-family: "Nunito", "Noto Sans", "Poppins", "Roboto", sans-serif;
+  font-weight: 500;
+  text-align: left;
   width: 95%;
   height: auto;
   font-size: 20px;
   margin: 40px auto;
   border: 1px solid black;
-  padding: 15px;
+  padding: 10px;
   border-radius: 20px;
 }
 
 .skillBar {
   width: 90%;
-  height: 50px;
+  height: 70px;
   position: relative;
-  background: rgba(238, 237, 237, 0.1882352941);
-  margin: 20px auto;
+  background: rgba(117, 116, 116, 0.4392156863);
+  padding-left: -20px;
+  margin: 25px auto;
+  border-radius: 15px;
 }
 
 .skill-Area {
@@ -705,9 +716,10 @@ section h2 {
   float: left;
   position: absolute;
   margin: 15px 0 0 15px;
+  padding-left: 30px;
   text-shadow: none;
   color: #fff;
-  font-size: 18px;
+  font-size: calc(15px + 0.8vw);
 }
 
 .PercentSkill {
@@ -718,9 +730,189 @@ section h2 {
   float: right;
   text-shadow: none;
   color: #fff;
-  font-size: 18px;
+  font-size: calc(15px + 0.8vw);
 }
 
+#skill-HTML {
+  width: 90%;
+  height: 70px;
+  border-radius: 15px;
+  position: absolute;
+  background-color: #c39c27;
+  animation: animate-HTML 5s;
+  -webkit-animation: animate-HTML 5s;
+  -moz-animation: animate-HTML 5s;
+  -o-animation: animate-HTML 5s;
+}
+
+#skill-CSS {
+  width: 70%;
+  height: 70px;
+  border-radius: 15px;
+  position: absolute;
+  background-color: #068a69;
+  animation: animate-CSS 5s;
+  -webkit-animation: animate-CSS 5s;
+  -moz-animation: animate-CSS 5s;
+  -o-animation: animate-CSS 5s;
+}
+
+#skill-JS {
+  width: 60%;
+  height: 70px;
+  border-radius: 15px;
+  position: absolute;
+  background-color: #5e2066;
+  animation: animate-JS 4s;
+  -webkit-animation: animate-JS 4s;
+  -moz-animation: animate-JS 4s;
+  -o-animation: animate-JS 4s;
+}
+
+#skill-React {
+  width: 60%;
+  height: 70px;
+  border-radius: 15px;
+  position: absolute;
+  background-color: #7b84e6;
+  animation: animate-React 4s;
+  -webkit-animation: animate-React 4s;
+  -moz-animation: animate-React 4s;
+  -o-animation: animate-React 4s;
+}
+
+#skill-Sass {
+  width: 90%;
+  height: 70px;
+  border-radius: 15px;
+  position: absolute;
+  background-color: #0ea452;
+  animation: animate-Sass 4s;
+  -webkit-animation: animate-Sass 4s;
+  -moz-animation: animate-Sass 4s;
+  -o-animation: animate-Sass 4s;
+}
+
+#skill-Java {
+  width: 70%;
+  height: 70px;
+  border-radius: 15px;
+  position: absolute;
+  background-color: #d55e43;
+  animation: animate-Java 4s;
+  -webkit-animation: animate-Java 4s;
+  -moz-animation: animate-Java 4s;
+  -o-animation: animate-Java 4s;
+}
+
+#skill-PHP {
+  width: 30%;
+  height: 70px;
+  border-radius: 15px;
+  position: absolute;
+  background-color: #51b5df;
+  animation: animate-PHP 4s;
+  -webkit-animation: animate-PHP 4s;
+  -moz-animation: animate-PHP 4s;
+  -o-animation: animate-PHP 4s;
+}
+
+#skill-C\# {
+  width: 20%;
+  height: 70px;
+  border-radius: 15px;
+  position: absolute;
+  background-color: #8c1b1b;
+  animation: animate-C\# 4s;
+  -webkit-animation: animate-C\# 4s;
+  -moz-animation: animate-C\# 4s;
+  -o-animation: animate-C\# 4s;
+}
+
+#skill-MongoDB {
+  width: 65%;
+  height: 70px;
+  border-radius: 15px;
+  position: absolute;
+  background-color: #3a41a6;
+  animation: animate-MongoDB 6s;
+  -webkit-animation: animate-MongoDB 6s;
+  -moz-animation: animate-MongoDB 6s;
+  -o-animation: animate-MongoDB 6s;
+}
+
+@keyframes animate-HTML {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes animate-CSS {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 70%;
+  }
+}
+@keyframes animate-JS {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 60%;
+  }
+}
+@keyframes animate-React {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 60%;
+  }
+}
+@keyframes animate-Sass {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes animate-Java {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 70%;
+  }
+}
+@keyframes animate-PHP {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 30%;
+  }
+}
+@keyframes animate-C\# {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 20%;
+  }
+}
+@keyframes animate-MongoDB {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 65%;
+  }
+}
 .responsive-section__title {
   text-align: center;
 }

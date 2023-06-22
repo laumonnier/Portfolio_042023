@@ -115,6 +115,7 @@
         ##{$skill}{
             width: map-get($map: $data, $key: wdh);
             height: map-get($map: $data, $key: ht);
+            border-radius: map-get($map: $data, $key: bder-rduis);
             position: map-get($map: $data, $key: ption);
             background-color: map-get($map: $data, $key: bc);
             animation: map-get($map: $data, $key: anim);
@@ -125,10 +126,26 @@
     }
 }
 
+
+
+@mixin keyframes-skills($skills) {
+    @each $keyframes-skill, $skill in $skills{ 
+        @keyframes #{$keyframes-skill}{
+            from {
+                width: 10px;
+            }
+            to {
+                width: map-get($map: $skill, $key: wdth);
+            }
+
+        }
+    }
+}
+
 @mixin text-decoding {
     height: 100%;
     font-weight: 400;
-    font-size: calc(0.4rem + 2.2vw);
+    font-size: calc(0.6rem + 2.8vw);
     letter-spacing: 2px;
     color: $black-color;
 }
