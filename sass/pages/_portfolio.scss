@@ -85,6 +85,10 @@
         }
         @include proj-base($proj-datas);
     }
+    &__summary {
+        text-align: center;
+        font-size: calc(8px + 1.6vw);
+    }
 }
 
 

@@ -16,21 +16,46 @@
     .as-grid{
         width: 90%;
         margin: auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 4fr);
-        gap: 2rem;
-        border: 2px solid $black-color;
-        padding: 5px;
+        // display: grid;
+        // grid-template-columns: repeat(2, 1fr);
+        // grid-template-rows: repeat(2, 1fr);
+        // gap: 2rem;
+        // border: 2px solid $black-color;
+        // padding: 5px;
         h4{
             text-align: center;
-            color: $light-mint-color;
+            color: $dark-grey-color;
+            text-decoration: underline;
         }
         &__item{
             width: 100%;
-            background: url("./../../public/images/fond-en-bois-clair_horizontal.jpg") center/cover ;
-            padding: .5rem;
+            // background: url("./../../public/images/fond-en-bois-clair_horizontal.jpg") center/cover ;
+            padding: .8rem;
             text-align: justify;
+            &--1{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+                gap: 2rem;
+                border: 2px solid $black-color;
+                padding: 5px;
+            }
+            &--2{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 1fr;
+                gap: 2rem;
+                border: 2px solid $black-color;
+                padding: 5px;
+            }
+            &--3{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+                gap: 2rem;
+                border: 2px solid $black-color;
+                padding: 5px;
+            }
         }
     }
         // p {

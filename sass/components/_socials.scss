@@ -10,11 +10,27 @@
     &__link {
         display:inline-flex;
         text-align: center;
-        margin: 0 0.5rem;
+        margin: 0 0.8rem;
+        &--around {
+            border: 1px solid $grey-alpha70-color;
+            border-radius: 50%;
+            background-color: $grey-alpha90-color;
+            cursor: pointer;
+            &:hover {
+                background-color: $light-grey-alpha45-color;
+                cursor: pointer;
+                i {
+                    color: $yellow-color;
+                }
+            }
+        }
     }
     a {
         text-decoration: none;
         color: $white-color;
         font-size: calc(map-get($font-size, social-heading) + 0.98vw);
+    }
+    i {
+        padding: 0 18px;
     }
 }

@@ -6,7 +6,8 @@ $invalid-color:#890627;
 $white-color: #fff;
 $light-grey-color: #eeeded;
 $light-grey-alpha45-color: #eeeded45;
-$grey-alpha70-color: #75747470; 
+$grey-alpha70-color: #75747470;
+$grey-alpha90-color: #75747490;
 $black-color: black;
 $red-color: #8c1b1b;
 $light-mint-color:#bce2a4;
@@ -71,7 +72,7 @@ $background-section:(
         width: 100vw,
         bg: $light-grey-alpha45-color,
         // bg: url(../../public/images/concept-logiciel-developpement-codage-langage-programmation.jpg) top/cover no-repeat,
-        // max-hgt: calc(300px + 70vw),
+        max-hgt: calc(300px + 70vw),
         hgt: auto,
         marg: auto,
         padd: 6vw 0 15vw,

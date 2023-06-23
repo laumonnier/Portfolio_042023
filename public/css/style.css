@@ -119,12 +119,28 @@ section {
 .socials__link {
   display: inline-flex;
   text-align: center;
-  margin: 0 0.5rem;
+  margin: 0 0.8rem;
+}
+.socials__link--around {
+  border: 1px solid rgba(117, 116, 116, 0.4392156863);
+  border-radius: 50%;
+  background-color: rgba(117, 116, 116, 0.5647058824);
+  cursor: pointer;
+}
+.socials__link--around:hover {
+  background-color: rgba(238, 237, 237, 0.2705882353);
+  cursor: pointer;
+}
+.socials__link--around:hover i {
+  color: #c39c27;
 }
 .socials a {
   text-decoration: none;
   color: #fff;
   font-size: calc(1.1rem + 0.98vw);
+}
+.socials i {
+  padding: 0 18px;
 }
 
 .nav {
@@ -262,6 +278,7 @@ section h2 {
 .expertise-section {
   width: 100vw;
   background: rgba(238, 237, 237, 0.2705882353);
+  max-height: calc(300px + 70vw);
   height: auto;
   margin: auto;
   padding: 6vw 0 15vw;
@@ -333,6 +350,10 @@ section h2 {
 
 .footer .socials a {
   font-size: calc(1.6rem + 1.5vw);
+  margin: 0 calc(0.5rem + 1.2vw);
+}
+.footer .socials i:hover {
+  color: #51b5df;
 }
 
 @keyframes animLinkFooter {
@@ -464,22 +485,40 @@ section h2 {
 .about-section .as-grid {
   width: 90%;
   margin: auto;
+}
+.about-section .as-grid h4 {
+  text-align: center;
+  color: #474646;
+  text-decoration: underline;
+}
+.about-section .as-grid__item {
+  width: 100%;
+  padding: 0.8rem;
+  text-align: justify;
+}
+.about-section .as-grid__item--1 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 4fr);
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   gap: 2rem;
   border: 2px solid black;
   padding: 5px;
 }
-.about-section .as-grid h4 {
-  text-align: center;
-  color: #bce2a4;
+.about-section .as-grid__item--2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 2rem;
+  border: 2px solid black;
+  padding: 5px;
 }
-.about-section .as-grid__item {
-  width: 100%;
-  background: url("./../../public/images/fond-en-bois-clair_horizontal.jpg") center/cover;
-  padding: 0.5rem;
-  text-align: justify;
+.about-section .as-grid__item--3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+  border: 2px solid black;
+  padding: 5px;
 }
 
 /*section home*/
@@ -649,6 +688,10 @@ section h2 {
 }
 .proj-section__project--p5 {
   margin: 0 auto 50px 6vw;
+}
+.proj-section__summary {
+  text-align: center;
+  font-size: calc(8px + 1.6vw);
 }
 
 @keyframes filter-cover {
