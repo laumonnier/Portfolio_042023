@@ -521,6 +521,131 @@ section h2 {
   padding: 5px;
 }
 
+.story-life-container__text-life {
+  position: absolute;
+  text-align: center;
+  top: calc(150px + 20vw);
+}
+
+#as-g__col1 {
+  z-index: 3;
+  border: 2px dashed red;
+  padding: 10px;
+  background-color: #eeeded;
+}
+
+#as-g__col2 {
+  z-index: 1;
+  position: relative;
+  border: 2px dashed red;
+  padding: 10px;
+  background-color: #eeeded;
+}
+#as-g__col2--like-programming {
+  width: 22vw;
+  position: absolute;
+  z-index: 2;
+  top: 25px;
+  left: 3vw;
+}
+#as-g__col2--autodidact {
+  width: 22vw;
+  position: absolute;
+  z-index: 2;
+  top: 25px;
+  left: 3vw;
+}
+#as-g__col2--career-transition {
+  width: 22vw;
+  position: absolute;
+  z-index: 2;
+  top: 25px;
+  left: 3vw;
+}
+#as-g__col2--degree {
+  width: 22vw;
+  position: absolute;
+  z-index: 2;
+  top: 25px;
+  left: 3vw;
+}
+#as-g__col2--coding-langage {
+  width: 22vw;
+  position: absolute;
+  z-index: 2;
+  top: 25px;
+  left: 3vw;
+}
+#as-g__col2--coding-project {
+  width: 22vw;
+  position: absolute;
+  z-index: 2;
+  top: 25px;
+  left: 3vw;
+}
+#as-g__col2--coding-project2 {
+  width: 22vw;
+  position: absolute;
+  z-index: 2;
+  top: 25px;
+  left: 3vw;
+}
+#as-g__col2--computer {
+  width: 22vw;
+  position: absolute;
+  z-index: 2;
+  top: 25px;
+  left: 3vw;
+}
+#as-g__col2--like-programming {
+  animation-delay: 5s;
+  animation-duration: 7s;
+  animation-direction: normal;
+  animation-name: glissement-right;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+#as-g__col3 {
+  z-index: 3;
+  border: 2px dashed red;
+  padding: 10px;
+  background-color: #eeeded;
+}
+
+@keyframes glissement-right {
+  from {
+    opacity: 0;
+    width: 22vw;
+    transform: translateX(-40vw);
+  }
+  15% {
+    opacity: 0;
+    width: 22vw;
+    transform: translateX(-30vw);
+  }
+  35% {
+    opacity: 0;
+    width: 22vw;
+    transform: translateX(-20vw);
+  }
+  50% {
+    opacity: 1;
+    width: 22vw;
+    transform: translateX(0vw);
+  }
+  65% {
+    opacity: 0;
+    width: 22vw;
+    transform: translateX(20vw);
+  }
+  to {
+    opacity: 0;
+    width: 22vw;
+    transform: translateX(35vw);
+    margin-left: 0%;
+  }
+}
 /*section home*/
 .home-section {
   position: relative;
@@ -573,11 +698,10 @@ section h2 {
 @keyframes glissement-left {
   from {
     opacity: 0;
-    transform: translateX(50vw);
   }
   90% {
     opacity: 0;
-    transform: translateX(75vw);
+    transform: translateX(50vw);
   }
   to {
     opacity: 1;
@@ -594,7 +718,7 @@ section h2 {
   }
   90% {
     opacity: 0;
-    transform: translateY(-50vh);
+    transform: translateY(50vh);
   }
   to {
     opacity: 1;

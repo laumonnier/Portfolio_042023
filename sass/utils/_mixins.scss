@@ -70,6 +70,18 @@
     }
 }
 
+@mixin about-story-life($datas){
+    @each $time, $data in $datas{
+        &--#{$time}{
+            width: map-get($map: $data, $key: wdth);
+            position: map-get($map: $data, $key: pstion);
+            z-index: map-get($map: $data, $key: z-ind);
+            top: map-get($map: $data, $key: top);
+            left: map-get($map: $data, $key: left);
+        }
+    }
+}
+
 @mixin list-unstyled{
     list-style-type: none;
     text-decoration: none;

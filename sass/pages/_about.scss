@@ -58,6 +58,7 @@
             }
         }
     }
+    
         // p {
         //     width: 100%;
         //     // min-width: 270px;
@@ -68,3 +69,93 @@
     
 }
 
+.story-life-container{
+    &__text-life {
+        position: absolute;
+        text-align: center;
+        top: calc(150px + 20vw);
+    }
+}
+
+#as-g__col1 {
+    z-index: 3;
+    border: 2px dashed red;
+    padding: 10px;
+    background-color: $light-grey-color;
+}
+
+#as-g__col2 {
+    z-index: 1;
+    position: relative;
+    // display: flex;
+    // flex-direction: column;
+    border: 2px dashed red;
+    padding: 10px;
+    background-color: $light-grey-color;
+    @include about-story-life($about-appear-image-data);
+    &--like-programming {
+        animation-delay: 5s;
+        animation-duration: 7s;
+        animation-direction: normal;
+        animation-name: glissement-right;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+}
+
+#as-g__col3 {
+    z-index: 3;
+    border: 2px dashed red;
+    padding: 10px;
+    background-color: $light-grey-color;
+}
+
+@keyframes glissement-right {
+    from {
+        opacity: 0;
+        width: 22vw;
+        // top: 25px;
+        // left: 3vw;
+        transform: translateX(-40vw);
+        // margin-left: 100%;
+        // width: 300%;
+    }
+    15% {
+        opacity: 0;
+        width: 22vw;
+        // top: 25px;
+        // left: 3vw;
+        transform: translateX(-30vw);
+    }
+    35% {
+        opacity: 0;
+        width: 22vw;
+        // top: 25px;
+        // left: 3vw;
+        transform: translateX(-20vw);
+    }
+    50% {
+        opacity: 1;
+        width: 22vw;
+        // top: 25px;
+        // left: 3vw;
+        transform: translateX(0vw);
+    }
+    65% {
+        opacity: 0;
+        width: 22vw;
+        // top: 25px;
+        // left: 3vw;
+        transform: translateX(20vw);
+    }
+
+    to {
+        opacity: 0 ;
+        width: 22vw;
+        // top: 25px;
+        // left: 3vw;
+        transform: translateX(35vw);
+        margin-left: 0%;
+        
+    }
+}
