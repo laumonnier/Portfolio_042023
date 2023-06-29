@@ -71,6 +71,7 @@
 
 .story-life-container{
     &__text-life {
+        font-size: calc(4px + 1.4vw);
         position: absolute;
         text-align: center;
         top: calc(150px + 20vw);
@@ -114,6 +115,14 @@
     // background-color: $light-grey-color;
 }
 
+.appearance {
+    animation-name: appearance;
+    animation-duration: 3s;
+    & img {
+        border-radius: 50px;
+    }
+}
+
 @keyframes glissement-right {
     from {
         opacity: 0;
@@ -154,5 +163,14 @@
         transform: translateX(30vw);
         margin-left: 0%;
         
+    }
+}
+
+@keyframes appearance {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
     }
 }

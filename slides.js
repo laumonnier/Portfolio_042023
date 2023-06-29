@@ -36,3 +36,13 @@ function showSlides() {
 //         }, 40);
 //     };
 // })();
+
+
+ //     var imgs = ["./public/images/png-transparent-programmer-it-it-workers-computer-thumbnail.png","./public/images/pngtree-library-reading-student-image_mini_desktop.jpg","./public/images/reconversion-professionnelle.png","./public/images/etudiant_réussi_son_diplome.png","./public/images/developpeur_web_image_portfolio_mini.png","./public/images/kisspng-web-development-web-developer-web-design-software_mini.png","./public/images/png-clipart-web-development-web-design-software-development-web-developer-web-design-web-design-text_mini.png","./public/images/pngtree-laptop-mock-up-vector-png-image.jpg"];
+    //     var image = document.getElementsByClassName("slide-image");
+    //     var index = 0;
+
+    //     function hop() {
+    //         image.src=imgs[(index++)%imgs.length];
+    //     };
+    //     setInterval(hop, 5000);

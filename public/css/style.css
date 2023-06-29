@@ -522,6 +522,7 @@ section h2 {
 }
 
 .story-life-container__text-life {
+  font-size: calc(4px + 1.4vw);
   position: absolute;
   text-align: center;
   top: calc(150px + 20vw);
@@ -549,52 +550,52 @@ section h2 {
   position: absolute;
   z-index: 7;
   top: 25px;
-  left: 3vw;
+  left: 3.6vw;
 }
 #as-g__col2--autodidact {
-  width: 22vw;
+  width: 25vw;
   position: absolute;
   z-index: 2;
   top: 25px;
-  left: 3vw;
+  left: 1.6vw;
 }
 #as-g__col2--career-transition {
-  width: 22vw;
+  width: 25vw;
   position: absolute;
   z-index: 2;
   top: 25px;
-  left: 3vw;
+  left: 1.6vw;
 }
 #as-g__col2--degree {
-  width: 22vw;
+  width: 25vw;
   position: absolute;
   z-index: 2;
   top: 25px;
-  left: 3vw;
+  left: 1.6vw;
 }
 #as-g__col2--coding-langage {
-  width: 22vw;
+  width: 25vw;
   position: absolute;
   z-index: 2;
   top: 25px;
-  left: 3vw;
+  left: 1.6vw;
 }
 #as-g__col2--coding-project {
-  width: 22vw;
+  width: 25vw;
   position: absolute;
   z-index: 2;
   top: 25px;
-  left: 3vw;
+  left: 1.6vw;
 }
 #as-g__col2--coding-project2 {
-  width: 22vw;
+  width: 25vw;
   position: absolute;
   z-index: 2;
   top: 25px;
-  left: 3vw;
+  left: 1.6vw;
 }
 #as-g__col2--computer {
-  width: 22vw;
+  width: 23.5vw;
   position: absolute;
   z-index: 2;
   top: 25px;
@@ -611,6 +612,14 @@ section h2 {
 #as-g__col3 {
   border: 2px dashed red;
   padding: 10px;
+}
+
+.appearance {
+  animation-name: appearance;
+  animation-duration: 3s;
+}
+.appearance img {
+  border-radius: 50px;
 }
 
 @keyframes glissement-right {
@@ -639,6 +648,14 @@ section h2 {
     width: 22vw;
     transform: translateX(30vw);
     margin-left: 0%;
+  }
+}
+@keyframes appearance {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
   }
 }
 /*section home*/

@@ -74,6 +74,7 @@
     @each $time, $data in $datas{
         &--#{$time}{
             width: map-get($map: $data, $key: wdth);
+            height: map-get($map: $data, $key: hgt);
             position: map-get($map: $data, $key: pstion);
             z-index: map-get($map: $data, $key: z-ind);
             top: map-get($map: $data, $key: top);
