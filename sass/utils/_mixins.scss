@@ -145,7 +145,7 @@
     @each $keyframes-skill, $skill in $skills{ 
         @keyframes #{$keyframes-skill}{
             from {
-                width: 10px;
+                width: 15px;
             }
             to {
                 width: map-get($map: $skill, $key: wdth);

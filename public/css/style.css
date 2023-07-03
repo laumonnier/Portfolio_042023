@@ -277,7 +277,7 @@ section h2 {
 
 .expertise-section {
   width: 100vw;
-  background: rgba(238, 237, 237, 0.2705882353);
+  background: rgba(238, 237, 237, 0.5843137255);
   max-height: calc(300px + 70vw);
   height: auto;
   margin: auto;
@@ -867,7 +867,7 @@ section h2 {
   color: black;
 }
 
-#skillBox {
+.skillBox {
   font-family: "Nunito", "Noto Sans", "Poppins", "Roboto", sans-serif;
   font-weight: 500;
   text-align: left;
@@ -912,7 +912,17 @@ section h2 {
   font-size: calc(15px + 0.8vw);
 }
 
-#skill-HTML {
+.reveal-loaded .reveal [class*=reveal-] {
+  opacity: 0 !important;
+  transform: translateY(-30px) !important;
+}
+
+.reveal-loaded [class*=reveal-] {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: cubic-bezier(0.54, 0.01, 0, 0.99);
+}
+.reveal-loaded [class*=reveal-] #skill-HTML {
   width: 90%;
   height: 70px;
   border-radius: 15px;
@@ -923,8 +933,7 @@ section h2 {
   -moz-animation: animate-HTML 5s;
   -o-animation: animate-HTML 5s;
 }
-
-#skill-CSS {
+.reveal-loaded [class*=reveal-] #skill-CSS {
   width: 70%;
   height: 70px;
   border-radius: 15px;
@@ -935,8 +944,7 @@ section h2 {
   -moz-animation: animate-CSS 5s;
   -o-animation: animate-CSS 5s;
 }
-
-#skill-JS {
+.reveal-loaded [class*=reveal-] #skill-JS {
   width: 60%;
   height: 70px;
   border-radius: 15px;
@@ -947,8 +955,7 @@ section h2 {
   -moz-animation: animate-JS 4s;
   -o-animation: animate-JS 4s;
 }
-
-#skill-React {
+.reveal-loaded [class*=reveal-] #skill-React {
   width: 60%;
   height: 70px;
   border-radius: 15px;
@@ -959,8 +966,7 @@ section h2 {
   -moz-animation: animate-React 4s;
   -o-animation: animate-React 4s;
 }
-
-#skill-Sass {
+.reveal-loaded [class*=reveal-] #skill-Sass {
   width: 90%;
   height: 70px;
   border-radius: 15px;
@@ -971,8 +977,7 @@ section h2 {
   -moz-animation: animate-Sass 4s;
   -o-animation: animate-Sass 4s;
 }
-
-#skill-Java {
+.reveal-loaded [class*=reveal-] #skill-Java {
   width: 70%;
   height: 70px;
   border-radius: 15px;
@@ -983,8 +988,7 @@ section h2 {
   -moz-animation: animate-Java 4s;
   -o-animation: animate-Java 4s;
 }
-
-#skill-PHP {
+.reveal-loaded [class*=reveal-] #skill-PHP {
   width: 30%;
   height: 70px;
   border-radius: 15px;
@@ -995,8 +999,7 @@ section h2 {
   -moz-animation: animate-PHP 4s;
   -o-animation: animate-PHP 4s;
 }
-
-#skill-C\# {
+.reveal-loaded [class*=reveal-] #skill-C\# {
   width: 20%;
   height: 70px;
   border-radius: 15px;
@@ -1007,8 +1010,7 @@ section h2 {
   -moz-animation: animate-C\# 4s;
   -o-animation: animate-C\# 4s;
 }
-
-#skill-MongoDB {
+.reveal-loaded [class*=reveal-] #skill-MongoDB {
   width: 65%;
   height: 70px;
   border-radius: 15px;
@@ -1019,10 +1021,9 @@ section h2 {
   -moz-animation: animate-MongoDB 6s;
   -o-animation: animate-MongoDB 6s;
 }
-
 @keyframes animate-HTML {
   from {
-    width: 10px;
+    width: 15px;
   }
   to {
     width: 90%;
@@ -1030,7 +1031,7 @@ section h2 {
 }
 @keyframes animate-CSS {
   from {
-    width: 10px;
+    width: 15px;
   }
   to {
     width: 70%;
@@ -1038,7 +1039,7 @@ section h2 {
 }
 @keyframes animate-JS {
   from {
-    width: 10px;
+    width: 15px;
   }
   to {
     width: 60%;
@@ -1046,7 +1047,7 @@ section h2 {
 }
 @keyframes animate-React {
   from {
-    width: 10px;
+    width: 15px;
   }
   to {
     width: 60%;
@@ -1054,7 +1055,7 @@ section h2 {
 }
 @keyframes animate-Sass {
   from {
-    width: 10px;
+    width: 15px;
   }
   to {
     width: 90%;
@@ -1062,7 +1063,7 @@ section h2 {
 }
 @keyframes animate-Java {
   from {
-    width: 10px;
+    width: 15px;
   }
   to {
     width: 70%;
@@ -1070,7 +1071,7 @@ section h2 {
 }
 @keyframes animate-PHP {
   from {
-    width: 10px;
+    width: 15px;
   }
   to {
     width: 30%;
@@ -1078,7 +1079,7 @@ section h2 {
 }
 @keyframes animate-C\# {
   from {
-    width: 10px;
+    width: 15px;
   }
   to {
     width: 20%;
@@ -1086,10 +1087,116 @@ section h2 {
 }
 @keyframes animate-MongoDB {
   from {
-    width: 10px;
+    width: 15px;
   }
   to {
     width: 65%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal [class*=reveal-] {
+    opacity: 1 !important;
+    transform: translateY(0px) !important;
+  }
+  .reveal [class*=reveal-] #skill-HTML {
+    width: 90%;
+    height: 70px;
+    border-radius: 15px;
+    position: absolute;
+    background-color: #c39c27;
+    animation: animate-HTML 5s;
+    -webkit-animation: animate-HTML 5s;
+    -moz-animation: animate-HTML 5s;
+    -o-animation: animate-HTML 5s;
+  }
+  .reveal [class*=reveal-] #skill-CSS {
+    width: 70%;
+    height: 70px;
+    border-radius: 15px;
+    position: absolute;
+    background-color: #068a69;
+    animation: animate-CSS 5s;
+    -webkit-animation: animate-CSS 5s;
+    -moz-animation: animate-CSS 5s;
+    -o-animation: animate-CSS 5s;
+  }
+  .reveal [class*=reveal-] #skill-JS {
+    width: 60%;
+    height: 70px;
+    border-radius: 15px;
+    position: absolute;
+    background-color: #5e2066;
+    animation: animate-JS 4s;
+    -webkit-animation: animate-JS 4s;
+    -moz-animation: animate-JS 4s;
+    -o-animation: animate-JS 4s;
+  }
+  .reveal [class*=reveal-] #skill-React {
+    width: 60%;
+    height: 70px;
+    border-radius: 15px;
+    position: absolute;
+    background-color: #7b84e6;
+    animation: animate-React 4s;
+    -webkit-animation: animate-React 4s;
+    -moz-animation: animate-React 4s;
+    -o-animation: animate-React 4s;
+  }
+  .reveal [class*=reveal-] #skill-Sass {
+    width: 90%;
+    height: 70px;
+    border-radius: 15px;
+    position: absolute;
+    background-color: #0ea452;
+    animation: animate-Sass 4s;
+    -webkit-animation: animate-Sass 4s;
+    -moz-animation: animate-Sass 4s;
+    -o-animation: animate-Sass 4s;
+  }
+  .reveal [class*=reveal-] #skill-Java {
+    width: 70%;
+    height: 70px;
+    border-radius: 15px;
+    position: absolute;
+    background-color: #d55e43;
+    animation: animate-Java 4s;
+    -webkit-animation: animate-Java 4s;
+    -moz-animation: animate-Java 4s;
+    -o-animation: animate-Java 4s;
+  }
+  .reveal [class*=reveal-] #skill-PHP {
+    width: 30%;
+    height: 70px;
+    border-radius: 15px;
+    position: absolute;
+    background-color: #51b5df;
+    animation: animate-PHP 4s;
+    -webkit-animation: animate-PHP 4s;
+    -moz-animation: animate-PHP 4s;
+    -o-animation: animate-PHP 4s;
+  }
+  .reveal [class*=reveal-] #skill-C\# {
+    width: 20%;
+    height: 70px;
+    border-radius: 15px;
+    position: absolute;
+    background-color: #8c1b1b;
+    animation: animate-C\# 4s;
+    -webkit-animation: animate-C\# 4s;
+    -moz-animation: animate-C\# 4s;
+    -o-animation: animate-C\# 4s;
+  }
+  .reveal [class*=reveal-] #skill-MongoDB {
+    width: 65%;
+    height: 70px;
+    border-radius: 15px;
+    position: absolute;
+    background-color: #3a41a6;
+    animation: animate-MongoDB 6s;
+    -webkit-animation: animate-MongoDB 6s;
+    -moz-animation: animate-MongoDB 6s;
+    -o-animation: animate-MongoDB 6s;
   }
 }
 .responsive-section__title {

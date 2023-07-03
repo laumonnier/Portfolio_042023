@@ -6,6 +6,7 @@ $invalid-color:#890627;
 $white-color: #fff;
 $light-grey-color: #eeeded;
 $light-grey-alpha45-color: #eeeded45;
+$light-grey-alpha95-color: #eeeded95;
 $grey-alpha70-color: #75747470;
 $grey-alpha90-color: #75747490;
 $black-color: black;
@@ -70,7 +71,7 @@ $background-section:(
     ),
     expertise-section:(
         width: 100vw,
-        bg: $light-grey-alpha45-color,
+        bg: $light-grey-alpha95-color,
         // bg: url(../../public/images/concept-logiciel-developpement-codage-langage-programmation.jpg) top/cover no-repeat,
         max-hgt: calc(300px + 70vw),
         hgt: auto,
@@ -320,6 +321,9 @@ $about-appear-image-data:(
 );
 
 $breakpoints:(
-    mobile: 767px,
-    tablet: 991px
+    smartphone: 320px,
+    smartphone_landscape: 480px, 
+    tablet: 768px,
+    desktop: 980px,
+    big_desktop:1200px,
 );
