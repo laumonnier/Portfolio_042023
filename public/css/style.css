@@ -132,7 +132,7 @@ section {
   cursor: pointer;
 }
 .socials__link--around:hover i {
-  color: #c39c27;
+  color: #51b5df;
 }
 .socials a {
   text-decoration: none;
@@ -231,6 +231,9 @@ section {
   width: calc(6rem + 1.1vw);
   border: 3px solid black;
   border-radius: 10px;
+}
+.header .socials i:hover {
+  color: #51b5df;
 }
 
 .main {
@@ -482,6 +485,12 @@ section h2 {
   text-align: center;
   color: #929292;
 }
+.about-section__text {
+  width: 100%;
+  text-align: justify;
+  margin: auto;
+  font-size: calc(4px + 1.6vw);
+}
 .about-section .as-grid {
   width: 90%;
   margin: auto;
@@ -529,19 +538,12 @@ section h2 {
 }
 
 #as-g__col1 {
-  border: 2px dashed red;
   padding: 10px;
 }
 
-#image {
-  z-index: 7;
-}
-
 #as-g__col2 {
-  z-index: 1;
   position: relative;
   overflow: hidden;
-  border: 2px dashed red;
   padding: 10px;
   background-color: #eeeded;
 }
@@ -601,16 +603,8 @@ section h2 {
   top: 25px;
   left: 3vw;
 }
-#as-g__col2--like-programming {
-  animation-delay: 5s;
-  animation-duration: 7s;
-  animation-direction: normal;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
 
 #as-g__col3 {
-  border: 2px dashed red;
   padding: 10px;
 }
 
@@ -873,7 +867,7 @@ section h2 {
   text-align: left;
   width: 95%;
   height: auto;
-  font-size: 20px;
+  font-size: calc(4px + 2.3vw);
   margin: 40px auto;
   border: 1px solid black;
   padding: 10px;
@@ -882,7 +876,7 @@ section h2 {
 
 .skillBar {
   width: 90%;
-  height: 70px;
+  height: calc(10px + 3vw);
   position: relative;
   background: rgba(117, 116, 116, 0.4392156863);
   padding-left: -20px;
@@ -894,7 +888,7 @@ section h2 {
   z-index: 1;
   float: left;
   position: absolute;
-  margin: 15px 0 0 15px;
+  margin: calc(0.5px + 0.35vw) 0 0 15px;
   padding-left: 30px;
   text-shadow: none;
   color: #fff;
@@ -905,7 +899,7 @@ section h2 {
   z-index: 3;
   position: relative;
   padding-right: 15px;
-  margin-top: 15px;
+  margin-top: calc(0.5px + 0.35vw);
   float: right;
   text-shadow: none;
   color: #fff;
@@ -924,7 +918,7 @@ section h2 {
 }
 .reveal-loaded [class*=reveal-] #skill-HTML {
   width: 90%;
-  height: 70px;
+  height: calc(10px + 3vw);
   border-radius: 15px;
   position: absolute;
   background-color: #c39c27;
@@ -935,7 +929,7 @@ section h2 {
 }
 .reveal-loaded [class*=reveal-] #skill-CSS {
   width: 70%;
-  height: 70px;
+  height: calc(10px + 3vw);
   border-radius: 15px;
   position: absolute;
   background-color: #068a69;
@@ -946,7 +940,7 @@ section h2 {
 }
 .reveal-loaded [class*=reveal-] #skill-JS {
   width: 60%;
-  height: 70px;
+  height: calc(10px + 3vw);
   border-radius: 15px;
   position: absolute;
   background-color: #5e2066;
@@ -957,7 +951,7 @@ section h2 {
 }
 .reveal-loaded [class*=reveal-] #skill-React {
   width: 60%;
-  height: 70px;
+  height: calc(10px + 3vw);
   border-radius: 15px;
   position: absolute;
   background-color: #7b84e6;
@@ -968,7 +962,7 @@ section h2 {
 }
 .reveal-loaded [class*=reveal-] #skill-Sass {
   width: 90%;
-  height: 70px;
+  height: calc(10px + 3vw);
   border-radius: 15px;
   position: absolute;
   background-color: #0ea452;
@@ -979,7 +973,7 @@ section h2 {
 }
 .reveal-loaded [class*=reveal-] #skill-Java {
   width: 70%;
-  height: 70px;
+  height: calc(10px + 3vw);
   border-radius: 15px;
   position: absolute;
   background-color: #d55e43;
@@ -990,7 +984,7 @@ section h2 {
 }
 .reveal-loaded [class*=reveal-] #skill-PHP {
   width: 30%;
-  height: 70px;
+  height: calc(10px + 3vw);
   border-radius: 15px;
   position: absolute;
   background-color: #51b5df;
@@ -1001,7 +995,7 @@ section h2 {
 }
 .reveal-loaded [class*=reveal-] #skill-C\# {
   width: 20%;
-  height: 70px;
+  height: calc(10px + 3vw);
   border-radius: 15px;
   position: absolute;
   background-color: #8c1b1b;
@@ -1012,7 +1006,7 @@ section h2 {
 }
 .reveal-loaded [class*=reveal-] #skill-MongoDB {
   width: 65%;
-  height: 70px;
+  height: calc(10px + 3vw);
   border-radius: 15px;
   position: absolute;
   background-color: #3a41a6;
@@ -1101,7 +1095,7 @@ section h2 {
   }
   .reveal [class*=reveal-] #skill-HTML {
     width: 90%;
-    height: 70px;
+    height: calc(10px + 3vw);
     border-radius: 15px;
     position: absolute;
     background-color: #c39c27;
@@ -1112,7 +1106,7 @@ section h2 {
   }
   .reveal [class*=reveal-] #skill-CSS {
     width: 70%;
-    height: 70px;
+    height: calc(10px + 3vw);
     border-radius: 15px;
     position: absolute;
     background-color: #068a69;
@@ -1123,7 +1117,7 @@ section h2 {
   }
   .reveal [class*=reveal-] #skill-JS {
     width: 60%;
-    height: 70px;
+    height: calc(10px + 3vw);
     border-radius: 15px;
     position: absolute;
     background-color: #5e2066;
@@ -1134,7 +1128,7 @@ section h2 {
   }
   .reveal [class*=reveal-] #skill-React {
     width: 60%;
-    height: 70px;
+    height: calc(10px + 3vw);
     border-radius: 15px;
     position: absolute;
     background-color: #7b84e6;
@@ -1145,7 +1139,7 @@ section h2 {
   }
   .reveal [class*=reveal-] #skill-Sass {
     width: 90%;
-    height: 70px;
+    height: calc(10px + 3vw);
     border-radius: 15px;
     position: absolute;
     background-color: #0ea452;
@@ -1156,7 +1150,7 @@ section h2 {
   }
   .reveal [class*=reveal-] #skill-Java {
     width: 70%;
-    height: 70px;
+    height: calc(10px + 3vw);
     border-radius: 15px;
     position: absolute;
     background-color: #d55e43;
@@ -1167,7 +1161,7 @@ section h2 {
   }
   .reveal [class*=reveal-] #skill-PHP {
     width: 30%;
-    height: 70px;
+    height: calc(10px + 3vw);
     border-radius: 15px;
     position: absolute;
     background-color: #51b5df;
@@ -1178,7 +1172,7 @@ section h2 {
   }
   .reveal [class*=reveal-] #skill-C\# {
     width: 20%;
-    height: 70px;
+    height: calc(10px + 3vw);
     border-radius: 15px;
     position: absolute;
     background-color: #8c1b1b;
@@ -1189,7 +1183,7 @@ section h2 {
   }
   .reveal [class*=reveal-] #skill-MongoDB {
     width: 65%;
-    height: 70px;
+    height: calc(10px + 3vw);
     border-radius: 15px;
     position: absolute;
     background-color: #3a41a6;

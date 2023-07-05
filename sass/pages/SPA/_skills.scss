@@ -48,7 +48,7 @@
     text-align: left;
     width: 95%;
     height: auto;
-    font-size: 20px;
+    font-size: calc(4px + 2.3vw);
     margin: 40px auto;
     border: 1px solid $black-color;
     padding: 10px;
@@ -57,7 +57,7 @@
 
 .skillBar {
     width: 90%;
-    height: 70px;
+    height: calc(10px + 3vw);
     position: relative;
     background: $grey-alpha70-color;
     padding-left: -20px;
@@ -69,7 +69,7 @@
     z-index: 1;
     float: left;
     position: absolute;
-    margin: 15px 0 0 15px;
+    margin: calc(0.5px + 0.35vw) 0 0 15px;
     padding-left: 30px;
     text-shadow: none;
     color: $white-color;
@@ -80,7 +80,7 @@
     z-index: 3;
     position: relative;
     padding-right: 15px;
-    margin-top: 15px;
+    margin-top: calc(0.5px + 0.35vw);
     float: right;
     text-shadow: none;
     color: $white-color;

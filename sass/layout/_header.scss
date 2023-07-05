@@ -29,4 +29,9 @@
         border: 3px solid black;
         border-radius: 10px;
     }
+    .socials {
+        i:hover {
+            color: $ocean-blue-color;
+        }
+    }
 }

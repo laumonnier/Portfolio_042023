@@ -1,19 +1,26 @@
 /*section about*/
 .about-section {
-    &__title{
+    &__title {
         h2 {
             // mix-blend-mode: exclusion; // Permet de faire le mix des différents éléments
             // display: block;
         @include section-title-shadow;
         }
     }
-    &__subtitle{
+    &__subtitle {
         h3{
             text-align: center;
             color: $grey-light-dark-color;
         }
     }
-    .as-grid{
+    &__text {
+        width: 100%;
+        // min-width: 270px;
+        text-align: justify;
+        margin: auto;
+        font-size: calc(4px + 1.6vw);
+    }
+    .as-grid {
         width: 90%;
         margin: auto;
         // display: grid;
@@ -22,17 +29,17 @@
         // gap: 2rem;
         // border: 2px solid $black-color;
         // padding: 5px;
-        h4{
+        h4 {
             text-align: center;
             color: $dark-grey-color;
             text-decoration: underline;
         }
-        &__item{
+        &__item {
             width: 100%;
             // background: url("./../../public/images/fond-en-bois-clair_horizontal.jpg") center/cover ;
             padding: .8rem;
             text-align: justify;
-            &--1{
+            &--1 {
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-template-rows: 1fr;
@@ -40,7 +47,7 @@
                 border: 2px solid $black-color;
                 padding: 5px;
             }
-            &--2{
+            &--2 {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-rows: 1fr;
@@ -48,7 +55,7 @@
                 border: 2px solid $black-color;
                 padding: 5px;
             }
-            &--3{
+            &--3 {
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-template-rows: 1fr;
@@ -57,19 +64,10 @@
                 padding: 5px;
             }
         }
-    }
-    
-        // p {
-        //     width: 100%;
-        //     // min-width: 270px;
-        //     text-align: justify;
-        //     margin: auto;
-        //     line-height: calc(3px + 2.3vw);
-        // }
-    
+    }   
 }
 
-.story-life-container{
+.story-life-container {
     &__text-life {
         font-size: calc(4px + 1.4vw);
         position: absolute;
@@ -79,38 +77,19 @@
 }
 
 #as-g__col1 {
-    border: 2px dashed red;
     padding: 10px;
     // background-color: $light-grey-color;
 }
 
-#image {
-    z-index: 7;
-}
-
 #as-g__col2 {
-    z-index: 1;
     position: relative;
     overflow: hidden;
-    // display: flex;
-    // flex-direction: column;
-    border: 2px dashed red;
     padding: 10px;
     background-color: $light-grey-color;
     @include about-story-life($about-appear-image-data);
-    &--like-programming {
-        animation-delay: 5s;
-        animation-duration: 7s;
-        animation-direction: normal;
-        // animation-name: glissement-right;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-    }
 }
 
 #as-g__col3 {
-    // z-index: 3;
-    border: 2px dashed red;
     padding: 10px;
     // background-color: $light-grey-color;
 }

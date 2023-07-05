@@ -16,16 +16,16 @@
             transform: scale(1.07);
         }
     }
-    &__text{
+    &__text {
         position: absolute;
         @include section-text;
         top: 18%;
         letter-spacing: 5px;
     }
-    &__name{
+    &__name {
         line-height: calc(6px + 5vw);
     }
-    &__title{
+    &__title {
         h2{
             font-size: calc(map-get($map: $font-size, $key: h2) + 1.98vw);
         }        

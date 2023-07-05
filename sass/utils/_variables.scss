@@ -94,10 +94,12 @@ $background-section:(
     ),
 );
 
+$height-skill-color-bar: calc(10px + 3vw);
+
 $skills-datas:(
     skill-HTML:(
         wdh: 90%,
-        ht: 70px,
+        ht: $height-skill-color-bar,
         bder-rduis: 15px,
         ption: absolute,
         bc: $yellow-color,
@@ -108,7 +110,7 @@ $skills-datas:(
     ),
     skill-CSS:(
         wdh: 70%,
-        ht: 70px,
+        ht: $height-skill-color-bar,
         bder-rduis: 15px,
         ption: absolute,
         bc: $primary-color,
@@ -119,7 +121,7 @@ $skills-datas:(
     ),
     skill-JS:(
         wdh: 60%,
-        ht: 70px,
+        ht: $height-skill-color-bar,
         bder-rduis: 15px,
         ption: absolute,
         bc: $purple-color,
@@ -130,7 +132,7 @@ $skills-datas:(
     ),
     skill-React:(
         wdh: 60%,
-        ht: 70px,
+        ht: $height-skill-color-bar,
         bder-rduis: 15px,
         ption: absolute,
         bc: $light-blue-color,
@@ -141,7 +143,7 @@ $skills-datas:(
     ),
     skill-Sass:(
         wdh: 90%,
-        ht: 70px,
+        ht: $height-skill-color-bar,
         bder-rduis: 15px,
         ption: absolute,
         bc: $green-color,
@@ -152,7 +154,7 @@ $skills-datas:(
     ),
     skill-Java:(
         wdh: 70%,
-        ht: 70px,
+        ht: $height-skill-color-bar,
         bder-rduis: 15px,
         ption: absolute,
         bc: $orange-color,
@@ -163,7 +165,7 @@ $skills-datas:(
     ),
     skill-PHP:(
         wdh: 30%,
-        ht: 70px,
+        ht: $height-skill-color-bar,
         bder-rduis: 15px,
         ption: absolute,
         bc: $ocean-blue-color,
@@ -174,7 +176,7 @@ $skills-datas:(
     ),
     skill-C\#: (
         wdh: 20%,
-        ht: 70px,
+        ht: $height-skill-color-bar,
         bder-rduis: 15px,        
         ption: absolute,
         bc: $red-color,
@@ -185,7 +187,7 @@ $skills-datas:(
     ),
     skill-MongoDB:(
         wdh: 65%,
-        ht: 70px,
+        ht: $height-skill-color-bar,
         bder-rduis: 15px,
         ption: absolute,
         bc: $dark-blue-color,
