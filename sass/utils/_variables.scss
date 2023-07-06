@@ -4,7 +4,7 @@ $secondary-color: #81e4c6;
 $tertiary-color: #e6b328;
 $invalid-color:#890627;
 $white-color: #fff;
-$light-grey-color: #eeeded;
+$light-grey-color: #fdfcfc;
 $light-grey-alpha45-color: #eeeded45;
 $light-grey-alpha95-color: #eeeded95;
 $grey-alpha70-color: #75747470;
@@ -18,7 +18,7 @@ $ocean-blue-color:#51b5df;
 $dark-blue-color:#3a41a6;
 $green-color:#0ea452;
 $orange-color:#d55e43;
-$grey-light-dark-color:#929292;
+$grey-light-dark-color:#888787;
 $dark-grey-color:#474646;
 $selection-bg-color:#000101;
 $grey-transparent-color:#03030390;
@@ -265,60 +265,59 @@ $home-appear-title-line:(
 $about-appear-image-data:(
     like-programming:(
         wdth: 22vw,
-        // hgt: calc(200px + 12vw),
         pstion: absolute,
         z-ind: 7,
         top: 25px,
-        left: 3.6vw,
+        left: 10.6vw,
     ),
     autodidact:(
         wdth: 25vw,
         pstion: absolute,
         z-ind: 2,
         top: 25px,
-        left: 1.6vw,
+        left: 9.2vw,
     ),
     career-transition:(
         wdth: 25vw,
         pstion: absolute,
         z-ind: 2,
         top: 25px,
-        left: 1.6vw,
+        left: 9.2vw,
     ),
     degree:(
         wdth: 25vw,
         pstion: absolute,
         z-ind: 2,
         top: 25px,
-        left: 1.6vw,
+        left: 9.2vw,
     ),
     coding-langage:(
         wdth: 25vw,
         pstion: absolute,
         z-ind: 2,
         top: 25px,
-        left: 1.6vw,
+        left: 9.2vw,
     ),
     coding-project:(
         wdth: 25vw,
         pstion: absolute,
         z-ind: 2,
         top: 25px,
-        left: 1.6vw,
+        left: 9.2vw,
     ),
     coding-project2:(
         wdth: 25vw,
         pstion: absolute,
         z-ind: 2,
         top: 25px,
-        left: 1.6vw,
+        left: 9.2vw,
     ),
     computer:(
         wdth: 23.5vw,
         pstion: absolute,
         z-ind: 2,
         top: 25px,
-        left: 3vw,
+        left: 9.2vw,
     ),
 );
 

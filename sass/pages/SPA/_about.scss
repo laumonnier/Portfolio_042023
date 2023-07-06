@@ -1,5 +1,6 @@
 /*section about*/
 .about-section {
+    line-height: 1.5;
     &__title {
         h2 {
             // mix-blend-mode: exclusion; // Permet de faire le mix des différents éléments
@@ -15,28 +16,23 @@
     }
     &__text {
         width: 100%;
-        // min-width: 270px;
-        text-align: justify;
-        margin: auto;
         font-size: calc(4px + 1.6vw);
+        color: $grey-light-dark-color;
+        font-weight: 500;
+        text-align: justify;
+        margin: calc(1px + 1.2vw) auto auto;
     }
     .as-grid {
         width: 90%;
         margin: auto;
-        // display: grid;
-        // grid-template-columns: repeat(2, 1fr);
-        // grid-template-rows: repeat(2, 1fr);
-        // gap: 2rem;
-        // border: 2px solid $black-color;
-        // padding: 5px;
-        h4 {
+        h4{
             text-align: center;
             color: $dark-grey-color;
             text-decoration: underline;
+            font-weight: 600;
         }
         &__item {
             width: 100%;
-            // background: url("./../../public/images/fond-en-bois-clair_horizontal.jpg") center/cover ;
             padding: .8rem;
             text-align: justify;
             &--1 {
@@ -45,15 +41,15 @@
                 grid-template-rows: 1fr;
                 gap: 2rem;
                 border: 2px solid $black-color;
-                padding: 5px;
+                padding: calc(5px + 2.2vw) 10px ;
             }
             &--2 {
                 display: grid;
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: 1fr;
                 gap: 2rem;
                 border: 2px solid $black-color;
-                padding: 5px;
+                padding: calc(5px + 2.2vw) 10px;
             }
             &--3 {
                 display: grid;
@@ -61,14 +57,15 @@
                 grid-template-rows: 1fr;
                 gap: 2rem;
                 border: 2px solid $black-color;
-                padding: 5px;
+                padding: 10px;
             }
         }
     }   
 }
 
-.story-life-container {
+.storyLife-container {
     &__text-life {
+        width: 95%;
         font-size: calc(4px + 1.4vw);
         position: absolute;
         text-align: center;
@@ -77,11 +74,16 @@
 }
 
 #as-g__col1 {
-    padding: 10px;
-    // background-color: $light-grey-color;
+    &--par1 {
+        padding: calc(5px + 2.2vw) 0;
+    }
+    &--par2 {
+        padding: calc(5px + 2.2vw) 10px;
+    }
 }
 
 #as-g__col2 {
+    color: $grey-light-dark-color;
     position: relative;
     overflow: hidden;
     padding: 10px;
@@ -89,59 +91,11 @@
     @include about-story-life($about-appear-image-data);
 }
 
-#as-g__col3 {
-    padding: 10px;
-    // background-color: $light-grey-color;
-}
-
 .appearance {
     animation-name: appearance;
     animation-duration: 3s;
     & img {
         border-radius: 50px;
-    }
-}
-
-@keyframes glissement-right {
-    from {
-        opacity: 0;
-        width: 22vw;
-        // top: 25px;
-        // left: 3vw;
-        transform: translateX(-30vw);
-        // margin-left: 100%;
-        // width: 300%;
-    }
-    35% {
-        opacity: 0;
-        width: 22vw;
-        // top: 25px;
-        // left: 3vw;
-        transform: translateX(-20vw);
-    }
-    50% {
-        opacity: 1;
-        width: 22vw;
-        // top: 25px;
-        // left: 3vw;
-        transform: translateX(0vw);
-    }
-    65% {
-        opacity: 1;
-        width: 22vw;
-        // top: 25px;
-        // left: 3vw;
-        transform: translateX(0vw);
-    }
-
-    to {
-        opacity: 0 ;
-        width: 22vw;
-        // top: 25px;
-        // left: 3vw;
-        transform: translateX(30vw);
-        margin-left: 0%;
-        
     }
 }
 
