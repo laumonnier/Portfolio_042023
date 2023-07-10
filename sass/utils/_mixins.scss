@@ -25,7 +25,6 @@
 
 @mixin section-text {
     z-index: 2;
-    // position: absolute;
     text-align: center;
     left: 0;
     right: 0;
@@ -132,9 +131,6 @@
             position: map-get($map: $data, $key: ption);
             background-color: map-get($map: $data, $key: bc);
             animation: map-get($map: $data, $key: anim);
-            -webkit-animation: map-get($map: $data, $key: -wbkit-anim);
-            -moz-animation: map-get($map: $data, $key: -mz-anim);
-            -o-animation: map-get($map: $data, $key: -o-anim);
         }
     }
 }
@@ -163,4 +159,33 @@
     color: $black-color;
 }
 
+@mixin mobile-only {
+    @media screen and (max-width: map-get($breakpoints, smartphone)) {
+        @content;
+    }
+}
+
+@mixin mobile-landscape {
+    @media screen and (max-width: map-get($breakpoints, smartphone_landscape)) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (max-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}
+
+@mixin big-desktop {
+    @media screen and (max-width: map-get($breakpoints, big_desktop)) {
+        @content;
+    }
+}
 /*@mixin socials à faire*/

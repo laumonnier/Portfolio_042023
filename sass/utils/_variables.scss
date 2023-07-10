@@ -33,7 +33,7 @@ $font-family-title-animation: 'Bungee Inline','Noto Sans','Merriweather','Poppin
 $font-family-loading-spinner: "Dancing Script", 'Poppins', 'Roboto', 'sans-serif';
 $font-family-skills: 'Nunito', 'Noto Sans', 'Poppins', 'Roboto', sans-serif;
 
-$font-size:(h1:calc(0.45rem + 1.8vw), h2:calc(0.45rem + 1.5vw), h3:calc(0.35rem + 1.5vw), h4:calc(0.25rem + 0.85vw), logo:4rem, quote:6rem, heading: 5rem, project-heading: 4rem, nav-heading: 1.1rem, social-heading: 1.1rem, social-footer: 1.6rem, label: 3rem, footer-contact: 0.77rem, footer-quick-title: 1.6rem);
+$font-size:(h1:calc(0.45rem + 1.8vw), h2:calc(0.45rem + 1.5vw), h3:calc(0.35rem + 1.5vw), h4:calc(0.25rem + 0.85vw), logo:4rem, quote:6rem, heading: 5rem, home-title:calc(0.35rem + 3.98vw), project-heading: 4rem, nav-heading: 1.1rem, social-heading: 1.1rem, social-footer: 1.6rem, label: 3rem, footer-contact: 0.77rem, footer-quick-title: 1.6rem);
 $text-shadow-offset:(logo:0.3rem);
 // $font-weight:(logo: 700, quote: 500, heading: 400, project-heading: 550, )
 
@@ -103,10 +103,7 @@ $skills-datas:(
         bder-rduis: 15px,
         ption: absolute,
         bc: $yellow-color,
-        anim: animate-HTML 5s,
-        -wbkit-anim: animate-HTML 5s,
-        -mz-anim: animate-HTML 5s,
-        -o-anim: animate-HTML 5s,  
+        anim: animate-HTML 5s,  
     ),
     skill-CSS:(
         wdh: 70%,
@@ -115,9 +112,6 @@ $skills-datas:(
         ption: absolute,
         bc: $primary-color,
         anim: animate-CSS 5s,
-        -wbkit-anim: animate-CSS 5s,
-        -mz-anim: animate-CSS 5s,
-        -o-anim: animate-CSS 5s,
     ),
     skill-JS:(
         wdh: 60%,
@@ -126,9 +120,6 @@ $skills-datas:(
         ption: absolute,
         bc: $purple-color,
         anim: animate-JS 4s,
-        -wbkit-anim: animate-JS 4s,
-        -mz-anim: animate-JS 4s,
-        -o-anim: animate-JS 4s,
     ),
     skill-React:(
         wdh: 60%,
@@ -137,9 +128,6 @@ $skills-datas:(
         ption: absolute,
         bc: $light-blue-color,
         anim: animate-React 4s,
-        -wbkit-anim: animate-React 4s,
-        -mz-anim: animate-React 4s,
-        -o-anim: animate-React 4s,
     ),
     skill-Sass:(
         wdh: 90%,
@@ -148,9 +136,6 @@ $skills-datas:(
         ption: absolute,
         bc: $green-color,
         anim: animate-Sass 4s,
-        -wbkit-anim: animate-Sass 4s,
-        -mz-anim: animate-Sass 4s,
-        -o-anim: animate-Sass 4s,
     ),
     skill-Java:(
         wdh: 70%,
@@ -159,9 +144,6 @@ $skills-datas:(
         ption: absolute,
         bc: $orange-color,
         anim: animate-Java 4s,
-        -wbkit-anim: animate-Java 4s,
-        -mz-anim: animate-Java 4s,
-        -o-anim: animate-Java 4s,
     ),
     skill-PHP:(
         wdh: 30%,
@@ -170,9 +152,6 @@ $skills-datas:(
         ption: absolute,
         bc: $ocean-blue-color,
         anim: animate-PHP 4s,
-        -wbkit-anim: animate-PHP 4s,
-        -mz-anim: animate-PHP 4s,
-        -o-anim: animate-PHP 4s,
     ),
     skill-C\#: (
         wdh: 20%,
@@ -181,9 +160,6 @@ $skills-datas:(
         ption: absolute,
         bc: $red-color,
         anim: animate-C\# 4s,
-        -wbkit-anim: animate-C\# 4s,
-        -mz-anim: animate-C\# 4s,
-        -o-anim: animate-C\# 4s,
     ),
     skill-MongoDB:(
         wdh: 65%,
@@ -192,17 +168,7 @@ $skills-datas:(
         ption: absolute,
         bc: $dark-blue-color,
         anim: animate-MongoDB 6s,
-        -wbkit-anim: animate-MongoDB 6s,
-        -mz-anim: animate-MongoDB 6s,
-        -o-anim: animate-MongoDB 6s,
     ),
-);
-
-$keyframes-browser:(
-    anim: keyframes,
-    wbkit-anim: -webkit-keyframes,
-    mz-anim: -moz-keyframes,
-    o-anim: -o-keyframes
 );
 
 $keyframes-skills:(
@@ -325,6 +291,6 @@ $breakpoints:(
     smartphone: 320px,
     smartphone_landscape: 480px, 
     tablet: 768px,
-    desktop: 980px,
+    desktop: 992px,
     big_desktop:1200px,
 );

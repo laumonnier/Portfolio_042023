@@ -16,6 +16,7 @@ h1 {
 h2 {
     font-weight: 600;
     font-size: calc(map-get($map: $font-size, $key: h2) + 1.98vw);
+    margin-bottom: 50px;
 }
 
 h3 {
