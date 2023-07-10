@@ -21,14 +21,17 @@
         @include section-text;
         top: 18%;
         letter-spacing: 5px;
+        padding-top: calc(10px + 2vw);
     }
     &__name {
         line-height: calc(6px + 5vw);
+        padding-bottom: calc(5px + 2vw);
     }
     &__title {
         p{
             font-size: map-get($map: $font-size, $key: home-title);
-            font-weight: 500;
+            font-weight: 700;
+            color: $dark-grey-color;
         }        
     }    
 }

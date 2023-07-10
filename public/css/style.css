@@ -205,8 +205,8 @@ section {
 .header {
   z-index: 5;
   background-color: rgba(3, 3, 3, 0.5647058824);
-  height: calc(8rem + 3.98vw);
-  margin-top: 3.95rem;
+  height: calc(20px + 5.1vw);
+  margin-top: calc(5px + 3.2vw);
   position: fixed;
   display: flex;
   flex-direction: row;
@@ -219,7 +219,7 @@ section {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 2rem;
+  margin-left: 25px;
   color: black;
   text-shadow: 0.3rem 0.3rem #fff;
 }
@@ -228,8 +228,8 @@ section {
   font-style: italic;
 }
 .header img {
-  height: calc(6rem + 1.1vw);
-  width: calc(6rem + 1.1vw);
+  height: calc(20px + 3.5vw);
+  width: calc(20px + 3.5vw);
   border: 3px solid black;
   border-radius: 10px;
 }
@@ -657,13 +657,16 @@ section h2 {
   right: 0;
   top: 18%;
   letter-spacing: 5px;
+  padding-top: calc(10px + 2vw);
 }
 .home-section__name {
   line-height: calc(6px + 5vw);
+  padding-bottom: calc(5px + 2vw);
 }
 .home-section__title p {
   font-size: calc(0.35rem + 3.98vw);
-  font-weight: 500;
+  font-weight: 700;
+  color: #474646;
 }
 
 #hs-title-line2 {

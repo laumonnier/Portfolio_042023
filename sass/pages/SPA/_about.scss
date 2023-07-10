@@ -2,8 +2,6 @@
 .about-section {
     line-height: 1.5;
     &__title {
-            // mix-blend-mode: exclusion; // Permet de faire le mix des différents éléments
-            // display: block;
         @include section-title-shadow;
     }
     
