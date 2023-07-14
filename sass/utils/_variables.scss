@@ -35,25 +35,7 @@ $font-family-skills: 'Nunito', 'Noto Sans', 'Poppins', 'Roboto', sans-serif;
 
 $font-size:(h1:calc(0.45rem + 1.8vw), h2:calc(0.45rem + 1.5vw), h3:calc(0.35rem + 1.5vw), h4:calc(0.25rem + 0.85vw), logo:4rem, quote:6rem, heading: 5rem, home-title:calc(0.35rem + 3.98vw), project-heading: 4rem, nav-heading: 1.1rem, social-heading: 1.1rem, social-footer: 1.6rem, label: 3rem, footer-contact: 0.77rem, footer-quick-title: 1.6rem);
 $text-shadow-offset:(logo:0.3rem);
-// $font-weight:(logo: 700, quote: 500, heading: 400, project-heading: 550, )
 
-
-/*variables lists used for mixins*/
-$txt-input-palette:(
-    focus:(
-        txt: $white-color,
-        border: $primary-color,
-    ),
-    hover:(
-        txt: $black-color,
-        border: $primary-color,
-    ),
-    invalid:(
-        bg: $primary-color,
-        txt: $white-color,
-        border: $primary-color,
-    ),
-);
 
 $background-section:(
     home-section:(
@@ -286,6 +268,15 @@ $about-appear-image-data:(
         z-ind: 2,
         top: 21.8%,
         left: 12.8vw,
+    ),
+);
+
+$about-subsection2-paragraph:(
+    par1:(
+        pad: calc(5px + 0.8vw) 0,
+    ),
+    par2:(
+        pad: calc(5px + 1.4vw) 0,
     ),
 );
 

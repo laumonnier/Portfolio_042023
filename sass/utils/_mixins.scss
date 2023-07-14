@@ -61,10 +61,26 @@
     }
 }
 
+/******************************************************************************************/
+
+//mixin concerning "home" section
+
 @mixin home-appear-delay($delays){
     @each $line, $delay in $delays{
         ##{$line}{
            transition-delay: map-get($map: $delay, $key: td); 
+        }
+    }
+}
+
+/******************************************************************************************/
+
+//mixin concerning "about" section
+
+@mixin about-subsection2-paragraph($datas){
+    @each $paragraph, $data in $datas{
+        &--#{$paragraph}{
+            padding: map-get($map: $data, $key: pad);
         }
     }
 }
@@ -89,15 +105,9 @@
     padding: 0;
 }
 
-@mixin txt-input-palette($palettes){
-    @each $state, $palette in $palettes{
-        &:#{$state}{
-        background-color: map-get($map: $palette, $key: bg);
-        color: map-get($map: $palette, $key: txt);
-        border: 0.2rem solid map-get($map: $palette, $key: border);
-        } 
-    }
-}
+/******************************************************************************************/
+
+//mixin concerning the shadow of each section title
 
 @mixin section-title-shadow{
     text-shadow: 
@@ -121,6 +131,10 @@
         6px 22px 30px rgba( 0, 0, 0, .10);
     color: $dark-grey-color;
 }
+
+/******************************************************************************************/
+
+//mixin concerning "skills" section
 
 @mixin skills-datas($datas) {
     @each $skill, $data in $datas{
@@ -159,6 +173,10 @@
     color: $black-color;
 }
 
+/******************************************************************************************/
+
+//mixin concerning "breakpoints"
+
 @mixin mobile-only {
     @media screen and (max-width: map-get($breakpoints, smartphone)) {
         @content;
@@ -188,4 +206,6 @@
         @content;
     }
 }
+
+/******************************************************************************************/
 /*@mixin socials à faire*/
