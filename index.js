@@ -137,7 +137,7 @@ observerSkillsText.observe(document.querySelector('.appear'));
 class TextScramble {
     constructor(el) {
         this.el = el
-        this.chars = '!<>-_\\/[]{}-=+*^?#________'
+        this.chars = '!<>-_\\/[]{}-=+*^?#_______'
         this.update = this.update.bind(this)        
     }
     setText(newText) {

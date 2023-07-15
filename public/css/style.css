@@ -494,14 +494,6 @@ section h2 {
   text-align: center;
   color: #888787;
 }
-.about-section__subsection {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 90%;
-  margin: auto;
-}
 .about-section__text {
   width: 100%;
   font-size: calc(4px + 1.6vw);
@@ -510,8 +502,65 @@ section h2 {
   text-align: justify;
   margin: calc(1px + 1.2vw) auto auto;
 }
+.about-section .title-ctner-anim {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.about-section .title-ctner-anim__arrow-ctner {
+  position: relative;
+  width: calc(14px + 2.4vw);
+  height: calc(14px + 2.4vw);
+  margin: auto 0;
+  bottom: calc(16px + 0.2vw);
+  left: 0;
+  right: calc(15px + 1.8vw);
+}
+.about-section .title-ctner-anim__arrow-ctner--arrow-1 {
+  position: absolute;
+  width: calc(8px + 2.8vw);
+  height: calc(8px + 2.8vw);
+  background: #6323ec;
+  opacity: 0.5;
+  border-radius: 50%;
+  top: calc(9px + 0.76vw);
+  right: calc(1.7px + 0.101vw);
+}
+.about-section .title-ctner-anim__arrow-ctner--arrow-2 {
+  position: absolute;
+  width: calc(6px + 1.95vw);
+  height: calc(6px + 1.95vw);
+  background: #6323ec;
+  border-radius: 50%;
+  top: calc(10px + 1.18vw);
+  left: calc(4px + 0.06vw);
+  z-index: 3;
+  display: table;
+}
+.about-section .title-ctner-anim__arrow-ctner--arrow-2 i.fa-solid {
+  font-size: calc(2px + 0.85vw);
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+}
+.about-section .title-ctner-anim__arrow-ctner--arrow-2:before {
+  content: "";
+  width: calc(3px + 1.82vw);
+  height: calc(3px + 1.82vw);
+  border: calc(1.5px + 0.04vw) solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(1.3px + 0.088vw);
+  left: calc(1.3px + 0.088vw);
+}
 .about-section .as-subsection {
-  width: 99%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
   padding: 0.8rem;
   text-align: justify;
 }
@@ -524,13 +573,11 @@ section h2 {
 .about-section .as-subsection__1 {
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
   padding: calc(5px + 1.2vw) 10px calc(5px + 0.5vw);
 }
 .about-section .as-subsection__2 {
   display: flex;
   flex-direction: row;
-  border: 2px solid black;
   padding: calc(5px + 0.5vw) 10px calc(5px + 1.2vw);
 }
 .about-section .as-subsection__2--left {
@@ -544,14 +591,24 @@ section h2 {
 .about-section .as-subsection__3 {
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
   padding: 10px;
+}
+
+/* Custom Animate.css */
+.animated.hinge {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.zoomIn {
+  animation-name: zoomIn;
 }
 
 .storyLife-container {
   border-radius: 10px;
 }
 .storyLife-container__text-life {
+  color: #474646;
   width: 95%;
   font-size: calc(4px + 2.2vw);
   position: absolute;
@@ -571,9 +628,6 @@ section h2 {
 #as-sub2__left--par2 {
   padding: calc(5px + 1.4vw) 0;
 }
-#as-sub2__left h4 {
-  padding-bottom: calc(5px + 1.1vw);
-}
 #as-sub2__right {
   width: 50%;
   display: flex;
@@ -591,56 +645,56 @@ section h2 {
   position: absolute;
   z-index: 7;
   top: 7.8%;
-  left: 11.9vw;
+  left: 9.8vw;
 }
 #as-sub2__right--autodidact {
   width: 25vw;
   position: absolute;
   z-index: 2;
   top: 9.8%;
-  left: 10.3vw;
+  left: 8.2vw;
 }
 #as-sub2__right--career-transition {
   width: 25vw;
   position: absolute;
   z-index: 2;
   top: 12.8%;
-  left: 10.3vw;
+  left: 8.2vw;
 }
 #as-sub2__right--degree {
   width: 25vw;
   position: absolute;
   z-index: 2;
   top: 9.8%;
-  left: 10.3vw;
+  left: 8.2vw;
 }
 #as-sub2__right--coding-langage {
   width: 25vw;
   position: absolute;
   z-index: 2;
   top: 11.4%;
-  left: 10.3vw;
+  left: 8.2vw;
 }
 #as-sub2__right--coding-project {
   width: 25vw;
   position: absolute;
   z-index: 2;
   top: 9.8%;
-  left: 10.3vw;
+  left: 8.2vw;
 }
 #as-sub2__right--coding-project2 {
   width: 25vw;
   position: absolute;
   z-index: 2;
   top: 9.8%;
-  left: 10.3vw;
+  left: 8.2vw;
 }
 #as-sub2__right--computer {
   width: 23.5vw;
   position: absolute;
   z-index: 2;
   top: 9.8%;
-  left: 10.3vw;
+  left: 8.2vw;
 }
 #as-sub2__right p {
   border: 2px solid rgba(117, 116, 116, 0.5647058824);
@@ -658,6 +712,18 @@ section h2 {
   border-radius: 50px;
 }
 
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @keyframes appearance {
   from {
     opacity: 0.2;
