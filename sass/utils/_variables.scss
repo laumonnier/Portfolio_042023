@@ -4,6 +4,7 @@ $secondary-color: #81e4c6;
 $tertiary-color: #e6b328;
 $invalid-color:#890627;
 $white-color: #fff;
+$white-alpha85-color: #ffffff85;
 $light-grey-color: #fdfcfc;
 $light-grey-alpha75-color: #dcdcdcdf;
 $light-grey-alpha45-color: #eeeded45;
@@ -23,7 +24,7 @@ $orange-color:#d55e43;
 $grey-light-dark-color:#888787;
 $dark-grey-color:#474646;
 $selection-bg-color:#000101;
-$grey-transparent-color:#03030390;
+$black-alpha90-color:#03030390;
 $purple-color:#5e2066;
 $yellow-color:#c39c27;
 $light-blue-color:#7b84e6;
@@ -38,6 +39,7 @@ $font-family-skills: 'Nunito', 'Noto Sans', 'Poppins', 'Roboto', sans-serif;
 $font-size:(h1:calc(0.45rem + 1.8vw), h2:calc(0.45rem + 1.5vw), h3:calc(0.35rem + 1.5vw), h4:calc(0.25rem + 0.85vw), logo:4rem, quote:6rem, heading: 5rem, home-title:calc(0.35rem + 3.98vw), project-heading: 4rem, nav-heading: 1.1rem, social-heading: 1.1rem, social-footer: 1.6rem, label: 3rem, footer-contact: 0.77rem, footer-quick-title: 1.6rem);
 $text-shadow-offset:(logo:0.3rem);
 
+$menu-dropdown_WIDTH: 50px;    
 
 $background-section:(
     home-section:(

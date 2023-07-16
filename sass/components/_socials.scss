@@ -1,6 +1,9 @@
 /*Faire une mixin des liens sociaux pour ensuite les inclure dans .socials*/
 .socials {
     display: flex;
+    position: absolute;
+    right: 25px;
+    top: 30px;
     justify-content: center;
     align-items: center;
     margin-right: 2rem;
@@ -10,14 +13,17 @@
     &__link {
         display:inline-flex;
         text-align: center;
-        margin: 0 0.8rem;
+        margin: 0 10px;
         &--around {
+            // width: calc(20px + 2.5vw);
+            // height: calc(20px + 2.5vw);
             border: 1px solid $grey-alpha70-color;
             border-radius: 50%;
             background-color: $grey-alpha90-color;
             cursor: pointer;
             &:hover {
                 background-color: $light-grey-alpha45-color;
+                box-shadow: 1px -2px 5px 5px $white-alpha85-color, 1px 4px 5px 5px $white-alpha85-color;
                 cursor: pointer;
                 i {
                     color: $ocean-blue-color;
@@ -29,8 +35,5 @@
         text-decoration: none;
         color: $white-color;
         font-size: calc(map-get($font-size, social-heading) + 0.98vw);
-    }
-    i {
-        padding: 0 18px;
     }
 }

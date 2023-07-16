@@ -7,6 +7,11 @@ body {
     line-height: 1.7;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 h1 {
     font-weight: 400;
     font-size: calc(map-get($map: $font-size, $key: h1) + 1.98vw);

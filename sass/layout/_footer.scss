@@ -63,25 +63,28 @@
             font-size: calc(map-get($font-size, social-footer) + 1.5vw);
             margin: 0 calc(0.5rem + 1.2vw);
         }
-        i:hover {
-            color: $ocean-blue-color;
+        i {
+            @include socials-around("footer");
+            &:hover {
+                color: $ocean-blue-color;
+            }
         }
     }
 }
 
-// .around {
-//     border: 1px solid $grey-alpha70-color;
-//     border-radius: 50%;
-//     background-color: $grey-alpha90-color;
-//     cursor: pointer;
-//     &:hover {
-//         background-color: $light-grey-alpha45-color;
-//         cursor: pointer;
-//         i {
-//             color: $yellow-color;
-//         }
-//     }
-// }
+.around {
+    border: 1px solid $grey-alpha70-color;
+    border-radius: 50%;
+    background-color: $grey-alpha90-color;
+    cursor: pointer;
+    &:hover {
+        background-color: $light-grey-alpha45-color;
+        cursor: pointer;
+        i {
+            color: $yellow-color;
+        }
+    }
+}
 
 //Corresponds to the different animations of the file
 @keyframes animLinkFooter{

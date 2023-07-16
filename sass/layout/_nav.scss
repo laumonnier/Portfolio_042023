@@ -5,6 +5,23 @@
     ul{
         @include list-unstyled;
     }
+    &__logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 25px;
+        color:$black-color;
+        @include text-shadow($white-color);
+        &--name {
+            margin-left: 1rem;
+            font-style: italic;
+        }
+    }
+    &__links {
+        position: absolute;
+        left: 26%;
+        top: 30px;
+    }
     &__link {
         display: inline-flex;
         justify-content: space-between;
@@ -19,7 +36,7 @@
             color: $light-grey-color;
             transition: 0.15s linear;
             &:hover {
-                @include background-shift($grey-transparent-color);
+                @include background-shift($black-alpha90-color);
                 transform: scale(1.1);
                 color: $white-color;
                 border-radius: 10px;
@@ -40,6 +57,11 @@
             }
         }
     }
+}
+.burger {
+    position: absolute;
+    top: 30px;
+    right: 20px;
 }
 
 //Corresponds to the different animations of the file
